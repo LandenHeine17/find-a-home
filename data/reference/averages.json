@@ -1,0 +1,10 @@
+{
+  "_about": "NE and national nursing home averages from Medicare (State US Averages dataset).",
+  "neDeficiencies": 7.6,
+  "usDeficiencies": 9.2,
+  "neNurseHours": 4.1,
+  "usNurseHours": 3.9,
+  "neTurnover": 48.5,
+  "usTurnover": 45.3,
+  "processingDate": "2026-10-01"
+}

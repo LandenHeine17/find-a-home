@@ -1,0 +1,44 @@
+{
+  "id": "al-ih-coddington",
+  "city": "Lincoln",
+  "area": "Lincoln area",
+  "kind": "facility",
+  "type": "memory",
+  "name": "Independence House – Coddington",
+  "address": "5500 S Coddington Ave, Lincoln, NE 68523",
+  "zip": "68523",
+  "phone": "(402) 420-0328",
+  "lat": 40.7599,
+  "lon": -96.7494,
+  "website": "https://www.theindependencehouses.com",
+  "websiteLabel": "Community website",
+  "priceLow": 5900,
+  "priceHigh": null,
+  "priceEstimated": true,
+  "priceNote": "Lincoln average for memory care (Caring.com). This community does not publish a price.",
+  "rating": {
+    "value": 4.6,
+    "source": "Caring.com family reviews",
+    "count": 3
+  },
+  "cms": null,
+  "memoryCare": "dedicated",
+  "memoryUnits": null,
+  "beds": null,
+  "openings": {
+    "est": null,
+    "note": "Openings are not published. Ask when you request a tour."
+  },
+  "payment": {
+    "private": "yes",
+    "medicaid": "ask",
+    "medicare": "no",
+    "va": "ask",
+    "ltc": "ask"
+  },
+  "bio": "Small, home-like memory care house in southwest Lincoln with private rooms or suites. Provides palliative care, day care, respite and short stays.",
+  "sources": [
+    "City of Lincoln Aging Partners, Licensed Assisted Living list (Apr 2020)",
+    "Ratings & prices: Caring.com (accessed Nov 2026)"
+  ]
+}

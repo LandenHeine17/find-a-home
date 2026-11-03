@@ -1,0 +1,31 @@
+{
+  "_about": "Which nursing homes `npm run import` pulls from Medicare. Add a county name to grow the list.",
+  "state": "NE",
+  "counties": [
+    "Lancaster",
+    "Seward",
+    "Saunders",
+    "Douglas",
+    "Sarpy",
+    "Cass",
+    "Washington"
+  ],
+  "priceEstimate": {
+    "low": 8380,
+    "high": 10040,
+    "note": "Nebraska average for a nursing home (semi-private to private room). This facility does not publish its price.",
+    "source": "CareScout Cost of Care Survey 2024, Nebraska averages"
+  },
+  "areas": [
+    {
+      "name": "Lincoln area",
+      "lat": 40.8136,
+      "lon": -96.7026
+    },
+    {
+      "name": "Omaha area",
+      "lat": 41.2565,
+      "lon": -95.9345
+    }
+  ]
+}

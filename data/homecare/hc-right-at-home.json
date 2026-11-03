@@ -1,0 +1,34 @@
+{
+  "id": "hc-right-at-home",
+  "kind": "homecare",
+  "type": "non-medical",
+  "name": "Right at Home – Lincoln",
+  "phone": "(402) 488-4421",
+  "website": "https://www.rightathome.net",
+  "priceLow": 30,
+  "priceHigh": 40,
+  "priceEstimated": true,
+  "priceNote": "Estimated Lincoln-area agency rate. Most agencies require a 3–4 hour minimum visit. Call for a quote.",
+  "dementia": true,
+  "serviceArea": "Lincoln & Lancaster County",
+  "services": [
+    "Companionship",
+    "Personal care & bathing",
+    "Meal preparation",
+    "Medication reminders",
+    "Respite for family caregivers",
+    "Transportation to appointments"
+  ],
+  "payment": {
+    "private": "yes",
+    "medicaid": "ask",
+    "medicare": "no",
+    "va": "ask",
+    "ltc": "ask"
+  },
+  "bio": "Non-medical in-home care agency. Office: 3883 Normal Blvd, Suite 206, Lincoln, NE 68506.",
+  "sources": [
+    "City of Lincoln Aging Partners, Community Home Health Care list (updated Jul 7, 2026)",
+    "Agency websites (accessed Nov 2026)"
+  ]
+}

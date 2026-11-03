@@ -1,0 +1,223 @@
+{
+  "id": "nh-285002",
+  "kind": "facility",
+  "type": "nursing",
+  "name": "Sumner Place",
+  "aka": null,
+  "city": "Lincoln",
+  "county": "Lancaster",
+  "area": "Lincoln area",
+  "address": "1750 South 20th Street, Lincoln, NE 68502",
+  "zip": "68502",
+  "phone": "(402) 475-6791",
+  "lat": 40.7947,
+  "lon": -96.692,
+  "website": "https://www.vetterseniorliving.com/our-locations/sumner-place/",
+  "websiteLabel": "Official website",
+  "careCompare": "https://www.medicare.gov/care-compare/details/nursing-home/285002",
+  "priceLow": 8380,
+  "priceHigh": 10040,
+  "priceEstimated": true,
+  "priceNote": "Nebraska average for a nursing home (semi-private to private room). This facility does not publish its price.",
+  "rating": {
+    "value": 4,
+    "source": "Medicare (CMS) overall star rating",
+    "count": null
+  },
+  "cms": {
+    "ccn": "285002",
+    "overall": 4,
+    "inspection": 4,
+    "staffing": 4,
+    "quality": 4,
+    "nurseHours": 4,
+    "rnHours": 0.58,
+    "weekendHours": 3.5,
+    "turnover": 28.9,
+    "rnTurnover": 20,
+    "adminLeft": 0,
+    "deficiencies": 2,
+    "complaintDeficiencies": 0,
+    "inspectionDate": "2026-08-18",
+    "fines": 0,
+    "fineDollars": 0,
+    "paymentDenials": 0,
+    "abuse": false,
+    "sff": false,
+    "sffCandidate": false,
+    "ownership": "Non-profit",
+    "familyCouncil": false
+  },
+  "inspections": [
+    {
+      "date": "2026-08-18",
+      "cycle": 1,
+      "tag": "0812",
+      "title": "Food stored or prepared unsafely",
+      "detail": "Procure food from sources approved or considered satisfactory and store, prepare, distribute and serve food in accordance with professional standards.",
+      "category": "Nutrition and Dietary",
+      "sev": "F",
+      "level": 2,
+      "scope": "many residents",
+      "complaint": false,
+      "corrected": true,
+      "dementia": false
+    },
+    {
+      "date": "2026-08-18",
+      "cycle": 1,
+      "tag": "0880",
+      "title": "Infection control not followed",
+      "detail": "Provide and implement an infection prevention and control program.",
+      "category": "Infection Control",
+      "sev": "D",
+      "level": 2,
+      "scope": "one resident",
+      "complaint": false,
+      "corrected": true,
+      "dementia": false
+    },
+    {
+      "date": "2025-05-13",
+      "cycle": 2,
+      "tag": "0812",
+      "title": "Food stored or prepared unsafely",
+      "detail": "Procure food from sources approved or considered satisfactory and store, prepare, distribute and serve food in accordance with professional standards.",
+      "category": "Nutrition and Dietary",
+      "sev": "F",
+      "level": 2,
+      "scope": "many residents",
+      "complaint": false,
+      "corrected": true,
+      "dementia": false
+    },
+    {
+      "date": "2025-05-13",
+      "cycle": 2,
+      "tag": "0686",
+      "title": "Pressure sores not prevented or treated",
+      "detail": "Provide appropriate pressure ulcer care and prevent new ulcers from developing.",
+      "category": "Quality of Life and Care",
+      "sev": "D",
+      "level": 2,
+      "scope": "one resident",
+      "complaint": false,
+      "corrected": true,
+      "dementia": false
+    },
+    {
+      "date": "2025-05-13",
+      "cycle": 2,
+      "tag": "0880",
+      "title": "Infection control not followed",
+      "detail": "Provide and implement an infection prevention and control program.",
+      "category": "Infection Control",
+      "sev": "D",
+      "level": 2,
+      "scope": "one resident",
+      "complaint": false,
+      "corrected": true,
+      "dementia": false
+    }
+  ],
+  "penalties": [],
+  "owners": {
+    "type": "Non profit - Corporation",
+    "legalName": "Vsl Lincoln Sumner LLC",
+    "changed12m": false,
+    "direct": [
+      {
+        "name": "Vetter Senior Living",
+        "pct": "100%",
+        "since": "12/31/2016"
+      }
+    ],
+    "indirect": [],
+    "indirectCount": 0,
+    "operators": [
+      "Vetter Senior Living",
+      "Vsl Vetter Health Services LLC"
+    ]
+  },
+  "quality": [
+    {
+      "code": "481",
+      "label": "Antipsychotic drugs (long-stay)",
+      "value": 13.6,
+      "ne": 20.7,
+      "us": 15.4,
+      "lowerBetter": true
+    },
+    {
+      "code": "410",
+      "label": "Falls with major injury",
+      "value": 5,
+      "ne": 4.5,
+      "us": 3.2,
+      "lowerBetter": true
+    },
+    {
+      "code": "479",
+      "label": "Pressure ulcers (bed sores)",
+      "value": 1.5,
+      "ne": 4,
+      "us": 4.5,
+      "lowerBetter": true
+    },
+    {
+      "code": "401",
+      "label": "Needing more help with daily activities",
+      "value": 19.6,
+      "ne": 19,
+      "us": 13.5,
+      "lowerBetter": true
+    },
+    {
+      "code": "404",
+      "label": "Lost too much weight",
+      "value": 4,
+      "ne": 5.1,
+      "us": 5.1,
+      "lowerBetter": true
+    },
+    {
+      "code": "408",
+      "label": "Depressive symptoms",
+      "value": 5.5,
+      "ne": 4.4,
+      "us": 13.5,
+      "lowerBetter": true
+    },
+    {
+      "code": "452",
+      "label": "Anti-anxiety or sleep drugs",
+      "value": 21.4,
+      "ne": 19,
+      "us": 19.5,
+      "lowerBetter": true
+    }
+  ],
+  "memoryCare": "unit",
+  "memorySource": "City of Lincoln Aging Partners nursing facility list (Mar 2024)",
+  "behavioral": false,
+  "memoryUnits": null,
+  "beds": 104,
+  "openings": {
+    "est": 24,
+    "note": "Estimate: certified beds minus average daily residents (CMS). Certified beds are often more than the beds actually staffed. Call to confirm."
+  },
+  "payment": {
+    "private": "yes",
+    "medicaid": "yes",
+    "medicare": "short",
+    "va": "ask",
+    "ltc": "ask"
+  },
+  "vaSource": null,
+  "bio": "Non-profit nursing home in Lincoln with 104 certified beds, part of Vetter Senior Living. Provides 24-hour skilled nursing care, long-term care, and short-term rehab.",
+  "sources": [
+    "Medicare / CMS Provider Data: provider info, health inspections, penalties, ownership, quality measures (processed 2026-10-01)",
+    "Dementia units & VA contracts: City of Lincoln Aging Partners nursing facility list (Mar 2024); Eastern Nebraska Office on Aging facility list (Sep 2025)",
+    "Price: CareScout Cost of Care Survey 2024, Nebraska averages"
+  ]
+}

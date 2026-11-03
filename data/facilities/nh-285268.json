@@ -1,0 +1,321 @@
+{
+  "id": "nh-285268",
+  "kind": "facility",
+  "type": "nursing",
+  "name": "Brookestone of Papillion",
+  "aka": null,
+  "city": "Papillion",
+  "county": "Sarpy",
+  "area": "Omaha area",
+  "address": "610 South Polk Street, Papillion, NE 68046",
+  "zip": "68046",
+  "phone": "(402) 339-7700",
+  "lat": 41.1516,
+  "lon": -96.049,
+  "website": "https://www.vetterseniorliving.com/our-locations/brookestone-of-papillion/",
+  "websiteLabel": "Official website",
+  "careCompare": "https://www.medicare.gov/care-compare/details/nursing-home/285268",
+  "priceLow": 8380,
+  "priceHigh": 10040,
+  "priceEstimated": true,
+  "priceNote": "Nebraska average for a nursing home (semi-private to private room). This facility does not publish its price.",
+  "rating": {
+    "value": 4,
+    "source": "Medicare (CMS) overall star rating",
+    "count": null
+  },
+  "cms": {
+    "ccn": "285268",
+    "overall": 4,
+    "inspection": 3,
+    "staffing": 5,
+    "quality": 4,
+    "nurseHours": 4.4,
+    "rnHours": 0.83,
+    "weekendHours": 3.7,
+    "turnover": 39.4,
+    "rnTurnover": 21.1,
+    "adminLeft": 1,
+    "deficiencies": 6,
+    "complaintDeficiencies": 1,
+    "inspectionDate": "2026-07-09",
+    "fines": 0,
+    "fineDollars": 0,
+    "paymentDenials": 0,
+    "abuse": false,
+    "sff": false,
+    "sffCandidate": false,
+    "ownership": "Non-profit",
+    "familyCouncil": false
+  },
+  "inspections": [
+    {
+      "date": "2026-07-09",
+      "cycle": 1,
+      "tag": "0812",
+      "title": "Food stored or prepared unsafely",
+      "detail": "Procure food from sources approved or considered satisfactory and store, prepare, distribute and serve food in accordance with professional standards.",
+      "category": "Nutrition and Dietary",
+      "sev": "F",
+      "level": 2,
+      "scope": "many residents",
+      "complaint": false,
+      "corrected": true,
+      "dementia": false
+    },
+    {
+      "date": "2026-07-09",
+      "cycle": 1,
+      "tag": "0628",
+      "title": "Transfer / bed-hold notice not given",
+      "detail": "Provide the required documentation or notification related to the resident's needs, appeal rights, or bed-hold policies.",
+      "category": "Resident Rights",
+      "sev": "E",
+      "level": 2,
+      "scope": "several residents",
+      "complaint": false,
+      "corrected": true,
+      "dementia": false
+    },
+    {
+      "date": "2026-07-09",
+      "cycle": 1,
+      "tag": "0880",
+      "title": "Infection control not followed",
+      "detail": "Provide and implement an infection prevention and control program.",
+      "category": "Infection Control",
+      "sev": "E",
+      "level": 2,
+      "scope": "several residents",
+      "complaint": false,
+      "corrected": true,
+      "dementia": false
+    },
+    {
+      "date": "2026-07-09",
+      "cycle": 1,
+      "tag": "0582",
+      "title": "Medicare/Medicaid coverage notice not given",
+      "detail": "Give residents notice of Medicaid/Medicare coverage and potential liability for services not covered.",
+      "category": "Resident Rights",
+      "sev": "D",
+      "level": 2,
+      "scope": "one resident",
+      "complaint": false,
+      "corrected": true,
+      "dementia": false
+    },
+    {
+      "date": "2026-07-09",
+      "cycle": 1,
+      "tag": "0627",
+      "title": "Unsafe transfer or discharge",
+      "detail": "Ensure the transfer/discharge meets the resident's needs/preferences and that the resident is prepared for a safe transfer/discharge.",
+      "category": "Resident Rights",
+      "sev": "D",
+      "level": 2,
+      "scope": "one resident",
+      "complaint": true,
+      "corrected": true,
+      "dementia": false
+    },
+    {
+      "date": "2026-07-09",
+      "cycle": 1,
+      "tag": "0689",
+      "title": "Accident hazards or not enough supervision (falls, wandering)",
+      "detail": "Ensure that a nursing home area is free from accident hazards and provides adequate supervision to prevent accidents.",
+      "category": "Quality of Life and Care",
+      "sev": "D",
+      "level": 2,
+      "scope": "one resident",
+      "complaint": false,
+      "corrected": true,
+      "dementia": true
+    },
+    {
+      "date": "2024-11-19",
+      "cycle": 2,
+      "tag": "0684",
+      "title": "Care not given as ordered",
+      "detail": "Provide appropriate treatment and care according to orders, resident’s preferences and goals.",
+      "category": "Quality of Life and Care",
+      "sev": "D",
+      "level": 2,
+      "scope": "one resident",
+      "complaint": true,
+      "corrected": true,
+      "dementia": false
+    },
+    {
+      "date": "2024-09-04",
+      "cycle": 3,
+      "tag": "0689",
+      "title": "Accident hazards or not enough supervision (falls, wandering)",
+      "detail": "Ensure that a nursing home area is free from accident hazards and provides adequate supervision to prevent accidents.",
+      "category": "Quality of Life and Care",
+      "sev": "D",
+      "level": 2,
+      "scope": "one resident",
+      "complaint": true,
+      "corrected": true,
+      "dementia": true
+    },
+    {
+      "date": "2023-11-02",
+      "cycle": 3,
+      "tag": "0812",
+      "title": "Food stored or prepared unsafely",
+      "detail": "Procure food from sources approved or considered satisfactory and store, prepare, distribute and serve food in accordance with professional standards.",
+      "category": "Nutrition and Dietary",
+      "sev": "F",
+      "level": 2,
+      "scope": "many residents",
+      "complaint": false,
+      "corrected": true,
+      "dementia": false
+    },
+    {
+      "date": "2023-11-02",
+      "cycle": 3,
+      "tag": "0561",
+      "title": "Resident choices not respected",
+      "detail": "Honor the resident's right to and the facility must promote and facilitate resident self-determination through support of resident choice.",
+      "category": "Resident Rights",
+      "sev": "D",
+      "level": 2,
+      "scope": "one resident",
+      "complaint": false,
+      "corrected": true,
+      "dementia": false
+    },
+    {
+      "date": "2023-11-02",
+      "cycle": 3,
+      "tag": "0803",
+      "title": "Menus not meeting nutrition needs",
+      "detail": "Ensure menus must meet the nutritional needs of residents, be prepared in advance, be followed, be updated, be reviewed by dietician, and meet the needs of the resident.",
+      "category": "Nutrition and Dietary",
+      "sev": "D",
+      "level": 2,
+      "scope": "one resident",
+      "complaint": false,
+      "corrected": true,
+      "dementia": false
+    },
+    {
+      "date": "2023-11-02",
+      "cycle": 3,
+      "tag": "0880",
+      "title": "Infection control not followed",
+      "detail": "Provide and implement an infection prevention and control program.",
+      "category": "Infection Control",
+      "sev": "D",
+      "level": 2,
+      "scope": "one resident",
+      "complaint": false,
+      "corrected": true,
+      "dementia": false
+    }
+  ],
+  "penalties": [],
+  "owners": {
+    "type": "Non profit - Corporation",
+    "legalName": "Vsl Papillion LLC",
+    "changed12m": false,
+    "direct": [
+      {
+        "name": "Vetter Senior Living",
+        "pct": "100%",
+        "since": "12/23/2016"
+      }
+    ],
+    "indirect": [],
+    "indirectCount": 0,
+    "operators": [
+      "Vetter Senior Living",
+      "Vsl Vetter Health Services LLC"
+    ]
+  },
+  "quality": [
+    {
+      "code": "481",
+      "label": "Antipsychotic drugs (long-stay)",
+      "value": 12.7,
+      "ne": 20.7,
+      "us": 15.4,
+      "lowerBetter": true
+    },
+    {
+      "code": "410",
+      "label": "Falls with major injury",
+      "value": 3.9,
+      "ne": 4.5,
+      "us": 3.2,
+      "lowerBetter": true
+    },
+    {
+      "code": "479",
+      "label": "Pressure ulcers (bed sores)",
+      "value": 2.4,
+      "ne": 4,
+      "us": 4.5,
+      "lowerBetter": true
+    },
+    {
+      "code": "401",
+      "label": "Needing more help with daily activities",
+      "value": 17.5,
+      "ne": 19,
+      "us": 13.5,
+      "lowerBetter": true
+    },
+    {
+      "code": "404",
+      "label": "Lost too much weight",
+      "value": 2.5,
+      "ne": 5.1,
+      "us": 5.1,
+      "lowerBetter": true
+    },
+    {
+      "code": "408",
+      "label": "Depressive symptoms",
+      "value": 5.3,
+      "ne": 4.4,
+      "us": 13.5,
+      "lowerBetter": true
+    },
+    {
+      "code": "452",
+      "label": "Anti-anxiety or sleep drugs",
+      "value": 20.2,
+      "ne": 19,
+      "us": 19.5,
+      "lowerBetter": true
+    }
+  ],
+  "memoryCare": "ask",
+  "memorySource": null,
+  "behavioral": false,
+  "memoryUnits": null,
+  "beds": 110,
+  "openings": {
+    "est": 18,
+    "note": "Estimate: certified beds minus average daily residents (CMS). Certified beds are often more than the beds actually staffed. Call to confirm."
+  },
+  "payment": {
+    "private": "yes",
+    "medicaid": "yes",
+    "medicare": "short",
+    "va": "ask",
+    "ltc": "ask"
+  },
+  "vaSource": null,
+  "bio": "Non-profit nursing home in Papillion with 110 certified beds, part of Vetter Senior Living. Provides 24-hour skilled nursing care, long-term care, and short-term rehab.",
+  "sources": [
+    "Medicare / CMS Provider Data: provider info, health inspections, penalties, ownership, quality measures (processed 2026-10-01)",
+    "Dementia units & VA contracts: City of Lincoln Aging Partners nursing facility list (Mar 2024); Eastern Nebraska Office on Aging facility list (Sep 2025)",
+    "Price: CareScout Cost of Care Survey 2024, Nebraska averages"
+  ]
+}

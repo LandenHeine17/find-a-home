@@ -1,74 +1,121 @@
-# Find-A-Home: Low-Fidelity Prototype
+# Find-A-Home
 
-Clickable browser prototype of our top napkin sketch ("Find-A-Home"), built from `Solution Concept.txt`.
+A prototype that helps families find **dementia care** (memory care, nursing homes and in-home care) near **Lincoln and Omaha, Nebraska**.
+Built by IP Group 14 (Landen Heine, Ammi Meyer, Kellan Nash) from our customer-discovery interviews and our top napkin sketch, "Find-A-Home".
 
-## How to run
-There are **two versions to compare with your group**. They share saved data, and each has a link at the top to switch to the other.
+A family answers about 2 minutes of questions (stage, wandering, payment, budget, distance). The app then ranks real facilities on what our interviews said matters most: **Is it safe? Can we pay? Can they handle dementia? Is it close? Is there room?**
 
-| File | What's different |
+## Run it locally
+
+Requires [Node.js](https://nodejs.org) 20 or newer.
+
+```bash
+npm install
+npm start          # http://localhost:3000
+```
+
+`npm run dev` restarts the server automatically when you edit server files. Front-end changes only need a browser refresh.
+
+> Opening `index.html` directly (file://) won't work. The page loads its data from the server's `/api`.
+
+## Deploy on Render
+
+This repo includes a [Render Blueprint](render.yaml).
+
+1. Sign in at [render.com](https://render.com) with GitHub.
+2. Click **New + → Blueprint**, pick this repository, then **Apply**.
+3. Render runs `npm ci && npm run validate`, starts `npm start`, and checks `/healthz`.
+
+Every push to `main` redeploys automatically. On the free plan the app sleeps after 15 idle minutes, so the first visit after that takes about 30–50 seconds. Open the link a minute before a testing session.
+
+## How the code is organized
+
+```
+index.html              page shell
+css/style.css           all styles (large text, calm colors)
+js/                     front end (plain ES modules, no build step)
+  main.js               entry point: loads data, registers screens, starts the router
+  router.js             hash routes: #/welcome, #/results, #/place/<id>, #/compare, #/list, #/next-steps
+  actions.js            one click handler; buttons use data-action="..."
+  assistant.js          "Care Guide" chat (scripted answers, no real AI)
+  core/                 state (localStorage), data loading, matching/scoring, labels, helpers
+  views/                one file per screen
+  components/           dialogs and the nursing-home-only detail sections
+server/
+  index.js              Express app: serves the front end + /api
+  routes/api.js         GET /api/facilities, /api/homecare, /api/places/:id, /api/reference
+  lib/store.js          loads every JSON file in data/ into memory and builds list summaries
+data/
+  facilities/           one JSON file per facility: nh-<CMS number>.json (nursing homes), al-*.json (memory care)
+  homecare/             one JSON file per home care agency
+  curated/nursing-homes.json   hand-researched facts Medicare doesn't have (dementia units, websites, notes)
+  reference/            ZIP code centers, state averages, plain-language citation titles
+  import-config.json    which counties `npm run import` pulls
+scripts/
+  import-cms.js         pulls nursing homes from Medicare and writes data/facilities/nh-*.json
+  validate-data.js      checks every data file for required fields
+```
+
+Each place is one object in one file. The server reads them all at startup, so adding a place never requires a code change.
+
+## Adding more places
+
+### Nursing homes (automatic, from Medicare)
+
+```bash
+npm run import -- --county Hall            # pull Hall County once
+npm run import -- --county Hall --save     # ...and keep it in data/import-config.json
+npm run import                             # refresh everything with the latest Medicare data
+```
+
+The import downloads ratings, every inspection citation, penalties, owners, staffing and dementia-related quality measures. It then lists any homes that have no curated facts yet.
+
+### Facts Medicare doesn't have
+
+Edit `data/curated/nursing-homes.json`, keyed by the CMS certification number (the digits in `nh-<number>.json`):
+
+```json
+"285019": {
+  "aka": "Another name families might know",
+  "memoryUnit": "enoa-2025",
+  "behavioral": true,
+  "vaContract": "aging-partners-2024",
+  "website": { "url": "https://example.org", "label": "Official website" },
+  "note": "Shown at the end of the About section."
+}
+```
+
+`memoryUnit` and `vaContract` point to a source listed under `_sources` at the top of the file. Re-run `npm run import` afterwards.
+
+### Memory care, assisted living or home care (by hand)
+
+Copy an existing file in `data/facilities/al-*.json` or `data/homecare/hc-*.json`, give it a new `id` that matches the file name, and fill it in. Then run:
+
+```bash
+npm run validate
+```
+
+## Data sources
+
+| What | Source |
 |---|---|
-| `index.html`, **Version A** | Clicking a place in the results opens it in **Google Maps in a new tab**. A **Details** button opens our detail page. |
-| `index-map.html`, **Version B** | Results have a **List / Map** toggle. The map shows numbered pins (1 = best match) and your home 🏠. Click a pin for "Open in Google Maps" or "Details". Clicking a list card opens the detail page. |
+| 52 nursing homes (Lincoln + Omaha metro): ratings, inspections, penalties, ownership, staffing, quality | Medicare / CMS Care Compare Provider Data |
+| Dementia units, behavioral care, VA contracts | Lincoln Aging Partners nursing facility list (Mar 2024), Eastern Nebraska Office on Aging (Sep 2025) |
+| 17 Lincoln memory care / assisted living communities | Lincoln Aging Partners licensed assisted living list (2020), with prices and ratings from Caring.com / Seniorly |
+| 10 home care agencies | Lincoln Aging Partners home care list (Jul 2026) and agency websites |
+| Nursing home cost estimate | CareScout Cost of Care Survey 2024 (Nebraska averages) |
+| Distances | US Census ZIP code centers |
 
-Double-click either file, or open it in any browser (Chrome, Edge, Firefox or Safari).
-No install is needed. Internet is only needed for the Version B map tiles and outside links such as Google Maps and Medicare pages.
-Progress is saved in the browser. Use **Start over** in the yellow banner to reset between testers.
+**Estimated:** nursing home prices (state average) and open beds (certified beds minus average residents).
+**Simulated:** insurance card upload, doctor connection, sending tour requests and facility replies, reviews (saved in the browser only) and the Care Guide chat.
+"Ask" in the app means the information isn't public. Facilities would fill it in when they claim their listing.
 
-## Screens (sketch → prototype)
-| Sketch | Prototype |
-|---|---|
-| 1 Welcome (name, insurance card, connect to doctors, Find Homes) | `#/welcome`, step 1 of a 3-step intake. Steps 2–3 add the dementia-needs, payment, budget and distance questions from the Solution Concept. |
-| 2 Selected: HOME CARE + faceted search | `#/results` with the **Home care** toggle |
-| 3 Selected: FACILITY + price / location / availability filters | `#/results` with the **Facilities** toggle |
-| 4 Facility page (rating, insurance taken, base price, bio, contact) | `#/place/<id>`, plus "Is it safe?", "Dementia care" and "Is there room?" sections |
-| 5 Home care page (rating, specialties, base price, bio, contact) | `#/place/hc-<id>` |
-| *(new)* Compare side by side | `#/compare` |
-| *(new)* Request a tour, waitlist, next best match | Tour button → **My list** (`#/list`) |
-| *(new)* What to do next guide | `#/next-steps` |
-| *(new)* AI assistant from our sketch writeup | "Ask Care Guide" button (scripted answers, no real AI) |
-
-## What's real vs. simulated
-**Real (public data, Nov 2026)**
-- **52 nursing homes in the Lincoln + Omaha metro** (Lancaster, Seward, Saunders, Douglas, Sarpy, Cass and Washington counties) from Medicare / CMS Care Compare. For each one:
-  - star ratings and watch-list status
-  - **every inspection citation** from the last 3 inspections (1,228 total), with plain-language titles, severity and a dementia-related flag
-  - **dementia-related quality measures**: antipsychotic use, falls with injury, pressure sores and more, compared with Nebraska averages
-  - **ownership**: owner companies, managers and recent ownership changes
-  - **penalties**: fines and payment denials
-  - staffing and turnover
-- **Dementia / memory units, behavioral care and VA contracts** from official county lists: Lincoln Aging Partners (Mar 2024) and the Eastern Nebraska Office on Aging (Sep 2025).
-- **Websites** were checked one by one (33 of 52). The rest show a "Find their website" search link. For photos, the app links to each place's Google Maps listing rather than copying images.
-- 17 Lincoln assisted living / memory care communities from the City of Lincoln Aging Partners licensed list (Apr 2020). Starting prices and review ratings come from Caring.com and Seniorly.
-- 10 home care agencies from the Aging Partners home care list (Jul 2026).
-- Distances from US Census ZIP code centers. Lincoln and Omaha ZIP codes both work.
-- Map tiles come from © OpenStreetMap contributors (Version B needs internet for the map).
-
-**Estimated**
-- Nursing home prices use the Nebraska average (CareScout 2024).
-- Home care rates use typical Lincoln agency rates.
-- Nursing home open beds are calculated as certified beds minus average residents.
-
-**Simulated**
-- Insurance card upload, the doctor connection, sending tour requests, and facility replies. On **My list**, testers click "Confirmed" or "No openings" to see both outcomes.
-- Reviews are stored only in the browser.
-- The Care Guide chat uses keyword-matched scripted answers.
-
-"Ask" means the information isn't public. Facilities would fill it in when they claim their listing.
+This is a student prototype. It is not medical advice and doesn't take payment from facilities.
 
 ## Suggested user-testing tasks
-0. Before or after testing: show testers **both versions** and ask which way of seeing locations they prefer.
+
 1. "Your dad has middle-stage dementia and wanders. You live in 68516 and will use savings, then Medicaid. Find two places worth touring."
-2. "Compare those two places. Which one would you pick, and why?"
+2. "Compare those two places. Which would you pick, and why?"
 3. "Request a tour. The facility says it's full. What do you do next?"
-4. "Find out whether Medicare will pay for memory care." (Try both the guide and the Care Guide chat.)
+4. "Find out whether Medicare will pay for memory care."
 5. "Send your list to your sister."
-
-Watch where testers hesitate, which wording confuses them, and whether they trust the ratings.
-
-## Files
-- `index.html` / `index-map.html`: Version A / Version B page shells
-- `vendor/leaflet/`: map library (stored locally)
-- `css/style.css`: styles (large text, calm colors)
-- `js/data.js`: facility and agency data, generated from the sources above
-- `js/app.js`: screens, matching and filters
-- `js/assistant.js`: scripted Care Guide

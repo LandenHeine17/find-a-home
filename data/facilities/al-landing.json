@@ -1,0 +1,44 @@
+{
+  "id": "al-landing",
+  "city": "Lincoln",
+  "area": "Lincoln area",
+  "kind": "facility",
+  "type": "assisted_memory",
+  "name": "The Landing at Williamsburg Village",
+  "address": "3500 Faulkner Dr, Lincoln, NE 68516",
+  "zip": "68516",
+  "phone": "(402) 420-9355",
+  "lat": 40.7494,
+  "lon": -96.6692,
+  "website": "https://www.immanuel.com",
+  "websiteLabel": "Community website",
+  "priceLow": 5900,
+  "priceHigh": null,
+  "priceEstimated": true,
+  "priceNote": "Lincoln average for memory care (Caring.com). This community does not publish a price.",
+  "rating": {
+    "value": null,
+    "source": "Caring.com family reviews",
+    "count": 0
+  },
+  "cms": null,
+  "memoryCare": "unit",
+  "memoryUnits": 14,
+  "beds": 48,
+  "openings": {
+    "est": null,
+    "note": "Openings are not published. Ask when you request a tour."
+  },
+  "payment": {
+    "private": "yes",
+    "medicaid": "ask",
+    "medicare": "no",
+    "va": "ask",
+    "ltc": "ask"
+  },
+  "bio": "Immanuel continuing care community with 34 assisted living apartments and 14 private memory support apartments.",
+  "sources": [
+    "City of Lincoln Aging Partners, Licensed Assisted Living list (Apr 2020)",
+    "Ratings & prices: Caring.com (accessed Nov 2026)"
+  ]
+}

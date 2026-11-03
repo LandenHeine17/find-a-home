@@ -1,0 +1,44 @@
+{
+  "id": "al-ch-70o",
+  "city": "Lincoln",
+  "area": "Lincoln area",
+  "kind": "facility",
+  "type": "memory",
+  "name": "CountryHouse at 70th & O",
+  "address": "240 S 70th St, Lincoln, NE 68510",
+  "zip": "68510",
+  "phone": "(402) 421-2200",
+  "lat": 40.8117,
+  "lon": -96.6249,
+  "website": "https://www.countryhouse.net",
+  "websiteLabel": "Community website",
+  "priceLow": 7595,
+  "priceHigh": null,
+  "priceEstimated": false,
+  "priceNote": "Starting monthly price listed on Caring.com. The final cost depends on the care level and room.",
+  "rating": {
+    "value": 5,
+    "source": "Caring.com family reviews",
+    "count": 4
+  },
+  "cms": null,
+  "memoryCare": "dedicated",
+  "memoryUnits": 37,
+  "beds": 37,
+  "openings": {
+    "est": null,
+    "note": "Openings are not published. Ask when you request a tour."
+  },
+  "payment": {
+    "private": "yes",
+    "medicaid": "ask",
+    "medicare": "no",
+    "va": "ask",
+    "ltc": "ask"
+  },
+  "bio": "Memory-care-only community with 37 units. Offers adult day services, respite care and short stays.",
+  "sources": [
+    "City of Lincoln Aging Partners, Licensed Assisted Living list (Apr 2020)",
+    "Ratings & prices: Caring.com (accessed Nov 2026)"
+  ]
+}

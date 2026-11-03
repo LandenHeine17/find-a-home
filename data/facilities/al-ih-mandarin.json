@@ -1,0 +1,44 @@
+{
+  "id": "al-ih-mandarin",
+  "city": "Lincoln",
+  "area": "Lincoln area",
+  "kind": "facility",
+  "type": "memory",
+  "name": "Independence House – Mandarin",
+  "address": "4610 Mandarin Cir, Lincoln, NE 68516",
+  "zip": "68516",
+  "phone": "(402) 488-2754",
+  "lat": 40.7669,
+  "lon": -96.6064,
+  "website": "https://www.theindependencehouses.com",
+  "websiteLabel": "Community website",
+  "priceLow": 5900,
+  "priceHigh": null,
+  "priceEstimated": true,
+  "priceNote": "Lincoln average for memory care (Caring.com). This community does not publish a price.",
+  "rating": {
+    "value": 4,
+    "source": "Caring.com family reviews",
+    "count": 1
+  },
+  "cms": null,
+  "memoryCare": "dedicated",
+  "memoryUnits": null,
+  "beds": null,
+  "openings": {
+    "est": null,
+    "note": "Openings are not published. Ask when you request a tour."
+  },
+  "payment": {
+    "private": "yes",
+    "medicaid": "ask",
+    "medicare": "no",
+    "va": "ask",
+    "ltc": "ask"
+  },
+  "bio": "Small, home-like memory care house with private rooms or suites. Provides palliative care, day care, respite and short stays.",
+  "sources": [
+    "City of Lincoln Aging Partners, Licensed Assisted Living list (Apr 2020)",
+    "Ratings & prices: Caring.com (accessed Nov 2026)"
+  ]
+}

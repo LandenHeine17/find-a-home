@@ -1,0 +1,44 @@
+{
+  "id": "al-waterford-wh",
+  "city": "Lincoln",
+  "area": "Lincoln area",
+  "kind": "facility",
+  "type": "memory",
+  "name": "The Waterford at Wilderness Hills",
+  "address": "8939 Keystone Dr, Lincoln, NE 68516",
+  "zip": "68516",
+  "phone": "(402) 421-8105",
+  "lat": 40.7224,
+  "lon": -96.6813,
+  "website": "https://www.thewaterford.net",
+  "websiteLabel": "Community website",
+  "priceLow": 5900,
+  "priceHigh": null,
+  "priceEstimated": true,
+  "priceNote": "Lincoln average for memory care (Caring.com). This community does not publish a price.",
+  "rating": {
+    "value": 4.1,
+    "source": "Caring.com family reviews",
+    "count": 7
+  },
+  "cms": null,
+  "memoryCare": "dedicated",
+  "memoryUnits": 16,
+  "beds": 16,
+  "openings": {
+    "est": null,
+    "note": "Openings are not published. Ask when you request a tour."
+  },
+  "payment": {
+    "private": "yes",
+    "medicaid": "no",
+    "medicare": "no",
+    "va": "ask",
+    "ltc": "ask"
+  },
+  "bio": "Small memory care community with 16 private studio and one-bedroom units. Listed by Aging Partners as not Medicaid waiver certified.",
+  "sources": [
+    "City of Lincoln Aging Partners, Licensed Assisted Living list (Apr 2020)",
+    "Ratings & prices: Caring.com (accessed Nov 2026)"
+  ]
+}

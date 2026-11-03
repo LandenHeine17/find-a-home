@@ -1,0 +1,44 @@
+{
+  "id": "al-bickford",
+  "city": "Lincoln",
+  "area": "Lincoln area",
+  "kind": "facility",
+  "type": "assisted_memory",
+  "name": "Bickford of Lincoln",
+  "address": "4451 Old Cheney Rd, Lincoln, NE 68516",
+  "zip": "68516",
+  "phone": "(402) 420-6058",
+  "lat": 40.7552,
+  "lon": -96.6582,
+  "website": "https://www.bickfordseniorliving.com/branch/bickford-of-lincoln",
+  "websiteLabel": "Community website",
+  "priceLow": 10494,
+  "priceHigh": null,
+  "priceEstimated": false,
+  "priceNote": "Starting monthly price listed on Caring.com. The final cost depends on the care level and room.",
+  "rating": {
+    "value": 4.5,
+    "source": "Caring.com family reviews",
+    "count": 18
+  },
+  "cms": null,
+  "memoryCare": "unit",
+  "memoryUnits": 7,
+  "beds": 44,
+  "openings": {
+    "est": null,
+    "note": "Openings are not published. Ask when you request a tour."
+  },
+  "payment": {
+    "private": "yes",
+    "medicaid": "ask",
+    "medicare": "no",
+    "va": "ask",
+    "ltc": "ask"
+  },
+  "bio": "Assisted living with 44 apartments (studio to two-bedroom) and 7 units set aside for advanced memory care. Small pets welcome.",
+  "sources": [
+    "City of Lincoln Aging Partners, Licensed Assisted Living list (Apr 2020)",
+    "Ratings & prices: Caring.com (accessed Nov 2026)"
+  ]
+}

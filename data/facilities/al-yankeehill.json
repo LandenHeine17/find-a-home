@@ -1,0 +1,44 @@
+{
+  "id": "al-yankeehill",
+  "city": "Lincoln",
+  "area": "Lincoln area",
+  "kind": "facility",
+  "type": "memory",
+  "name": "Autumn View Memory Care at Yankee Hill Village",
+  "address": "8401 S 33rd St, Lincoln, NE 68516",
+  "zip": "68516",
+  "phone": "(402) 489-0331",
+  "lat": 40.7271,
+  "lon": -96.6736,
+  "website": "https://www.immanuel.com",
+  "websiteLabel": "Community website",
+  "priceLow": 4900,
+  "priceHigh": null,
+  "priceEstimated": false,
+  "priceNote": "Starting price listed on Seniorly.",
+  "rating": {
+    "value": null,
+    "source": "Caring.com family reviews",
+    "count": 0
+  },
+  "cms": null,
+  "memoryCare": "dedicated",
+  "memoryUnits": 16,
+  "beds": 16,
+  "openings": {
+    "est": null,
+    "note": "Openings are not published. Ask when you request a tour."
+  },
+  "payment": {
+    "private": "yes",
+    "medicaid": "ask",
+    "medicare": "no",
+    "va": "ask",
+    "ltc": "ask"
+  },
+  "bio": "Immanuel's memory care neighborhood inside Yankee Hill Village, with 16 studio and one-bedroom apartments for residents with Alzheimer's and related dementias.",
+  "sources": [
+    "City of Lincoln Aging Partners, Licensed Assisted Living list (Apr 2020)",
+    "Ratings & prices: Seniorly (accessed Nov 2026)"
+  ]
+}

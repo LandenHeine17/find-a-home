@@ -1,0 +1,44 @@
+{
+  "id": "al-arbors",
+  "city": "Lincoln",
+  "area": "Lincoln area",
+  "kind": "facility",
+  "type": "memory",
+  "name": "The Arbors Memory Care",
+  "address": "3777 N 58th St, Lincoln, NE 68507",
+  "zip": "68507",
+  "phone": "(402) 466-3777",
+  "lat": 40.8504,
+  "lon": -96.6416,
+  "website": "https://www.legacyretirement.com",
+  "websiteLabel": "Community website",
+  "priceLow": 5900,
+  "priceHigh": null,
+  "priceEstimated": true,
+  "priceNote": "Lincoln average for memory care (Caring.com). This community does not publish a price.",
+  "rating": {
+    "value": 5,
+    "source": "Caring.com family reviews",
+    "count": 1
+  },
+  "cms": null,
+  "memoryCare": "dedicated",
+  "memoryUnits": 32,
+  "beds": 32,
+  "openings": {
+    "est": null,
+    "note": "Openings are not published. Ask when you request a tour."
+  },
+  "payment": {
+    "private": "yes",
+    "medicaid": "ask",
+    "medicare": "no",
+    "va": "ask",
+    "ltc": "ask"
+  },
+  "bio": "A Legacy memory care community with 32 private suites. It accepts only residents with Alzheimer's and related dementias.",
+  "sources": [
+    "City of Lincoln Aging Partners, Licensed Assisted Living list (Apr 2020)",
+    "Ratings & prices: Caring.com (accessed Nov 2026)"
+  ]
+}

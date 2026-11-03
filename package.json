@@ -1,0 +1,20 @@
+{
+  "name": "find-a-home",
+  "version": "1.0.0",
+  "description": "Find-A-Home: a prototype that helps families find dementia care (memory care, nursing homes, home care) near Lincoln and Omaha, Nebraska.",
+  "private": true,
+  "type": "module",
+  "main": "server/index.js",
+  "scripts": {
+    "start": "node server/index.js",
+    "dev": "node --watch server/index.js",
+    "import": "node scripts/import-cms.js",
+    "validate": "node scripts/validate-data.js"
+  },
+  "engines": {
+    "node": ">=20"
+  },
+  "dependencies": {
+    "express": "^4.22.3"
+  }
+}

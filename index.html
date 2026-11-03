@@ -4,12 +4,11 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Find-A-Home · Dementia care near Lincoln, NE (Prototype)</title>
-  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="/css/style.css">
   <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'><path d='M8 30 32 10l24 20v26H8z' fill='%232f6f73'/><path d='M26 56V40h12v16' fill='%23fff'/></svg>">
 </head>
 <body>
   <div class="proto-banner">
-    <b>Version A:</b> clicking a place opens Google Maps. <a class="variant-switch" href="index-map.html#/results">Try Version B (map view) →</a><br>
     Prototype for user testing (IP Group 14). Facility info comes from public sources and may be out of date, so please call before visiting.
     <button class="linkbtn" data-action="sources">About the data</button> ·
     <button class="linkbtn" data-action="reset">Start over</button>
@@ -42,9 +41,6 @@
   </button>
   <section class="assistant-panel hidden" id="assistantPanel" role="dialog" aria-label="Care Guide assistant"></section>
 
-  <script>window.FAH_VARIANT = 'maplink';</script>
-  <script src="js/data.js"></script>
-  <script src="js/app.js"></script>
-  <script src="js/assistant.js"></script>
+  <script type="module" src="/js/main.js"></script>
 </body>
 </html>

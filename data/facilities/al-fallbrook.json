@@ -1,0 +1,44 @@
+{
+  "id": "al-fallbrook",
+  "city": "Lincoln",
+  "area": "Lincoln area",
+  "kind": "facility",
+  "type": "assisted_memory",
+  "name": "Fallbrook Assisted Living & Memory Care",
+  "address": "6600 Juliet Ct, Lincoln, NE 68521",
+  "zip": "68521",
+  "phone": "(402) 261-9050",
+  "lat": 40.8789,
+  "lon": -96.7376,
+  "website": "https://www.fallbrookassisted.com",
+  "websiteLabel": "Community website",
+  "priceLow": 8750,
+  "priceHigh": null,
+  "priceEstimated": false,
+  "priceNote": "Starting monthly price listed on Caring.com. The final cost depends on the care level and room.",
+  "rating": {
+    "value": 4.8,
+    "source": "Caring.com family reviews",
+    "count": 7
+  },
+  "cms": null,
+  "memoryCare": "unit",
+  "memoryUnits": 17,
+  "beds": 71,
+  "openings": {
+    "est": null,
+    "note": "Openings are not published. Ask when you request a tour."
+  },
+  "payment": {
+    "private": "yes",
+    "medicaid": "ask",
+    "medicare": "no",
+    "va": "ask",
+    "ltc": "ask"
+  },
+  "bio": "Northwest Lincoln community with 54 private assisted living apartments and 17 memory care apartments. Pets allowed with a deposit.",
+  "sources": [
+    "City of Lincoln Aging Partners, Licensed Assisted Living list (Apr 2020)",
+    "Ratings & prices: Caring.com (accessed Nov 2026)"
+  ]
+}

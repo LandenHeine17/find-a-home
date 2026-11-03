@@ -1,0 +1,260 @@
+{
+  "id": "nh-285288",
+  "kind": "facility",
+  "type": "nursing",
+  "name": "Eventide Williamsburg",
+  "aka": null,
+  "city": "Lincoln",
+  "county": "Lancaster",
+  "area": "Lincoln area",
+  "address": "6120 South 34th Street, Lincoln, NE 68516",
+  "zip": "68516",
+  "phone": "(402) 486-8919",
+  "lat": 40.7522,
+  "lon": -96.671,
+  "website": "https://eventide.org/",
+  "websiteLabel": "Operator: Eventide",
+  "careCompare": "https://www.medicare.gov/care-compare/details/nursing-home/285288",
+  "priceLow": 8380,
+  "priceHigh": 10040,
+  "priceEstimated": true,
+  "priceNote": "Nebraska average for a nursing home (semi-private to private room). This facility does not publish its price.",
+  "rating": {
+    "value": 5,
+    "source": "Medicare (CMS) overall star rating",
+    "count": null
+  },
+  "cms": {
+    "ccn": "285288",
+    "overall": 5,
+    "inspection": 4,
+    "staffing": 5,
+    "quality": 5,
+    "nurseHours": 5.3,
+    "rnHours": 1.19,
+    "weekendHours": 5.1,
+    "turnover": 47.8,
+    "rnTurnover": 36.4,
+    "adminLeft": 0,
+    "deficiencies": 2,
+    "complaintDeficiencies": 1,
+    "inspectionDate": "2025-12-04",
+    "fines": 0,
+    "fineDollars": 0,
+    "paymentDenials": 0,
+    "abuse": false,
+    "sff": false,
+    "sffCandidate": false,
+    "ownership": "Non-profit",
+    "familyCouncil": false
+  },
+  "inspections": [
+    {
+      "date": "2026-04-02",
+      "cycle": 1,
+      "tag": "0684",
+      "title": "Care not given as ordered",
+      "detail": "Provide appropriate treatment and care according to orders, resident’s preferences and goals.",
+      "category": "Quality of Life and Care",
+      "sev": "D",
+      "level": 2,
+      "scope": "one resident",
+      "complaint": true,
+      "corrected": true,
+      "dementia": false
+    },
+    {
+      "date": "2025-12-04",
+      "cycle": 1,
+      "tag": "0880",
+      "title": "Infection control not followed",
+      "detail": "Provide and implement an infection prevention and control program.",
+      "category": "Infection Control",
+      "sev": "D",
+      "level": 2,
+      "scope": "one resident",
+      "complaint": false,
+      "corrected": true,
+      "dementia": false
+    },
+    {
+      "date": "2025-06-30",
+      "cycle": 2,
+      "tag": "0580",
+      "title": "Family or doctor not told about a change or injury",
+      "detail": "Immediately tell the resident, the resident's doctor, and a family member of situations (injury/decline/room, etc.)  that affect the resident.",
+      "category": "Resident Rights",
+      "sev": "D",
+      "level": 2,
+      "scope": "one resident",
+      "complaint": true,
+      "corrected": true,
+      "dementia": false
+    },
+    {
+      "date": "2025-06-30",
+      "cycle": 2,
+      "tag": "0609",
+      "title": "Suspected abuse or neglect not reported on time",
+      "detail": "Timely report suspected abuse, neglect, or theft and report the results of the investigation to proper authorities.",
+      "category": "Freedom from Abuse, Neglect, and Exploitation",
+      "sev": "D",
+      "level": 2,
+      "scope": "one resident",
+      "complaint": true,
+      "corrected": true,
+      "dementia": true
+    },
+    {
+      "date": "2025-06-30",
+      "cycle": 2,
+      "tag": "0610",
+      "title": "Abuse allegation not investigated properly",
+      "detail": "Respond appropriately to all alleged violations.",
+      "category": "Freedom from Abuse, Neglect, and Exploitation",
+      "sev": "D",
+      "level": 2,
+      "scope": "one resident",
+      "complaint": true,
+      "corrected": true,
+      "dementia": true
+    },
+    {
+      "date": "2024-11-21",
+      "cycle": 2,
+      "tag": "0812",
+      "title": "Food stored or prepared unsafely",
+      "detail": "Procure food from sources approved or considered satisfactory and store, prepare, distribute and serve food in accordance with professional standards.",
+      "category": "Nutrition and Dietary",
+      "sev": "F",
+      "level": 2,
+      "scope": "many residents",
+      "complaint": false,
+      "corrected": true,
+      "dementia": false
+    },
+    {
+      "date": "2024-11-21",
+      "cycle": 2,
+      "tag": "0880",
+      "title": "Infection control not followed",
+      "detail": "Provide and implement an infection prevention and control program.",
+      "category": "Infection Control",
+      "sev": "D",
+      "level": 2,
+      "scope": "one resident",
+      "complaint": false,
+      "corrected": true,
+      "dementia": false
+    },
+    {
+      "date": "2023-12-12",
+      "cycle": 3,
+      "tag": "0880",
+      "title": "Infection control not followed",
+      "detail": "Provide and implement an infection prevention and control program.",
+      "category": "Infection Control",
+      "sev": "D",
+      "level": 2,
+      "scope": "one resident",
+      "complaint": false,
+      "corrected": true,
+      "dementia": false
+    }
+  ],
+  "penalties": [],
+  "owners": {
+    "type": "Non profit - Corporation",
+    "legalName": "Tabitha, Inc.",
+    "changed12m": false,
+    "direct": [],
+    "indirect": [
+      "Eventide Nebraska Senior Living LLC"
+    ],
+    "indirectCount": 1,
+    "operators": [
+      "Eventide"
+    ]
+  },
+  "quality": [
+    {
+      "code": "481",
+      "label": "Antipsychotic drugs (long-stay)",
+      "value": 8.6,
+      "ne": 20.7,
+      "us": 15.4,
+      "lowerBetter": true
+    },
+    {
+      "code": "410",
+      "label": "Falls with major injury",
+      "value": 8,
+      "ne": 4.5,
+      "us": 3.2,
+      "lowerBetter": true
+    },
+    {
+      "code": "479",
+      "label": "Pressure ulcers (bed sores)",
+      "value": 0.9,
+      "ne": 4,
+      "us": 4.5,
+      "lowerBetter": true
+    },
+    {
+      "code": "401",
+      "label": "Needing more help with daily activities",
+      "value": 14.7,
+      "ne": 19,
+      "us": 13.5,
+      "lowerBetter": true
+    },
+    {
+      "code": "404",
+      "label": "Lost too much weight",
+      "value": 2.7,
+      "ne": 5.1,
+      "us": 5.1,
+      "lowerBetter": true
+    },
+    {
+      "code": "408",
+      "label": "Depressive symptoms",
+      "value": 0,
+      "ne": 4.4,
+      "us": 13.5,
+      "lowerBetter": true
+    },
+    {
+      "code": "452",
+      "label": "Anti-anxiety or sleep drugs",
+      "value": 13.3,
+      "ne": 19,
+      "us": 19.5,
+      "lowerBetter": true
+    }
+  ],
+  "memoryCare": "ask",
+  "memorySource": null,
+  "behavioral": false,
+  "memoryUnits": null,
+  "beds": 50,
+  "openings": {
+    "est": 22,
+    "note": "Estimate: certified beds minus average daily residents (CMS). Certified beds are often more than the beds actually staffed. Call to confirm."
+  },
+  "payment": {
+    "private": "yes",
+    "medicaid": "yes",
+    "medicare": "short",
+    "va": "ask",
+    "ltc": "ask"
+  },
+  "vaSource": null,
+  "bio": "Non-profit nursing home in Lincoln with 50 certified beds. Provides 24-hour skilled nursing care, long-term care, and short-term rehab.",
+  "sources": [
+    "Medicare / CMS Provider Data: provider info, health inspections, penalties, ownership, quality measures (processed 2026-10-01)",
+    "Dementia units & VA contracts: City of Lincoln Aging Partners nursing facility list (Mar 2024); Eastern Nebraska Office on Aging facility list (Sep 2025)",
+    "Price: CareScout Cost of Care Survey 2024, Nebraska averages"
+  ]
+}

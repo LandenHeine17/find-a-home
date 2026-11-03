@@ -1,0 +1,237 @@
+{
+  "id": "nh-285219",
+  "kind": "facility",
+  "type": "nursing",
+  "name": "Southlake Village Rehabilitation & Care Center",
+  "aka": null,
+  "city": "Lincoln",
+  "county": "Lancaster",
+  "area": "Lincoln area",
+  "address": "9401 Andermatt Drive, Lincoln, NE 68526",
+  "zip": "68526",
+  "phone": "(402) 327-6300",
+  "lat": 40.7319,
+  "lon": -96.591,
+  "website": "https://www.vetterseniorliving.com/our-locations/",
+  "websiteLabel": "Operator: Vetter Senior Living",
+  "careCompare": "https://www.medicare.gov/care-compare/details/nursing-home/285219",
+  "priceLow": 8380,
+  "priceHigh": 10040,
+  "priceEstimated": true,
+  "priceNote": "Nebraska average for a nursing home (semi-private to private room). This facility does not publish its price.",
+  "rating": {
+    "value": 5,
+    "source": "Medicare (CMS) overall star rating",
+    "count": null
+  },
+  "cms": {
+    "ccn": "285219",
+    "overall": 5,
+    "inspection": 4,
+    "staffing": 5,
+    "quality": 4,
+    "nurseHours": 4.7,
+    "rnHours": 0.56,
+    "weekendHours": 4.3,
+    "turnover": 28.4,
+    "rnTurnover": 13.3,
+    "adminLeft": 0,
+    "deficiencies": 5,
+    "complaintDeficiencies": 0,
+    "inspectionDate": "2025-11-25",
+    "fines": 0,
+    "fineDollars": 0,
+    "paymentDenials": 0,
+    "abuse": false,
+    "sff": false,
+    "sffCandidate": false,
+    "ownership": "Non-profit",
+    "familyCouncil": false
+  },
+  "inspections": [
+    {
+      "date": "2025-11-25",
+      "cycle": 1,
+      "tag": "0947",
+      "title": "Nurse aides missing required dementia and abuse training",
+      "detail": "Ensure nurse aides have the skills they need to care for residents, and give nurse aides education in dementia care and abuse prevention.",
+      "category": "Nursing and Physician Services",
+      "sev": "F",
+      "level": 2,
+      "scope": "many residents",
+      "complaint": false,
+      "corrected": true,
+      "dementia": true
+    },
+    {
+      "date": "2025-11-25",
+      "cycle": 1,
+      "tag": "0803",
+      "title": "Menus not meeting nutrition needs",
+      "detail": "Ensure menus must meet the nutritional needs of residents, be prepared in advance, be followed, be updated, be reviewed by dietician, and meet the needs of the resident.",
+      "category": "Nutrition and Dietary",
+      "sev": "E",
+      "level": 2,
+      "scope": "several residents",
+      "complaint": false,
+      "corrected": true,
+      "dementia": false
+    },
+    {
+      "date": "2025-11-25",
+      "cycle": 1,
+      "tag": "0578",
+      "title": "Honor the resident's right to request, refuse, and/or discontinue treatment, to participate in or refuse to participate in experimental research, and to formulate an advance directive",
+      "detail": "Honor the resident's right to request, refuse, and/or discontinue treatment, to participate in or refuse to participate in experimental research, and to formulate an advance directive.",
+      "category": "Resident Rights",
+      "sev": "D",
+      "level": 2,
+      "scope": "one resident",
+      "complaint": false,
+      "corrected": true,
+      "dementia": false
+    },
+    {
+      "date": "2025-11-25",
+      "cycle": 1,
+      "tag": "0812",
+      "title": "Food stored or prepared unsafely",
+      "detail": "Procure food from sources approved or considered satisfactory and store, prepare, distribute and serve food in accordance with professional standards.",
+      "category": "Nutrition and Dietary",
+      "sev": "D",
+      "level": 2,
+      "scope": "one resident",
+      "complaint": false,
+      "corrected": true,
+      "dementia": false
+    },
+    {
+      "date": "2025-11-25",
+      "cycle": 1,
+      "tag": "0923",
+      "title": "Poor ventilation",
+      "detail": "Have enough outside ventilation via a window or mechanical ventilation, or both.",
+      "category": "Environmental",
+      "sev": "D",
+      "level": 2,
+      "scope": "one resident",
+      "complaint": false,
+      "corrected": true,
+      "dementia": false
+    },
+    {
+      "date": "2023-08-03",
+      "cycle": 3,
+      "tag": "0880",
+      "title": "Infection control not followed",
+      "detail": "Provide and implement an infection prevention and control program.",
+      "category": "Infection Control",
+      "sev": "D",
+      "level": 2,
+      "scope": "one resident",
+      "complaint": false,
+      "corrected": true,
+      "dementia": false
+    }
+  ],
+  "penalties": [],
+  "owners": {
+    "type": "Non profit - Corporation",
+    "legalName": "Vsl Lincoln Southlake LLC",
+    "changed12m": false,
+    "direct": [
+      {
+        "name": "Vetter Senior Living",
+        "pct": "100%",
+        "since": "12/23/2016"
+      }
+    ],
+    "indirect": [],
+    "indirectCount": 0,
+    "operators": [
+      "Vetter Senior Living",
+      "Vsl Vetter Health Services LLC"
+    ]
+  },
+  "quality": [
+    {
+      "code": "481",
+      "label": "Antipsychotic drugs (long-stay)",
+      "value": 10.1,
+      "ne": 20.7,
+      "us": 15.4,
+      "lowerBetter": true
+    },
+    {
+      "code": "410",
+      "label": "Falls with major injury",
+      "value": 2.8,
+      "ne": 4.5,
+      "us": 3.2,
+      "lowerBetter": true
+    },
+    {
+      "code": "479",
+      "label": "Pressure ulcers (bed sores)",
+      "value": 2.6,
+      "ne": 4,
+      "us": 4.5,
+      "lowerBetter": true
+    },
+    {
+      "code": "401",
+      "label": "Needing more help with daily activities",
+      "value": 17.7,
+      "ne": 19,
+      "us": 13.5,
+      "lowerBetter": true
+    },
+    {
+      "code": "404",
+      "label": "Lost too much weight",
+      "value": 3.4,
+      "ne": 5.1,
+      "us": 5.1,
+      "lowerBetter": true
+    },
+    {
+      "code": "408",
+      "label": "Depressive symptoms",
+      "value": 1.5,
+      "ne": 4.4,
+      "us": 13.5,
+      "lowerBetter": true
+    },
+    {
+      "code": "452",
+      "label": "Anti-anxiety or sleep drugs",
+      "value": 16.5,
+      "ne": 19,
+      "us": 19.5,
+      "lowerBetter": true
+    }
+  ],
+  "memoryCare": "ask",
+  "memorySource": null,
+  "behavioral": false,
+  "memoryUnits": null,
+  "beds": 126,
+  "openings": {
+    "est": 8,
+    "note": "Estimate: certified beds minus average daily residents (CMS). Certified beds are often more than the beds actually staffed. Call to confirm."
+  },
+  "payment": {
+    "private": "yes",
+    "medicaid": "yes",
+    "medicare": "short",
+    "va": "ask",
+    "ltc": "ask"
+  },
+  "vaSource": null,
+  "bio": "Non-profit nursing home in Lincoln with 126 certified beds, part of Vetter Senior Living. Provides 24-hour skilled nursing care, long-term care, and short-term rehab.",
+  "sources": [
+    "Medicare / CMS Provider Data: provider info, health inspections, penalties, ownership, quality measures (processed 2026-10-01)",
+    "Dementia units & VA contracts: City of Lincoln Aging Partners nursing facility list (Mar 2024); Eastern Nebraska Office on Aging facility list (Sep 2025)",
+    "Price: CareScout Cost of Care Survey 2024, Nebraska averages"
+  ]
+}

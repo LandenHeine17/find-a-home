@@ -1,0 +1,44 @@
+{
+  "id": "al-ih-northview",
+  "city": "Lincoln",
+  "area": "Lincoln area",
+  "kind": "facility",
+  "type": "memory",
+  "name": "Independence House – Northview",
+  "address": "2355 Superior St, Lincoln, NE 68521",
+  "zip": "68521",
+  "phone": "(402) 261-8973",
+  "lat": 40.857,
+  "lon": -96.6866,
+  "website": "https://www.theindependencehouses.com",
+  "websiteLabel": "Community website",
+  "priceLow": 5370,
+  "priceHigh": null,
+  "priceEstimated": false,
+  "priceNote": "Starting monthly price listed on Caring.com. The final cost depends on the care level and room.",
+  "rating": {
+    "value": 4.5,
+    "source": "Caring.com family reviews",
+    "count": 12
+  },
+  "cms": null,
+  "memoryCare": "dedicated",
+  "memoryUnits": null,
+  "beds": null,
+  "openings": {
+    "est": null,
+    "note": "Openings are not published. Ask when you request a tour."
+  },
+  "payment": {
+    "private": "yes",
+    "medicaid": "ask",
+    "medicare": "no",
+    "va": "ask",
+    "ltc": "ask"
+  },
+  "bio": "Small, home-like memory care house in north Lincoln with private rooms or suites. Provides palliative care, day care, respite and short stays.",
+  "sources": [
+    "City of Lincoln Aging Partners, Licensed Assisted Living list (Apr 2020)",
+    "Ratings & prices: Caring.com (accessed Nov 2026)"
+  ]
+}

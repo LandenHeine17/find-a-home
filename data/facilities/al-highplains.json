@@ -1,0 +1,44 @@
+{
+  "id": "al-highplains",
+  "city": "Lincoln",
+  "area": "Lincoln area",
+  "kind": "facility",
+  "type": "memory",
+  "name": "High Plains Alzheimer's Special Care Center",
+  "address": "5601 S 84th St, Lincoln, NE 68516",
+  "zip": "68516",
+  "phone": "(402) 483-0250",
+  "lat": 40.7563,
+  "lon": -96.6062,
+  "website": "https://www.jeaseniorliving.com",
+  "websiteLabel": "Community website",
+  "priceLow": 4800,
+  "priceHigh": null,
+  "priceEstimated": false,
+  "priceNote": "Starting monthly price listed on Caring.com. The final cost depends on the care level and room.",
+  "rating": {
+    "value": null,
+    "source": "Caring.com family reviews",
+    "count": 0
+  },
+  "cms": null,
+  "memoryCare": "dedicated",
+  "memoryUnits": 66,
+  "beds": 66,
+  "openings": {
+    "est": null,
+    "note": "Openings are not published. Ask when you request a tour."
+  },
+  "payment": {
+    "private": "yes",
+    "medicaid": "ask",
+    "medicare": "no",
+    "va": "ask",
+    "ltc": "ask"
+  },
+  "bio": "100% memory care with 66 beds in private and semi-private rooms. Shared rooms help keep costs lower. Offers respite care and day services.",
+  "sources": [
+    "City of Lincoln Aging Partners, Licensed Assisted Living list (Apr 2020)",
+    "Ratings & prices: Caring.com (accessed Nov 2026)"
+  ]
+}

@@ -1,0 +1,44 @@
+{
+  "id": "al-ch-oldcheney",
+  "city": "Lincoln",
+  "area": "Lincoln area",
+  "kind": "facility",
+  "type": "memory",
+  "name": "CountryHouse on Old Cheney",
+  "address": "5720 S 25th St, Lincoln, NE 68512",
+  "zip": "68512",
+  "phone": "(402) 421-1160",
+  "lat": 40.7551,
+  "lon": -96.6847,
+  "website": "https://www.countryhouse.net",
+  "websiteLabel": "Community website",
+  "priceLow": 6595,
+  "priceHigh": null,
+  "priceEstimated": false,
+  "priceNote": "Starting monthly price listed on Caring.com. The final cost depends on the care level and room.",
+  "rating": {
+    "value": 3.7,
+    "source": "Caring.com family reviews",
+    "count": 4
+  },
+  "cms": null,
+  "memoryCare": "dedicated",
+  "memoryUnits": 33,
+  "beds": 33,
+  "openings": {
+    "est": null,
+    "note": "Openings are not published. Ask when you request a tour."
+  },
+  "payment": {
+    "private": "yes",
+    "medicaid": "ask",
+    "medicare": "no",
+    "va": "ask",
+    "ltc": "ask"
+  },
+  "bio": "Memory-care-only community for people with Alzheimer's and related memory loss. 33 units. Offers adult day services, respite care and short stays.",
+  "sources": [
+    "City of Lincoln Aging Partners, Licensed Assisted Living list (Apr 2020)",
+    "Ratings & prices: Caring.com (accessed Nov 2026)"
+  ]
+}

@@ -1,0 +1,44 @@
+{
+  "id": "al-aviva",
+  "city": "Lincoln",
+  "area": "Lincoln area",
+  "kind": "facility",
+  "type": "assisted_memory",
+  "name": "AVIVA Woodlands (formerly Woodlands at Hillcrest)",
+  "address": "9421 Gable Pines Rd, Lincoln, NE 68520",
+  "zip": "68520",
+  "phone": "(402) 261-0261",
+  "lat": 40.8127,
+  "lon": -96.593,
+  "website": "https://www.hillcresthealth.com",
+  "websiteLabel": "Community website",
+  "priceLow": 7495,
+  "priceHigh": null,
+  "priceEstimated": false,
+  "priceNote": "Starting monthly price listed on Caring.com. The final cost depends on the care level and room.",
+  "rating": {
+    "value": 4.3,
+    "source": "Caring.com family reviews",
+    "count": 13
+  },
+  "cms": null,
+  "memoryCare": "unit",
+  "memoryUnits": 32,
+  "beds": 97,
+  "openings": {
+    "est": null,
+    "note": "Openings are not published. Ask when you request a tour."
+  },
+  "payment": {
+    "private": "yes",
+    "medicaid": "ask",
+    "medicare": "no",
+    "va": "ask",
+    "ltc": "ask"
+  },
+  "bio": "East Lincoln community with 65 assisted living apartments and 32 memory care apartments. Pets allowed.",
+  "sources": [
+    "City of Lincoln Aging Partners, Licensed Assisted Living list (Apr 2020)",
+    "Ratings & prices: Caring.com (accessed Nov 2026)"
+  ]
+}

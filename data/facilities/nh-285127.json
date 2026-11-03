@@ -1,0 +1,222 @@
+{
+  "id": "nh-285127",
+  "kind": "facility",
+  "type": "nursing",
+  "name": "Ambassador Health of Omaha",
+  "aka": null,
+  "city": "Omaha",
+  "county": "Douglas",
+  "area": "Omaha area",
+  "address": "1540 North 72ndStreet, Omaha, NE 68114",
+  "zip": "68114",
+  "phone": "(402) 393-6500",
+  "lat": 41.2796,
+  "lon": -95.952,
+  "website": "https://www.ambassadorhealth.com",
+  "websiteLabel": "Operator: Ambassador Health",
+  "careCompare": "https://www.medicare.gov/care-compare/details/nursing-home/285127",
+  "priceLow": 8380,
+  "priceHigh": 10040,
+  "priceEstimated": true,
+  "priceNote": "Nebraska average for a nursing home (semi-private to private room). This facility does not publish its price.",
+  "rating": {
+    "value": 5,
+    "source": "Medicare (CMS) overall star rating",
+    "count": null
+  },
+  "cms": {
+    "ccn": "285127",
+    "overall": 5,
+    "inspection": 4,
+    "staffing": 3,
+    "quality": 5,
+    "nurseHours": 6.6,
+    "rnHours": 1.94,
+    "weekendHours": 6,
+    "turnover": 31.7,
+    "rnTurnover": 21.6,
+    "adminLeft": 0,
+    "deficiencies": 3,
+    "complaintDeficiencies": 0,
+    "inspectionDate": "2025-07-10",
+    "fines": 0,
+    "fineDollars": 0,
+    "paymentDenials": 0,
+    "abuse": false,
+    "sff": false,
+    "sffCandidate": false,
+    "ownership": "For-profit",
+    "familyCouncil": false
+  },
+  "inspections": [
+    {
+      "date": "2025-07-10",
+      "cycle": 1,
+      "tag": "0812",
+      "title": "Food stored or prepared unsafely",
+      "detail": "Procure food from sources approved or considered satisfactory and store, prepare, distribute and serve food in accordance with professional standards.",
+      "category": "Nutrition and Dietary",
+      "sev": "E",
+      "level": 2,
+      "scope": "several residents",
+      "complaint": false,
+      "corrected": true,
+      "dementia": false
+    },
+    {
+      "date": "2025-07-10",
+      "cycle": 1,
+      "tag": "0693",
+      "title": "Feeding tube care problems",
+      "detail": "Ensure that feeding tubes are  not used unless there is a medical reason and the resident agrees; and provide appropriate care for a resident with a feeding tube.",
+      "category": "Quality of Life and Care",
+      "sev": "D",
+      "level": 2,
+      "scope": "one resident",
+      "complaint": false,
+      "corrected": true,
+      "dementia": false
+    },
+    {
+      "date": "2025-07-10",
+      "cycle": 1,
+      "tag": "0757",
+      "title": "Unnecessary medications given",
+      "detail": "Ensure each resident’s drug regimen must be free from unnecessary drugs.",
+      "category": "Pharmacy Service",
+      "sev": "D",
+      "level": 2,
+      "scope": "one resident",
+      "complaint": false,
+      "corrected": true,
+      "dementia": false
+    },
+    {
+      "date": "2024-05-14",
+      "cycle": 2,
+      "tag": "0756",
+      "title": "Pharmacist drug review not done properly",
+      "detail": "Ensure a licensed pharmacist perform a monthly drug regimen review, including the medical chart, following irregularity reporting guidelines in developed policies and procedures.",
+      "category": "Pharmacy Service",
+      "sev": "D",
+      "level": 2,
+      "scope": "one resident",
+      "complaint": false,
+      "corrected": true,
+      "dementia": false
+    },
+    {
+      "date": "2024-05-14",
+      "cycle": 2,
+      "tag": "0880",
+      "title": "Infection control not followed",
+      "detail": "Provide and implement an infection prevention and control program.",
+      "category": "Infection Control",
+      "sev": "D",
+      "level": 2,
+      "scope": "one resident",
+      "complaint": false,
+      "corrected": true,
+      "dementia": false
+    }
+  ],
+  "penalties": [],
+  "owners": {
+    "type": "For profit - Corporation",
+    "legalName": "The Ambassador Omaha Inc",
+    "changed12m": false,
+    "direct": [
+      {
+        "name": "Ambassador Holding Company",
+        "pct": "",
+        "since": "06/05/1985"
+      }
+    ],
+    "indirect": [],
+    "indirectCount": 0,
+    "operators": [
+      "The Ambassador Group Inc"
+    ]
+  },
+  "quality": [
+    {
+      "code": "481",
+      "label": "Antipsychotic drugs (long-stay)",
+      "value": 13.6,
+      "ne": 20.7,
+      "us": 15.4,
+      "lowerBetter": true
+    },
+    {
+      "code": "410",
+      "label": "Falls with major injury",
+      "value": 1.5,
+      "ne": 4.5,
+      "us": 3.2,
+      "lowerBetter": true
+    },
+    {
+      "code": "479",
+      "label": "Pressure ulcers (bed sores)",
+      "value": 0.8,
+      "ne": 4,
+      "us": 4.5,
+      "lowerBetter": true
+    },
+    {
+      "code": "401",
+      "label": "Needing more help with daily activities",
+      "value": 4,
+      "ne": 19,
+      "us": 13.5,
+      "lowerBetter": true
+    },
+    {
+      "code": "404",
+      "label": "Lost too much weight",
+      "value": 1.9,
+      "ne": 5.1,
+      "us": 5.1,
+      "lowerBetter": true
+    },
+    {
+      "code": "408",
+      "label": "Depressive symptoms",
+      "value": 1.4,
+      "ne": 4.4,
+      "us": 13.5,
+      "lowerBetter": true
+    },
+    {
+      "code": "452",
+      "label": "Anti-anxiety or sleep drugs",
+      "value": 38.8,
+      "ne": 19,
+      "us": 19.5,
+      "lowerBetter": true
+    }
+  ],
+  "memoryCare": "ask",
+  "memorySource": null,
+  "behavioral": false,
+  "memoryUnits": null,
+  "beds": 146,
+  "openings": {
+    "est": 66,
+    "note": "Estimate: certified beds minus average daily residents (CMS). Certified beds are often more than the beds actually staffed. Call to confirm."
+  },
+  "payment": {
+    "private": "yes",
+    "medicaid": "yes",
+    "medicare": "short",
+    "va": "ask",
+    "ltc": "ask"
+  },
+  "vaSource": null,
+  "bio": "For-profit nursing home in Omaha with 146 certified beds, part of Ambassador Health. Provides 24-hour skilled nursing care, long-term care, and short-term rehab.",
+  "sources": [
+    "Medicare / CMS Provider Data: provider info, health inspections, penalties, ownership, quality measures (processed 2026-10-01)",
+    "Dementia units & VA contracts: City of Lincoln Aging Partners nursing facility list (Mar 2024); Eastern Nebraska Office on Aging facility list (Sep 2025)",
+    "Price: CareScout Cost of Care Survey 2024, Nebraska averages"
+  ]
+}

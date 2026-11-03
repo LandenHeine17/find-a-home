@@ -1,0 +1,44 @@
+{
+  "id": "al-knolls",
+  "city": "Lincoln",
+  "area": "Lincoln area",
+  "kind": "facility",
+  "type": "assisted_memory",
+  "name": "The Knolls Retirement Community",
+  "address": "5801 Norman Rd, Lincoln, NE 68512",
+  "zip": "68512",
+  "phone": "(402) 264-7864",
+  "lat": 40.754,
+  "lon": -96.6909,
+  "website": "https://www.dialretirementcommunities.com",
+  "websiteLabel": "Community website",
+  "priceLow": 5900,
+  "priceHigh": null,
+  "priceEstimated": true,
+  "priceNote": "Lincoln average for memory care (Caring.com). This community does not publish a price.",
+  "rating": {
+    "value": 4.2,
+    "source": "Caring.com family reviews",
+    "count": 7
+  },
+  "cms": null,
+  "memoryCare": "unit",
+  "memoryUnits": 20,
+  "beds": 80,
+  "openings": {
+    "est": null,
+    "note": "Openings are not published. Ask when you request a tour."
+  },
+  "payment": {
+    "private": "yes",
+    "medicaid": "ask",
+    "medicare": "no",
+    "va": "ask",
+    "ltc": "ask"
+  },
+  "bio": "Continuing care retirement community with 60 private assisted living apartments and 20 memory care apartments. Pets allowed.",
+  "sources": [
+    "City of Lincoln Aging Partners, Licensed Assisted Living list (Apr 2020)",
+    "Ratings & prices: Caring.com (accessed Nov 2026)"
+  ]
+}

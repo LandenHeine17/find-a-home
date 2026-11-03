@@ -1,0 +1,263 @@
+{
+  "_about": "Hand-researched facts about nursing homes that Medicare data does not include. Keyed by CMS certification number (CCN). scripts/import-cms.js merges this into data/facilities/nh-<CCN>.json. Edit this file and re-run `npm run import` to update.",
+  "_sources": {
+    "aging-partners-2024": "City of Lincoln Aging Partners nursing facility list (Mar 2024)",
+    "enoa-2025": "Eastern Nebraska Office on Aging facility list (Sep 2025)"
+  },
+  "285002": {
+    "memoryUnit": "aging-partners-2024",
+    "website": {
+      "url": "https://www.vetterseniorliving.com/our-locations/sumner-place/",
+      "label": "Official website"
+    }
+  },
+  "285004": {
+    "aka": "Madonna St. Jane de Chantal",
+    "website": {
+      "url": "https://www.madonna.org/",
+      "label": "Operator: Madonna"
+    }
+  },
+  "285019": {
+    "memoryUnit": "enoa-2025",
+    "behavioral": true,
+    "website": {
+      "url": "https://dchc.douglascounty-ne.gov/memory-support/",
+      "label": "Official website"
+    }
+  },
+  "285036": {
+    "aka": "Eastmont Towers",
+    "website": {
+      "url": "https://transformingage.org/community/eastmont-living/",
+      "label": "Official website"
+    },
+    "note": "Certified for Medicare only, so it does not take Medicaid."
+  },
+  "285049": {
+    "memoryUnit": "aging-partners-2024",
+    "vaContract": "aging-partners-2024"
+  },
+  "285054": {
+    "aka": "Banyan at Montclair",
+    "memoryUnit": "enoa-2025"
+  },
+  "285057": {
+    "aka": "Tabitha Nursing & Rehabilitation Center",
+    "vaContract": "aging-partners-2024",
+    "website": {
+      "url": "https://eventide.org/",
+      "label": "Operator: Eventide"
+    },
+    "note": "Same campus as GracePointe memory care (4620 Randolph St). Offers adult day services."
+  },
+  "285059": {
+    "website": {
+      "url": "https://rbjh.com",
+      "label": "Official website"
+    }
+  },
+  "285066": {
+    "website": {
+      "url": "https://www.ambassadorhealth.com",
+      "label": "Operator: Ambassador Health"
+    }
+  },
+  "285078": {
+    "memoryUnit": "enoa-2025",
+    "website": {
+      "url": "https://www.delmargardens.com/",
+      "label": "Operator: Delmar Gardens"
+    }
+  },
+  "285085": {
+    "website": {
+      "url": "https://immanuel.com/communities",
+      "label": "Operator: Immanuel"
+    }
+  },
+  "285104": {
+    "memoryUnit": "enoa-2025",
+    "website": {
+      "url": "https://www.prestigecare.com/",
+      "label": "Operator: Prestige Care"
+    }
+  },
+  "285127": {
+    "website": {
+      "url": "https://www.ambassadorhealth.com",
+      "label": "Operator: Ambassador Health"
+    }
+  },
+  "285133": {
+    "website": {
+      "url": "https://hillcresthealth.com/",
+      "label": "Operator: Hillcrest Health"
+    }
+  },
+  "285134": {
+    "website": {
+      "url": "https://lcca.com/locations/ne/elkhorn/",
+      "label": "Official website"
+    }
+  },
+  "285137": {
+    "website": {
+      "url": "https://lcca.com/locations/ne/omaha/",
+      "label": "Official website"
+    }
+  },
+  "285140": {
+    "aka": "Ashland Care Center",
+    "memoryUnit": "aging-partners-2024"
+  },
+  "285143": {
+    "aka": "Azria Health Waverly"
+  },
+  "285146": {
+    "aka": "The Willows at Gretna"
+  },
+  "285148": {
+    "website": {
+      "url": "https://www.goodshepherdblair.com/",
+      "label": "Official website"
+    }
+  },
+  "285149": {
+    "memoryUnit": "enoa-2025"
+  },
+  "285218": {
+    "aka": "Cypress at Midtown"
+  },
+  "285219": {
+    "website": {
+      "url": "https://www.vetterseniorliving.com/our-locations/",
+      "label": "Operator: Vetter Senior Living"
+    }
+  },
+  "285231": {
+    "memoryUnit": "aging-partners-2024",
+    "website": {
+      "url": "https://www.vetterseniorliving.com/our-locations/south-haven/",
+      "label": "Official website"
+    }
+  },
+  "285232": {
+    "aka": "Sunrise Country Manor",
+    "note": "Aging Partners lists adult day and night services."
+  },
+  "285238": {
+    "behavioral": true,
+    "website": {
+      "url": "https://keystoneridgerehab.com/",
+      "label": "Official website"
+    }
+  },
+  "285239": {
+    "memoryUnit": "enoa-2025"
+  },
+  "285240": {
+    "website": {
+      "url": "https://omahanursingandrehab.com/",
+      "label": "Official website"
+    }
+  },
+  "285242": {
+    "memoryUnit": "enoa-2025",
+    "website": {
+      "url": "https://www.vetterseniorliving.com/our-locations/brookestone-village/",
+      "label": "Official website"
+    }
+  },
+  "285266": {
+    "aka": "Gateway Vista (Nye Health Services)",
+    "website": {
+      "url": "https://nyehealthservices.com/gateway-vista/",
+      "label": "Official website"
+    }
+  },
+  "285267": {
+    "website": {
+      "url": "https://nyehealthservices.com/nye-summit/",
+      "label": "Official website"
+    }
+  },
+  "285268": {
+    "website": {
+      "url": "https://www.vetterseniorliving.com/our-locations/brookestone-of-papillion/",
+      "label": "Official website"
+    }
+  },
+  "285275": {
+    "memoryUnit": "aging-partners-2024",
+    "vaContract": "aging-partners-2024"
+  },
+  "285276": {
+    "website": {
+      "url": "https://www.vetterseniorliving.com/our-locations/",
+      "label": "Operator: Vetter Senior Living"
+    }
+  },
+  "285279": {
+    "memoryUnit": "aging-partners-2024",
+    "website": {
+      "url": "https://www.vetterseniorliving.com/our-locations/",
+      "label": "Operator: Vetter Senior Living"
+    }
+  },
+  "285280": {
+    "website": {
+      "url": "https://immanuel.com/communities",
+      "label": "Operator: Immanuel"
+    }
+  },
+  "285288": {
+    "website": {
+      "url": "https://eventide.org/",
+      "label": "Operator: Eventide"
+    }
+  },
+  "285293": {
+    "website": {
+      "url": "https://hillcresthealth.com/",
+      "label": "Operator: Hillcrest Health"
+    }
+  },
+  "285296": {
+    "memoryUnit": "aging-partners-2024",
+    "website": {
+      "url": "https://saundersmedicalcenter.com/",
+      "label": "Official website"
+    }
+  },
+  "285299": {
+    "aka": "Old Cheney Rehabilitation",
+    "note": "Aging Partners lists this facility for Medicare short stays only. Ask whether it takes long-term residents."
+  },
+  "285300": {
+    "website": {
+      "url": "https://hillcresthealth.com/",
+      "label": "Operator: Hillcrest Health"
+    }
+  },
+  "285302": {
+    "website": {
+      "url": "https://hillcresthealth.com/",
+      "label": "Operator: Hillcrest Health"
+    }
+  },
+  "28A060": {
+    "website": {
+      "url": "https://qliomaha.com/",
+      "label": "Official website"
+    },
+    "note": "Certified for Medicaid only. Quality Living (QLI) focuses on brain injury rehabilitation."
+  },
+  "28E299": {
+    "website": {
+      "url": "https://hillcresthealth.com/",
+      "label": "Operator: Hillcrest Health"
+    },
+    "note": "Certified for Medicaid only."
+  }
+}

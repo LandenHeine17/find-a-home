@@ -1,0 +1,279 @@
+{
+  "id": "nh-285242",
+  "kind": "facility",
+  "type": "nursing",
+  "name": "Brookestone Village",
+  "aka": null,
+  "city": "Omaha",
+  "county": "Douglas",
+  "area": "Omaha area",
+  "address": "4330 South 144th Street, Omaha, NE 68137",
+  "zip": "68137",
+  "phone": "(402) 614-4000",
+  "lat": 41.217,
+  "lon": -96.139,
+  "website": "https://www.vetterseniorliving.com/our-locations/brookestone-village/",
+  "websiteLabel": "Official website",
+  "careCompare": "https://www.medicare.gov/care-compare/details/nursing-home/285242",
+  "priceLow": 8380,
+  "priceHigh": 10040,
+  "priceEstimated": true,
+  "priceNote": "Nebraska average for a nursing home (semi-private to private room). This facility does not publish its price.",
+  "rating": {
+    "value": 5,
+    "source": "Medicare (CMS) overall star rating",
+    "count": null
+  },
+  "cms": {
+    "ccn": "285242",
+    "overall": 5,
+    "inspection": 4,
+    "staffing": 5,
+    "quality": 5,
+    "nurseHours": 4.8,
+    "rnHours": 0.99,
+    "weekendHours": 4.3,
+    "turnover": 35.8,
+    "rnTurnover": 37.9,
+    "adminLeft": 0,
+    "deficiencies": 6,
+    "complaintDeficiencies": 1,
+    "inspectionDate": "2026-02-24",
+    "fines": 0,
+    "fineDollars": 0,
+    "paymentDenials": 0,
+    "abuse": false,
+    "sff": false,
+    "sffCandidate": false,
+    "ownership": "Non-profit",
+    "familyCouncil": true
+  },
+  "inspections": [
+    {
+      "date": "2026-03-24",
+      "cycle": 1,
+      "tag": "0551",
+      "title": "Give the resident's representative the ability to exercise the resident's rights",
+      "detail": "Give the resident's representative the ability to exercise the resident's rights.",
+      "category": "Resident Rights",
+      "sev": "D",
+      "level": 2,
+      "scope": "one resident",
+      "complaint": true,
+      "corrected": true,
+      "dementia": false
+    },
+    {
+      "date": "2026-02-24",
+      "cycle": 1,
+      "tag": "0880",
+      "title": "Infection control not followed",
+      "detail": "Provide and implement an infection prevention and control program.",
+      "category": "Infection Control",
+      "sev": "E",
+      "level": 2,
+      "scope": "several residents",
+      "complaint": false,
+      "corrected": true,
+      "dementia": false
+    },
+    {
+      "date": "2026-02-24",
+      "cycle": 1,
+      "tag": "0610",
+      "title": "Abuse allegation not investigated properly",
+      "detail": "Respond appropriately to all alleged violations.",
+      "category": "Freedom from Abuse, Neglect, and Exploitation",
+      "sev": "D",
+      "level": 2,
+      "scope": "one resident",
+      "complaint": false,
+      "corrected": true,
+      "dementia": true
+    },
+    {
+      "date": "2026-02-24",
+      "cycle": 1,
+      "tag": "0657",
+      "title": "Care plan not updated on time",
+      "detail": "Develop the complete care plan within 7 days of the comprehensive assessment; and prepared, reviewed, and revised by a team of health professionals.",
+      "category": "Resident Assessment and Care Planning",
+      "sev": "D",
+      "level": 2,
+      "scope": "one resident",
+      "complaint": false,
+      "corrected": true,
+      "dementia": false
+    },
+    {
+      "date": "2026-02-24",
+      "cycle": 1,
+      "tag": "0686",
+      "title": "Pressure sores not prevented or treated",
+      "detail": "Provide appropriate pressure ulcer care and prevent new ulcers from developing.",
+      "category": "Quality of Life and Care",
+      "sev": "D",
+      "level": 2,
+      "scope": "one resident",
+      "complaint": false,
+      "corrected": true,
+      "dementia": false
+    },
+    {
+      "date": "2026-02-24",
+      "cycle": 1,
+      "tag": "0695",
+      "title": "Breathing / oxygen care problems",
+      "detail": "Provide safe and appropriate respiratory care for a resident when needed.",
+      "category": "Quality of Life and Care",
+      "sev": "D",
+      "level": 2,
+      "scope": "one resident",
+      "complaint": false,
+      "corrected": true,
+      "dementia": false
+    },
+    {
+      "date": "2024-10-16",
+      "cycle": 2,
+      "tag": "0657",
+      "title": "Care plan not updated on time",
+      "detail": "Develop the complete care plan within 7 days of the comprehensive assessment; and prepared, reviewed, and revised by a team of health professionals.",
+      "category": "Resident Assessment and Care Planning",
+      "sev": "D",
+      "level": 2,
+      "scope": "one resident",
+      "complaint": false,
+      "corrected": true,
+      "dementia": false
+    },
+    {
+      "date": "2023-08-16",
+      "cycle": 3,
+      "tag": "0812",
+      "title": "Food stored or prepared unsafely",
+      "detail": "Procure food from sources approved or considered satisfactory and store, prepare, distribute and serve food in accordance with professional standards.",
+      "category": "Nutrition and Dietary",
+      "sev": "F",
+      "level": 2,
+      "scope": "many residents",
+      "complaint": false,
+      "corrected": true,
+      "dementia": false
+    },
+    {
+      "date": "2023-08-16",
+      "cycle": 3,
+      "tag": "0880",
+      "title": "Infection control not followed",
+      "detail": "Provide and implement an infection prevention and control program.",
+      "category": "Infection Control",
+      "sev": "E",
+      "level": 2,
+      "scope": "several residents",
+      "complaint": false,
+      "corrected": true,
+      "dementia": false
+    }
+  ],
+  "penalties": [],
+  "owners": {
+    "type": "Non profit - Corporation",
+    "legalName": "Vsl Omaha LLC",
+    "changed12m": false,
+    "direct": [
+      {
+        "name": "Vetter Senior Living",
+        "pct": "100%",
+        "since": "12/23/2016"
+      }
+    ],
+    "indirect": [],
+    "indirectCount": 0,
+    "operators": [
+      "Vetter Senior Living",
+      "Vsl Vetter Health Services LLC"
+    ]
+  },
+  "quality": [
+    {
+      "code": "481",
+      "label": "Antipsychotic drugs (long-stay)",
+      "value": 8.2,
+      "ne": 20.7,
+      "us": 15.4,
+      "lowerBetter": true
+    },
+    {
+      "code": "410",
+      "label": "Falls with major injury",
+      "value": 4.4,
+      "ne": 4.5,
+      "us": 3.2,
+      "lowerBetter": true
+    },
+    {
+      "code": "479",
+      "label": "Pressure ulcers (bed sores)",
+      "value": 3.2,
+      "ne": 4,
+      "us": 4.5,
+      "lowerBetter": true
+    },
+    {
+      "code": "401",
+      "label": "Needing more help with daily activities",
+      "value": 21.1,
+      "ne": 19,
+      "us": 13.5,
+      "lowerBetter": true
+    },
+    {
+      "code": "404",
+      "label": "Lost too much weight",
+      "value": 1.7,
+      "ne": 5.1,
+      "us": 5.1,
+      "lowerBetter": true
+    },
+    {
+      "code": "408",
+      "label": "Depressive symptoms",
+      "value": 0.3,
+      "ne": 4.4,
+      "us": 13.5,
+      "lowerBetter": true
+    },
+    {
+      "code": "452",
+      "label": "Anti-anxiety or sleep drugs",
+      "value": 7.1,
+      "ne": 19,
+      "us": 19.5,
+      "lowerBetter": true
+    }
+  ],
+  "memoryCare": "unit",
+  "memorySource": "Eastern Nebraska Office on Aging facility list (Sep 2025)",
+  "behavioral": false,
+  "memoryUnits": null,
+  "beds": 140,
+  "openings": {
+    "est": 9,
+    "note": "Estimate: certified beds minus average daily residents (CMS). Certified beds are often more than the beds actually staffed. Call to confirm."
+  },
+  "payment": {
+    "private": "yes",
+    "medicaid": "yes",
+    "medicare": "short",
+    "va": "ask",
+    "ltc": "ask"
+  },
+  "vaSource": null,
+  "bio": "Non-profit nursing home in Omaha with 140 certified beds, part of Vetter Senior Living. Provides 24-hour skilled nursing care, long-term care, and short-term rehab.",
+  "sources": [
+    "Medicare / CMS Provider Data: provider info, health inspections, penalties, ownership, quality measures (processed 2026-10-01)",
+    "Dementia units & VA contracts: City of Lincoln Aging Partners nursing facility list (Mar 2024); Eastern Nebraska Office on Aging facility list (Sep 2025)",
+    "Price: CareScout Cost of Care Survey 2024, Nebraska averages"
+  ]
+}

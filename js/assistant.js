@@ -1,11 +1,23 @@
 /* Care Guide – a SCRIPTED demo assistant (no AI service is called).
    It matches keywords to pre-written answers so testers can react to the idea of
    a built-in helper. It also uses the page you're on and your intake answers. */
-(function () {
-  'use strict';
+import { S } from './core/state.js';
+import { TYPE_LABEL } from './core/labels.js';
+import { dist } from './core/geo.js';
+import { match, filtered } from './core/matching.js';
+import { summary } from './core/data.js';
+
+const FAH = {
+  get state() { return S; }, match, dist, TYPE_LABEL,
+  lovedOne: () => S.intake.lovedOne.trim(),
+  currentPlace() { const m = location.hash.match(/^#\/place\/(.+)$/); return m ? summary(decodeURIComponent(m[1])) : null; },
+  topMatches: n => filtered(S.mode).slice(0, n)
+};
+
+export function initAssistant() {
   const fab = document.getElementById('assistantFab');
   const panel = document.getElementById('assistantPanel');
-  const F = () => window.FAH;
+  const F = () => FAH;
   const esc = s => String(s ?? '').replace(/[&<>"']/g, c => ({ '&': '&amp;', '<': '&lt;', '>': '&gt;', '"': '&quot;', "'": '&#39;' }[c]));
   const lo = () => (F().lovedOne() || 'your loved one');
   let opened = false;
@@ -55,7 +67,7 @@
       if (c.sff) s += '⚠️ It is on Medicare\'s <b>watch list</b> for serious quality problems. ';
       if (c.fines) s += `It has had ${c.fines} federal fine(s) in the last 3 years. `;
       if (c.sffCandidate) s += '⚠️ It is a <b>candidate</b> for Medicare\'s watch list. ';
-      const serious = (p.inspections || []).filter(i => i.level >= 3).length;
+      const serious = p.inspectionSummary ? p.inspectionSummary.serious : 0;
       s += serious ? `Inspectors cited <b>${serious}</b> problem(s) where a resident was harmed or in danger in the last 3 inspections. ` : 'No citations for harming residents in the last 3 inspections. ';
       if (p.memoryCare === 'unit') s += 'It has a <b>dementia / memory support unit</b>. ';
       const ap = (p.quality || []).find(q => q.code === '481');
@@ -143,5 +155,5 @@
   panel.querySelector('#asstClose').addEventListener('click', close);
   panel.addEventListener('keydown', e => { if (e.key === 'Escape') close(); });
 
-  window.FAH_ASSISTANT = { onRoute() { if (!panel.classList.contains('hidden')) suggestions(); } };
-})();
+  window.addEventListener('fah:route', () => { if (!panel.classList.contains('hidden')) suggestions(); });
+}

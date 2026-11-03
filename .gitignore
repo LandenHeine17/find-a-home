@@ -6,3 +6,4 @@ node_modules/
 # Editor / AI-tool local files
 .specstory/
 .cursorindexingignore
+.vscode/

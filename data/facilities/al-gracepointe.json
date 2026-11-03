@@ -1,0 +1,44 @@
+{
+  "id": "al-gracepointe",
+  "city": "Lincoln",
+  "area": "Lincoln area",
+  "kind": "facility",
+  "type": "assisted_memory",
+  "name": "GracePointe Memory Care & Assisted Living",
+  "address": "4620 Randolph St, Lincoln, NE 68510",
+  "zip": "68510",
+  "phone": "(402) 484-9888",
+  "lat": 40.8062,
+  "lon": -96.6558,
+  "website": "https://www.eventide.org",
+  "websiteLabel": "Community website",
+  "priceLow": 5900,
+  "priceHigh": null,
+  "priceEstimated": true,
+  "priceNote": "Lincoln average for memory care (Caring.com). This community does not publish a price.",
+  "rating": {
+    "value": 3.6,
+    "source": "Caring.com family reviews",
+    "count": 9
+  },
+  "cms": null,
+  "memoryCare": "unit",
+  "memoryUnits": 24,
+  "beds": 59,
+  "openings": {
+    "est": null,
+    "note": "Openings are not published. Ask when you request a tour."
+  },
+  "payment": {
+    "private": "yes",
+    "medicaid": "ask",
+    "medicare": "no",
+    "va": "ask",
+    "ltc": "ask"
+  },
+  "bio": "Continuing care campus with 35 assisted living apartments and 24 memory care apartments with dedicated memory care programming.",
+  "sources": [
+    "City of Lincoln Aging Partners, Licensed Assisted Living list (Apr 2020)",
+    "Ratings & prices: Caring.com (accessed Nov 2026)"
+  ]
+}

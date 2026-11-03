@@ -1,0 +1,285 @@
+{
+  "id": "nh-285266",
+  "kind": "facility",
+  "type": "nursing",
+  "name": "Gateway Vista",
+  "aka": "Gateway Vista (Nye Health Services)",
+  "city": "Lincoln",
+  "county": "Lancaster",
+  "area": "Lincoln area",
+  "address": "225 North 56th Street, Lincoln, NE 68504",
+  "zip": "68504",
+  "phone": "(402) 464-6371",
+  "lat": 40.8145,
+  "lon": -96.644,
+  "website": "https://nyehealthservices.com/gateway-vista/",
+  "websiteLabel": "Official website",
+  "careCompare": "https://www.medicare.gov/care-compare/details/nursing-home/285266",
+  "priceLow": 8380,
+  "priceHigh": 10040,
+  "priceEstimated": true,
+  "priceNote": "Nebraska average for a nursing home (semi-private to private room). This facility does not publish its price.",
+  "rating": {
+    "value": 5,
+    "source": "Medicare (CMS) overall star rating",
+    "count": null
+  },
+  "cms": {
+    "ccn": "285266",
+    "overall": 5,
+    "inspection": 4,
+    "staffing": 4,
+    "quality": 5,
+    "nurseHours": 4.7,
+    "rnHours": 0.96,
+    "weekendHours": 3.9,
+    "turnover": 64.4,
+    "rnTurnover": 41.2,
+    "adminLeft": 1,
+    "deficiencies": 3,
+    "complaintDeficiencies": 1,
+    "inspectionDate": "2025-09-03",
+    "fines": 1,
+    "fineDollars": 8659,
+    "paymentDenials": 1,
+    "abuse": false,
+    "sff": false,
+    "sffCandidate": false,
+    "ownership": "For-profit",
+    "familyCouncil": false
+  },
+  "inspections": [
+    {
+      "date": "2025-12-23",
+      "cycle": 1,
+      "tag": "0844",
+      "title": "Follow rules about disclosure of ownership requirements and tell the state agency about changes in ownership and/or administrative personnel",
+      "detail": "Follow rules about disclosure of ownership requirements and tell the state agency about changes in ownership and/or administrative personnel.",
+      "category": "Administration",
+      "sev": "F",
+      "level": 2,
+      "scope": "many residents",
+      "complaint": true,
+      "corrected": true,
+      "dementia": false
+    },
+    {
+      "date": "2025-09-18",
+      "cycle": 2,
+      "tag": "0697",
+      "title": "Pain not managed properly",
+      "detail": "Provide safe, appropriate pain management for a resident who requires such services.",
+      "category": "Quality of Life and Care",
+      "sev": "D",
+      "level": 2,
+      "scope": "one resident",
+      "complaint": true,
+      "corrected": true,
+      "dementia": false
+    },
+    {
+      "date": "2025-09-03",
+      "cycle": 1,
+      "tag": "0923",
+      "title": "Poor ventilation",
+      "detail": "Have enough outside ventilation via a window or mechanical ventilation, or both.",
+      "category": "Environmental",
+      "sev": "E",
+      "level": 2,
+      "scope": "several residents",
+      "complaint": false,
+      "corrected": true,
+      "dementia": false
+    },
+    {
+      "date": "2025-09-03",
+      "cycle": 1,
+      "tag": "0880",
+      "title": "Infection control not followed",
+      "detail": "Provide and implement an infection prevention and control program.",
+      "category": "Infection Control",
+      "sev": "D",
+      "level": 2,
+      "scope": "one resident",
+      "complaint": false,
+      "corrected": true,
+      "dementia": false
+    },
+    {
+      "date": "2024-06-12",
+      "cycle": 2,
+      "tag": "0689",
+      "title": "Accident hazards or not enough supervision (falls, wandering)",
+      "detail": "Ensure that a nursing home area is free from accident hazards and provides adequate supervision to prevent accidents.",
+      "category": "Quality of Life and Care",
+      "sev": "G",
+      "level": 3,
+      "scope": "one resident",
+      "complaint": true,
+      "corrected": true,
+      "dementia": true
+    },
+    {
+      "date": "2024-06-12",
+      "cycle": 2,
+      "tag": "0641",
+      "title": "Resident assessment inaccurate",
+      "detail": "Ensure each resident receives an accurate assessment.",
+      "category": "Resident Assessment and Care Planning",
+      "sev": "D",
+      "level": 2,
+      "scope": "one resident",
+      "complaint": false,
+      "corrected": true,
+      "dementia": false
+    },
+    {
+      "date": "2024-06-12",
+      "cycle": 2,
+      "tag": "0655",
+      "title": "Initial care plan not done within 48 hours",
+      "detail": "Create and put into place a plan for meeting the resident's most immediate needs within 48 hours of being admitted",
+      "category": "Resident Assessment and Care Planning",
+      "sev": "D",
+      "level": 2,
+      "scope": "one resident",
+      "complaint": false,
+      "corrected": true,
+      "dementia": false
+    },
+    {
+      "date": "2024-06-12",
+      "cycle": 2,
+      "tag": "0656",
+      "title": "Care plan incomplete",
+      "detail": "Develop and implement a complete care plan that meets all the resident's needs, with timetables and actions that can be measured.",
+      "category": "Resident Assessment and Care Planning",
+      "sev": "D",
+      "level": 2,
+      "scope": "one resident",
+      "complaint": false,
+      "corrected": true,
+      "dementia": false
+    },
+    {
+      "date": "2024-06-12",
+      "cycle": 2,
+      "tag": "0880",
+      "title": "Infection control not followed",
+      "detail": "Provide and implement an infection prevention and control program.",
+      "category": "Infection Control",
+      "sev": "D",
+      "level": 2,
+      "scope": "one resident",
+      "complaint": false,
+      "corrected": true,
+      "dementia": false
+    }
+  ],
+  "penalties": [
+    {
+      "date": "2024-06-12",
+      "type": "Fine",
+      "amount": 8659,
+      "days": null
+    },
+    {
+      "date": "2024-06-12",
+      "type": "Payment Denial",
+      "amount": null,
+      "days": 18
+    }
+  ],
+  "owners": {
+    "type": "For profit - Corporation",
+    "legalName": "Gateway Properties, Inc.",
+    "changed12m": false,
+    "direct": [],
+    "indirect": [],
+    "indirectCount": 0,
+    "operators": [
+      "Paragon Management Services Inc"
+    ]
+  },
+  "quality": [
+    {
+      "code": "481",
+      "label": "Antipsychotic drugs (long-stay)",
+      "value": 16.4,
+      "ne": 20.7,
+      "us": 15.4,
+      "lowerBetter": true
+    },
+    {
+      "code": "410",
+      "label": "Falls with major injury",
+      "value": 3.5,
+      "ne": 4.5,
+      "us": 3.2,
+      "lowerBetter": true
+    },
+    {
+      "code": "479",
+      "label": "Pressure ulcers (bed sores)",
+      "value": 4.4,
+      "ne": 4,
+      "us": 4.5,
+      "lowerBetter": true
+    },
+    {
+      "code": "401",
+      "label": "Needing more help with daily activities",
+      "value": 12.4,
+      "ne": 19,
+      "us": 13.5,
+      "lowerBetter": true
+    },
+    {
+      "code": "404",
+      "label": "Lost too much weight",
+      "value": 6.9,
+      "ne": 5.1,
+      "us": 5.1,
+      "lowerBetter": true
+    },
+    {
+      "code": "408",
+      "label": "Depressive symptoms",
+      "value": 2.2,
+      "ne": 4.4,
+      "us": 13.5,
+      "lowerBetter": true
+    },
+    {
+      "code": "452",
+      "label": "Anti-anxiety or sleep drugs",
+      "value": 10.7,
+      "ne": 19,
+      "us": 19.5,
+      "lowerBetter": true
+    }
+  ],
+  "memoryCare": "ask",
+  "memorySource": null,
+  "behavioral": false,
+  "memoryUnits": null,
+  "beds": 80,
+  "openings": {
+    "est": 10,
+    "note": "Estimate: certified beds minus average daily residents (CMS). Certified beds are often more than the beds actually staffed. Call to confirm."
+  },
+  "payment": {
+    "private": "yes",
+    "medicaid": "yes",
+    "medicare": "short",
+    "va": "ask",
+    "ltc": "ask"
+  },
+  "vaSource": null,
+  "bio": "For-profit nursing home in Lincoln with 80 certified beds. Provides 24-hour skilled nursing care, long-term care, and short-term rehab. Part of a continuing care retirement community, so residents can move between levels of care on one campus.",
+  "sources": [
+    "Medicare / CMS Provider Data: provider info, health inspections, penalties, ownership, quality measures (processed 2026-10-01)",
+    "Dementia units & VA contracts: City of Lincoln Aging Partners nursing facility list (Mar 2024); Eastern Nebraska Office on Aging facility list (Sep 2025)",
+    "Price: CareScout Cost of Care Survey 2024, Nebraska averages"
+  ]
+}

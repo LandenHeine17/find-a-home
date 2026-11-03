@@ -1,0 +1,32 @@
+{
+  "id": "hc-eventide-home",
+  "kind": "homecare",
+  "type": "medical",
+  "name": "Eventide Home Health Care (formerly Tabitha)",
+  "phone": "(402) 486-8520",
+  "website": "https://www.eventide.org",
+  "priceLow": null,
+  "priceHigh": null,
+  "priceEstimated": true,
+  "priceNote": "Billed per visit. Medicare may cover it when a doctor orders skilled care.",
+  "dementia": null,
+  "serviceArea": "Lincoln & Lancaster County",
+  "services": [
+    "Skilled nursing visits",
+    "Physical / occupational therapy",
+    "Wound care",
+    "Medication management"
+  ],
+  "payment": {
+    "private": "yes",
+    "medicaid": "ask",
+    "medicare": "yes",
+    "va": "ask",
+    "ltc": "ask"
+  },
+  "bio": "Medical home health agency. Medical home health: nurses and therapists, usually ordered by a doctor. Can be billed to Medicare when it qualifies.",
+  "sources": [
+    "City of Lincoln Aging Partners, Community Home Health Care list (updated Jul 7, 2026)",
+    "Agency websites (accessed Nov 2026)"
+  ]
+}
