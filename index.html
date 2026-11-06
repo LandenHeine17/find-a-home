@@ -3,44 +3,150 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Find-A-Home · Dementia care near Lincoln, NE (Prototype)</title>
-  <link rel="stylesheet" href="/css/style.css">
+  <title>IP Group 14 · Dementia care finder prototypes</title>
+  <meta name="description" content="Three prototypes that help families find dementia care near Lincoln and Omaha, Nebraska: Find-A-Home, Map-A-Home and Tind-A-Home.">
   <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'><path d='M8 30 32 10l24 20v26H8z' fill='%232f6f73'/><path d='M26 56V40h12v16' fill='%23fff'/></svg>">
+  <style>
+    :root {
+      --bg: #f6f4ef; --surface: #fff; --ink: #1f2a2e; --ink-soft: #5b6669; --line: #e4e0d6;
+      --teal: #2f6f73; --teal-tint: #e3f0ef; --green: #3f8f5a; --green-tint: #e5f3e9; --pink: #fd4f6c; --pink-tint: #ffe8ec;
+      --radius: 18px; --shadow: 0 1px 2px rgba(0,0,0,.04), 0 8px 24px rgba(31,42,46,.07);
+    }
+    * { box-sizing: border-box; }
+    body {
+      margin: 0; background: var(--bg); color: var(--ink);
+      font: 17px/1.55 system-ui, -apple-system, "Segoe UI", Roboto, sans-serif;
+    }
+    main { max-width: 1120px; margin: 0 auto; padding: 3.5rem 1.25rem 2rem; }
+    header { text-align: center; max-width: 720px; margin: 0 auto 2.75rem; }
+    .eyebrow { display: inline-block; font-size: .8rem; font-weight: 700; letter-spacing: .08em; text-transform: uppercase;
+      color: var(--teal); background: var(--teal-tint); padding: .3rem .8rem; border-radius: 999px; margin-bottom: 1rem; }
+    h1 { font-size: clamp(1.9rem, 4vw, 2.7rem); line-height: 1.15; margin: 0 0 .9rem; }
+    header p { color: var(--ink-soft); font-size: 1.1rem; margin: 0; }
+
+    .grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 1.5rem; }
+    @media (max-width: 900px) { .grid { grid-template-columns: 1fr; max-width: 520px; margin: 0 auto; } }
+
+    .proto {
+      --accent: var(--teal); --tint: var(--teal-tint);
+      display: flex; flex-direction: column; background: var(--surface); border: 1px solid var(--line);
+      border-radius: var(--radius); box-shadow: var(--shadow); overflow: hidden; color: inherit; text-decoration: none;
+      transition: transform .15s ease, box-shadow .15s ease, border-color .15s ease;
+    }
+    .proto:hover, .proto:focus-visible { transform: translateY(-3px); border-color: var(--accent);
+      box-shadow: 0 2px 4px rgba(0,0,0,.05), 0 16px 36px rgba(31,42,46,.12); }
+    .proto:focus-visible { outline: 3px solid var(--accent); outline-offset: 3px; }
+    .proto.map { --accent: var(--green); --tint: var(--green-tint); }
+    .proto.tind { --accent: var(--pink); --tint: var(--pink-tint); }
+
+    .art { background: var(--tint); height: 170px; display: grid; place-items: center; }
+    .art svg { width: 100%; height: 100%; }
+    .body { padding: 1.25rem 1.4rem 1.4rem; display: flex; flex-direction: column; flex: 1; }
+    .rank { font-size: .78rem; font-weight: 700; letter-spacing: .06em; text-transform: uppercase; color: var(--accent); margin-bottom: .2rem; }
+    h2 { margin: 0 0 .5rem; font-size: 1.45rem; }
+    .body p { margin: 0 0 1rem; color: var(--ink-soft); }
+    ul { margin: 0 0 1.25rem; padding-left: 1.15rem; color: var(--ink-soft); font-size: .95rem; }
+    li { margin: .2rem 0; }
+    .open { margin-top: auto; align-self: flex-start; background: var(--accent); color: #fff; font-weight: 700;
+      padding: .7rem 1.3rem; border-radius: 999px; }
+    .open::after { content: " →"; }
+
+    .note { margin: 2.5rem auto 0; max-width: 720px; text-align: center; color: var(--ink-soft); font-size: .95rem; }
+    footer { border-top: 1px solid var(--line); margin-top: 3rem; padding: 1.5rem 1.25rem 2.5rem; text-align: center;
+      color: var(--ink-soft); font-size: .9rem; }
+  </style>
 </head>
 <body>
-  <div class="proto-banner">
-    Prototype for user testing (IP Group 14). Facility info comes from public sources and may be out of date, so please call before visiting.
-    <button class="linkbtn" data-action="sources">About the data</button> ·
-    <button class="linkbtn" data-action="reset">Start over</button>
-  </div>
-  <header class="topbar">
-    <div class="topbar-inner">
-      <a class="brand" href="#/welcome" aria-label="Find-A-Home home">
-        <svg viewBox="0 0 64 64" aria-hidden="true"><rect width="64" height="64" rx="14" fill="#e3f0ef"/><path d="M12 32 32 14l20 18v20H12z" fill="#2f6f73"/><path d="M27 52V39h10v13" fill="#fff"/><path d="M32 22c-3-4-9-1-6 4l6 5 6-5c3-5-3-8-6-4z" fill="#f2b766"/></svg>
-        Find-A-Home
+  <main>
+    <header>
+      <span class="eyebrow">IP Group 14 · Prototypes</span>
+      <h1>Three ways to help a family find dementia care</h1>
+      <p>Each prototype uses the same 69 real nursing homes and memory care communities around Lincoln and Omaha, Nebraska. Pick one to try it.</p>
+    </header>
+
+    <div class="grid">
+      <a class="proto find" href="find-a-home/">
+        <div class="art" aria-hidden="true">
+          <svg viewBox="0 0 320 170">
+            <rect x="34" y="28" width="70" height="114" rx="10" fill="#fff"/>
+            <g fill="#cfe2e1"><rect x="44" y="42" width="50" height="7" rx="3"/><rect x="44" y="60" width="38" height="6" rx="3"/><rect x="44" y="74" width="44" height="6" rx="3"/><rect x="44" y="88" width="34" height="6" rx="3"/><rect x="44" y="102" width="42" height="6" rx="3"/></g>
+            <g><rect x="116" y="28" width="170" height="34" rx="9" fill="#fff"/><rect x="116" y="70" width="170" height="34" rx="9" fill="#fff"/><rect x="116" y="112" width="170" height="30" rx="9" fill="#fff"/></g>
+            <g fill="#2f6f73"><rect x="126" y="37" width="16" height="16" rx="4"/><rect x="126" y="79" width="16" height="16" rx="4"/><rect x="126" y="119" width="16" height="16" rx="4"/></g>
+            <g fill="#cfe2e1"><rect x="150" y="38" width="80" height="6" rx="3"/><rect x="150" y="48" width="56" height="5" rx="2.5"/><rect x="150" y="80" width="70" height="6" rx="3"/><rect x="150" y="90" width="50" height="5" rx="2.5"/><rect x="150" y="120" width="76" height="6" rx="3"/></g>
+            <g font-family="system-ui, sans-serif" font-weight="700" font-size="12" fill="#2f6f73"><text x="250" y="50">92%</text><text x="250" y="92">87%</text><text x="250" y="132">81%</text></g>
+          </svg>
+        </div>
+        <div class="body">
+          <div class="rank">Napkin sketch #1</div>
+          <h2>Find-A-Home</h2>
+          <p>A calm, website-style search. Answer a few questions, then filter, compare and save the places that fit.</p>
+          <ul>
+            <li>Ranked matches with filters for price, distance, safety and Medicaid</li>
+            <li>Detail pages with Medicare ratings and inspections</li>
+            <li>Side-by-side compare, saved list and tour requests</li>
+          </ul>
+          <span class="open">Open Find-A-Home</span>
+        </div>
       </a>
-      <nav class="nav" aria-label="Main">
-        <a href="#/results" data-nav="results">Find care</a>
-        <a href="#/compare" data-nav="compare">Compare <span class="count-pill" id="compareCount">0</span></a>
-        <a href="#/list" data-nav="list">My list <span class="count-pill" id="savedCount">0</span></a>
-        <a href="#/next-steps" data-nav="next-steps">Next steps</a>
-      </nav>
+
+      <a class="proto map" href="map-a-home/">
+        <div class="art" aria-hidden="true">
+          <svg viewBox="0 0 320 170">
+            <path d="M0 120 C60 100 90 140 150 118 S250 80 320 100 V170 H0Z" fill="#cfe8d6"/>
+            <path d="M0 60 C80 80 120 40 200 62 S290 40 320 50" stroke="#fff" stroke-width="8" fill="none"/>
+            <path d="M110 0 C120 60 90 110 120 170" stroke="#fff" stroke-width="6" fill="none"/>
+            <g font-family="system-ui, sans-serif" font-weight="800" font-size="11" fill="#fff" text-anchor="middle">
+              <g transform="translate(70 92)"><path d="M0 0c-11-12-16-19-16-26a16 16 0 0 1 32 0c0 7-5 14-16 26z" fill="#3f8f5a"/><text y="-22">94</text></g>
+              <g transform="translate(190 64)"><path d="M0 0c-11-12-16-19-16-26a16 16 0 0 1 32 0c0 7-5 14-16 26z" fill="#8cb33f"/><text y="-22">78</text></g>
+              <g transform="translate(250 128)"><path d="M0 0c-11-12-16-19-16-26a16 16 0 0 1 32 0c0 7-5 14-16 26z" fill="#e0a83a"/><text y="-22">61</text></g>
+              <g transform="translate(150 150)"><path d="M0 0c-11-12-16-19-16-26a16 16 0 0 1 32 0c0 7-5 14-16 26z" fill="#d0574f"/><text y="-22">42</text></g>
+            </g>
+            <rect x="214" y="12" width="94" height="30" rx="15" fill="#fff"/><text x="261" y="32" font-family="system-ui, sans-serif" font-size="12" font-weight="700" fill="#3f8f5a" text-anchor="middle">🤖 Care Guide</text>
+          </svg>
+        </div>
+        <div class="body">
+          <div class="rank">Napkin sketch #2</div>
+          <h2>Map-A-Home</h2>
+          <p>Every home on a map, colored by how well it matches your loved one, with a chat guide that builds the profile for you.</p>
+          <ul>
+            <li>Pins show each home's match %, red to green</li>
+            <li>Care Guide chat asks questions and answers them</li>
+            <li>Game-style profile, hearts and tour booking</li>
+          </ul>
+          <span class="open">Open Map-A-Home</span>
+        </div>
+      </a>
+
+      <a class="proto tind" href="tind-a-home/">
+        <div class="art" aria-hidden="true">
+          <svg viewBox="0 0 320 170">
+            <rect x="96" y="22" width="120" height="134" rx="14" fill="#fff" opacity=".55" transform="rotate(-8 156 89)"/>
+            <rect x="104" y="18" width="120" height="134" rx="14" fill="#fff"/>
+            <rect x="114" y="28" width="100" height="70" rx="9" fill="#ffd3db"/>
+            <path d="M164 44 140 64h6v24h36V64h6z" fill="#fd4f6c"/>
+            <g fill="#f3d9de"><rect x="114" y="106" width="74" height="7" rx="3.5"/><rect x="114" y="119" width="52" height="6" rx="3"/></g>
+            <g font-family="system-ui, sans-serif" font-size="18" font-weight="800" text-anchor="middle">
+              <circle cx="66" cy="90" r="22" fill="#fff"/><text x="66" y="97" fill="#8a96a3">✕</text>
+              <circle cx="262" cy="90" r="22" fill="#fff"/><text x="262" y="97" fill="#fd4f6c">♥</text>
+            </g>
+          </svg>
+        </div>
+        <div class="body">
+          <div class="rank">Napkin sketch #3</div>
+          <h2>Tind-A-Home</h2>
+          <p>A dating-app take on the search: swipe through homes one at a time, best fit first.</p>
+          <ul>
+            <li>Swipe right to match, left to pass, up to save</li>
+            <li>Every card answers: safe? affordable? dementia care? close? room?</li>
+            <li>Matches list, compare, tour planner and share with family</li>
+          </ul>
+          <span class="open">Open Tind-A-Home</span>
+        </div>
+      </a>
     </div>
-  </header>
 
-  <main id="app" tabindex="-1"></main>
-
-  <footer class="site">
-    Find-A-Home is a student prototype (IP Group 14: Landen Heine, Ammi Meyer, Kellan Nash). It is not medical advice and does not take payment from facilities.
-    <br>Need help today? Call the Alzheimer's Association 24/7 Helpline at <a href="tel:18002723900">1-800-272-3900</a> or Aging Partners at <a href="tel:4024417070">402-441-7070</a>.
-  </footer>
-
-  <button class="assistant-fab" id="assistantFab" aria-haspopup="dialog">
-    <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M21 12a8 8 0 0 1-11.6 7.1L4 20l1-4.6A8 8 0 1 1 21 12z"/></svg>
-    Ask Care Guide
-  </button>
-  <section class="assistant-panel hidden" id="assistantPanel" role="dialog" aria-label="Care Guide assistant"></section>
-
-  <script type="module" src="/js/main.js"></script>
+    <p class="note">These are student prototypes for user testing. Facility info comes from public sources (Medicare Care Compare, Nebraska licensing lists) and may be out of date. Nothing you enter is sent anywhere; each prototype saves your answers in this browser only.</p>
+  </main>
+  <footer>Built by IP Group 14: Landen Heine, Ammi Meyer, Kellan Nash</footer>
 </body>
 </html>

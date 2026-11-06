@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+  <meta name="theme-color" content="#fd5068">
+  <title>Tind-A-Home: swipe to find dementia care</title>
+  <meta name="description" content="Swipe right on the right home. Tind-A-Home matches people living with dementia to memory care and nursing homes near Lincoln and Omaha, Nebraska.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@500;600;700;800;900&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <div id="app">
+    <header class="topbar" id="topbar">
+      <button class="tb-btn" data-action="go" data-view="profile" aria-label="Profile">
+        <span class="tb-avatar" id="tb-avatar">👵</span>
+      </button>
+      <button class="brand" data-action="go" data-view="swipe" aria-label="Tind-A-Home: back to swiping">
+        <svg class="brand-mark" viewBox="0 0 32 32" aria-hidden="true">
+          <defs><linearGradient id="bg-g" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#fd267a"/><stop offset="1" stop-color="#ff7854"/></linearGradient></defs>
+          <path d="M16 3 3 14h3.5v14h19V14H29L16 3Z" fill="url(#bg-g)"/>
+          <path d="M16 25.5s-6-3.7-6-8.1c0-2 1.5-3.4 3.3-3.4 1.2 0 2.2.6 2.7 1.6.5-1 1.5-1.6 2.7-1.6 1.8 0 3.3 1.4 3.3 3.4 0 4.4-6 8.1-6 8.1Z" fill="#fff"/>
+        </svg>
+        <span class="brand-word">tind<span>·a·</span>home</span>
+      </button>
+      <button class="tb-btn" data-action="go" data-view="guide" aria-label="What to do next guide">
+        <span class="tb-ico">🧭</span>
+      </button>
+    </header>
+
+    <main id="view" tabindex="-1"></main>
+
+    <nav class="tabbar" id="tabbar" aria-label="Main">
+      <button class="tab" data-action="go" data-view="swipe"><span class="tab-ico">🏠</span><span class="tab-lbl">Swipe</span></button>
+      <button class="tab" data-action="go" data-view="matches"><span class="tab-ico">💞</span><span class="tab-lbl">Matches</span><b class="badge" id="badge-matches" hidden></b></button>
+      <button class="tab" data-action="go" data-view="saved"><span class="tab-ico">⭐</span><span class="tab-lbl">Saved</span><b class="badge badge-blue" id="badge-saved" hidden></b></button>
+      <button class="tab" data-action="go" data-view="profile"><span class="tab-ico">👤</span><span class="tab-lbl">Profile</span></button>
+    </nav>
+
+    <div class="modal-wrap" id="modal" hidden></div>
+    <div class="toasts" id="toasts" aria-live="polite"></div>
+  </div>
+
+  <script src="js/data.js"></script>
+  <script src="js/state.js"></script>
+  <script src="js/match.js"></script>
+  <script src="js/onboarding.js"></script>
+  <script src="js/swipe.js"></script>
+  <script src="js/detail.js"></script>
+  <script src="js/views.js"></script>
+  <script src="js/app.js"></script>
+</body>
+</html>

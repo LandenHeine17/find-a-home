@@ -1,15 +1,17 @@
 {
-  "name": "find-a-home",
+  "name": "ip-group-14-prototypes",
   "version": "1.0.0",
-  "description": "Find-A-Home: a prototype that helps families find dementia care (memory care, nursing homes, home care) near Lincoln and Omaha, Nebraska.",
+  "description": "IP Group 14 prototypes (Find-A-Home, Map-A-Home, Tind-A-Home): three designs that help families find dementia care near Lincoln and Omaha, Nebraska.",
   "private": true,
   "type": "module",
   "main": "server/index.js",
   "scripts": {
     "start": "node server/index.js",
     "dev": "node --watch server/index.js",
-    "import": "node scripts/import-cms.js",
-    "validate": "node scripts/validate-data.js"
+    "import": "node find-a-home/scripts/import-cms.js",
+    "validate": "node find-a-home/scripts/validate-data.js",
+    "build:map": "node map-a-home/scripts/build-data.js",
+    "build:tind": "node tind-a-home/scripts/build-data.js"
   },
   "engines": {
     "node": ">=20"
