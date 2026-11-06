@@ -19,9 +19,3 @@ export function dist(p) {
 
 export const mapsUrl = p => 'https://www.google.com/maps/search/?api=1&query=' +
   encodeURIComponent(p.kind === 'facility' ? `${p.name}, ${p.address}` : `${p.name} ${p.city || 'Lincoln'} NE`);
-
-/** Open a place in Google Maps in a new tab and switch to it. */
-export function openMaps(p) {
-  const w = window.open(mapsUrl(p), '_blank', 'noopener');
-  if (w) w.focus();
-}

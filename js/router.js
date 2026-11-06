@@ -13,14 +13,15 @@ export function register(name, render, { isDefault = false } = {}) {
   if (isDefault) fallback = render;
 }
 
-export function route() {
+export function route({ keepScroll = false } = {}) {
   const [view, arg] = location.hash.replace(/^#\/?/, '').split('/');
   document.querySelectorAll('.nav a').forEach(a => a.classList.toggle('active',
     a.dataset.nav === view || (a.dataset.nav === 'results' && view === 'place')));
   closeModal();
+  const x = window.scrollX, y = window.scrollY;
   const render = routes[view] || fallback;
   const result = render(arg ? decodeURIComponent(arg) : undefined);
-  window.scrollTo(0, 0);
+  if (keepScroll) window.scrollTo(x, y); else window.scrollTo(0, 0);
   app.focus({ preventScroll: true });
   window.dispatchEvent(new CustomEvent('fah:route', { detail: { view, arg } }));
   return result;
@@ -30,6 +31,6 @@ export function route() {
 export const go = h => { if (location.hash === h) route(); else location.hash = h; };
 
 /** Re-render the current screen (after a state change). */
-export const refresh = () => route();
+export const refresh = () => route({ keepScroll: true });
 
 window.addEventListener('hashchange', route);

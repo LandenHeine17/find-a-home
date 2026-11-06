@@ -8,6 +8,11 @@ import { summary } from '../core/data.js';
 import { app } from '../router.js';
 import { tourChecklistBox } from '../components/modals.js';
 
+const heart = p => {
+  const on = S.saved.includes(p.id);
+  return `<button class="heart no-print ${on ? 'on' : ''}" data-action="save-toggle" data-id="${p.id}" aria-label="${on ? 'Remove' : 'Save'} ${esc(p.name)} ${on ? 'from' : 'to'} my list" aria-pressed="${on}">${on ? '♥' : '♡'}</button>`;
+};
+
 export function renderCompare() {
   const items = S.compare.map(summary).filter(Boolean);
   if (items.length < 2) {
@@ -50,11 +55,11 @@ export function renderCompare() {
   }).join('');
   app.innerHTML = `
     <div style="display:flex;justify-content:space-between;align-items:center;flex-wrap:wrap;gap:1rem;margin-bottom:1rem">
-      <div><h1 style="margin:0">Compare side by side</h1><p class="muted" style="margin:0">Green marks the best value in each row.</p></div>
+      <div><h1 style="margin:0">Compare side by side</h1><p class="muted" style="margin:0">Green marks the best value in each row. Tap ♡ to save a place to My list.</p></div>
       <div class="no-print" style="display:flex;gap:.5rem"><button class="btn secondary" onclick="window.print()">🖨️ Print</button><a class="btn secondary" href="#/results">+ Add another</a></div>
     </div>
     <div class="compare-wrap"><table class="compare">
-      <thead><tr><th></th>${items.map(p => `<th scope="col">${icon(p.type, 44)}<br><a href="#/place/${p.id}">${esc(p.name)}</a></th>`).join('')}</tr></thead>
+      <thead><tr><th></th>${items.map(p => `<th scope="col">${icon(p.type, 44)}<br><span class="compare-name"><a href="#/place/${p.id}">${esc(p.name)}</a>${heart(p)}</span></th>`).join('')}</tr></thead>
       <tbody>${body}
         <tr class="no-print"><th></th>${items.map(p => `<td><button class="btn small" data-action="tour" data-id="${p.id}">Request ${p.kind === 'facility' ? 'tour' : 'consult'}</button><br><button class="linkbtn small" data-action="compare-remove" data-id="${p.id}" style="margin-top:.4rem">Remove</button></td>`).join('')}</tr>
       </tbody></table></div>

@@ -1,11 +1,11 @@
 /**
  * Screens 2 & 3 of the sketch: matches for Home care | Facilities, with faceted filters.
- * Clicking a match opens it in Google Maps (new tab); "Details" opens our detail page.
+ * Clicking a match opens its detail page; "Map" opens it in Google Maps (new tab).
  */
 import { S, save } from '../core/state.js';
 import { esc, stars, icon } from '../core/util.js';
 import { lovedOne, TYPE_LABEL, PAY_LABEL, priceText, reviewsFor, avgReview } from '../core/labels.js';
-import { zipKnown } from '../core/geo.js';
+import { zipKnown, mapsUrl } from '../core/geo.js';
 import { filtered } from '../core/matching.js';
 import { app } from '../router.js';
 
@@ -69,8 +69,10 @@ export function renderResults() {
   const cards = res.length ? res.map(({ p, m, d }) => card(p, m, d)).join('') :
     `<div class="card empty"><h3>No matches with these filters</h3><p>Try widening the distance or area.</p><button class="btn secondary" data-action="reset-filters">Reset filters</button></div>`;
 
-  const hint = '<p class="hint" style="margin:-.25rem 0 .75rem">📍 Click a place to see it on Google Maps (opens a new tab). Use <b>Details</b> for ratings, inspections and tours.</p>';
+  const hint = '<p class="hint" style="margin:-.25rem 0 .75rem">Click a place for ratings, inspections and tours. Use <b>Map</b> to see it on Google Maps (opens a new tab).</p>';
 
+  // Keep the filter panel's own scroll position when it re-renders.
+  const filterScroll = app.querySelector('.filters')?.scrollTop || 0;
   app.innerHTML = `
     <div class="results-head">
       <div class="results-title"><span class="selected-label">Selected</span><h1>${isFac ? 'Facilities' : 'Home care'}</h1>
@@ -93,6 +95,7 @@ export function renderResults() {
       </section>
     </div>
     ${compareBar()}`;
+  app.querySelector('.filters').scrollTop = filterScroll;
 
   app.querySelectorAll('[data-filter]').forEach(el => el.addEventListener('change', () => { F[el.dataset.filter] = el.checked; save(); renderResults(); }));
   app.querySelectorAll('[data-filter-arr]').forEach(el => el.addEventListener('change', () => {
@@ -124,12 +127,12 @@ export function card(p, m, d) {
   const ratingLine = p.kind === 'facility'
     ? `${stars(p.rating.value)} <span class="small muted">${p.rating.value != null ? (p.cms ? 'Medicare rating' : `${p.rating.count} review${p.rating.count === 1 ? '' : 's'}`) : ''}</span>`
     : `${reviewsFor(p.id).length ? stars(avgReview(p.id)) + ` <span class="small muted">${reviewsFor(p.id).length} Find-A-Home review(s)</span>` : '<span class="small muted">No reviews yet</span>'}`;
-  const openAttr = `data-maps="${p.id}" title="Open in Google Maps" aria-label="${esc(p.name)}: open in Google Maps"`;
+  const openAttr = `data-place="${p.id}" aria-label="${esc(p.name)}: see details"`;
   return `
     <article class="card match" ${openAttr} tabindex="0">
       <div class="thumb">${icon(p.type, 96)}</div>
       <div>
-        <h3>${esc(p.name)} <span class="maps-cue" aria-hidden="true">📍↗</span></h3>
+        <h3>${esc(p.name)}</h3>
         <div class="sub">${sub}</div>
         <div style="margin-bottom:.4rem">${ratingLine}</div>
         <div class="tags">${m.good.slice(0, 4).map(t => `<span class="tag good">✓ ${esc(t)}</span>`).join('')}${m.warn.slice(0, 2).map(t => `<span class="tag ${/watch|abuse|not take|Low|danger|harmed/.test(t) ? 'bad' : 'warn'}">! ${esc(t)}</span>`).join('')}</div>
@@ -137,6 +140,7 @@ export function card(p, m, d) {
       <div class="side">
         ${S.intakeDone ? `<div class="match-score"><b>${m.score}%</b><span>match</span></div>` : ''}
         <a class="btn small secondary" href="#/place/${p.id}">Details</a>
+        <a class="btn small secondary" href="${mapsUrl(p)}" target="_blank" rel="noopener" aria-label="${esc(p.name)} on Google Maps (opens a new tab)">📍 Map</a>
         <div style="display:flex;align-items:center;gap:.4rem">
           <label class="compare-check" data-stop><input type="checkbox" data-action="compare-toggle" data-id="${p.id}" ${cmp ? 'checked' : ''}> Compare</label>
           <button class="heart ${saved ? 'on' : ''}" data-action="save-toggle" data-id="${p.id}" aria-label="${saved ? 'Remove from' : 'Save to'} my list" aria-pressed="${saved}">${saved ? '♥' : '♡'}</button>

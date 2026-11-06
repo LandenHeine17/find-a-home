@@ -4,8 +4,6 @@
  */
 import { S, save, resetState, defaultFilters } from './core/state.js';
 import { toast } from './core/util.js';
-import { openMaps } from './core/geo.js';
-import { summary } from './core/data.js';
 import { go, refresh } from './router.js';
 import { readIntake } from './views/welcome.js';
 import { shareList } from './views/list.js';
@@ -55,13 +53,13 @@ export function bindActions() {
       ACTIONS[el.dataset.action](el, el.dataset.id);
       return;
     }
-    // Clicking a match card (but not its buttons/links) opens it in Google Maps.
+    // Clicking a match card (but not its buttons/links) opens its detail page.
     if (e.target.closest('[data-stop], a, button, input, label')) return;
-    const card = e.target.closest('[data-maps]');
-    if (card) openMaps(summary(card.dataset.maps));
+    const card = e.target.closest('[data-place]');
+    if (card) go('#/place/' + card.dataset.place);
   });
   document.addEventListener('keydown', e => {
-    const card = e.target.closest && e.target.closest('[data-maps]');
-    if (card && e.target === card && (e.key === 'Enter' || e.key === ' ')) { e.preventDefault(); openMaps(summary(card.dataset.maps)); }
+    const card = e.target.closest && e.target.closest('[data-place]');
+    if (card && e.target === card && (e.key === 'Enter' || e.key === ' ')) { e.preventDefault(); go('#/place/' + card.dataset.place); }
   });
 }
