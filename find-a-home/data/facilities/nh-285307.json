@@ -1,0 +1,391 @@
+{
+  "id": "nh-285307",
+  "kind": "facility",
+  "type": "nursing",
+  "name": "Eventide Prairie Commons Care Center",
+  "aka": null,
+  "city": "Grand Island",
+  "county": "Hall",
+  "area": "Central Nebraska",
+  "address": "3490 Ewoldt Street, Grand Island, NE 68803",
+  "zip": "68803",
+  "phone": "(308) 321-1122",
+  "lat": 40.887,
+  "lon": -98.383,
+  "website": null,
+  "websiteLabel": null,
+  "careCompare": "https://www.medicare.gov/care-compare/details/nursing-home/285307",
+  "priceLow": 8380,
+  "priceHigh": 10040,
+  "priceEstimated": true,
+  "priceNote": "Nebraska average for a nursing home (semi-private to private room). This facility does not publish its price.",
+  "rating": {
+    "value": 1,
+    "source": "Medicare (CMS) overall star rating",
+    "count": null
+  },
+  "cms": {
+    "ccn": "285307",
+    "overall": 1,
+    "inspection": 1,
+    "staffing": 4,
+    "quality": 3,
+    "nurseHours": 5.1,
+    "rnHours": 0.81,
+    "weekendHours": 4.7,
+    "turnover": 64.6,
+    "rnTurnover": 100,
+    "adminLeft": 0,
+    "deficiencies": 6,
+    "complaintDeficiencies": 1,
+    "inspectionDate": "2025-05-01",
+    "fines": 2,
+    "fineDollars": 24676,
+    "paymentDenials": 0,
+    "abuse": false,
+    "sff": false,
+    "sffCandidate": false,
+    "ownership": "Non-profit",
+    "familyCouncil": false
+  },
+  "inspections": [
+    {
+      "date": "2026-06-03",
+      "cycle": 1,
+      "tag": "0689",
+      "title": "Accident hazards or not enough supervision (falls, wandering)",
+      "detail": "Ensure that a nursing home area is free from accident hazards and provides adequate supervision to prevent accidents.",
+      "category": "Quality of Life and Care",
+      "sev": "G",
+      "level": 3,
+      "scope": "one resident",
+      "complaint": true,
+      "corrected": true,
+      "dementia": true
+    },
+    {
+      "date": "2025-05-01",
+      "cycle": 1,
+      "tag": "0678",
+      "title": "CPR / life support not provided properly",
+      "detail": "Provide basic life support, including CPR, prior to the arrival of emergency medical personnel , subject to physician orders and the resident’s advance directives.",
+      "category": "Quality of Life and Care",
+      "sev": "J",
+      "level": 4,
+      "scope": "one resident",
+      "complaint": false,
+      "corrected": true,
+      "dementia": false
+    },
+    {
+      "date": "2025-05-01",
+      "cycle": 1,
+      "tag": "0759",
+      "title": "Medication error rate of 5% or more",
+      "detail": "Ensure medication error rates are not 5 percent or greater.",
+      "category": "Pharmacy Service",
+      "sev": "E",
+      "level": 2,
+      "scope": "several residents",
+      "complaint": false,
+      "corrected": true,
+      "dementia": false
+    },
+    {
+      "date": "2025-05-01",
+      "cycle": 1,
+      "tag": "0880",
+      "title": "Infection control not followed",
+      "detail": "Provide and implement an infection prevention and control program.",
+      "category": "Infection Control",
+      "sev": "E",
+      "level": 2,
+      "scope": "several residents",
+      "complaint": false,
+      "corrected": true,
+      "dementia": false
+    },
+    {
+      "date": "2025-05-01",
+      "cycle": 1,
+      "tag": "0582",
+      "title": "Medicare/Medicaid coverage notice not given",
+      "detail": "Give residents notice of Medicaid/Medicare coverage and potential liability for services not covered.",
+      "category": "Resident Rights",
+      "sev": "D",
+      "level": 2,
+      "scope": "one resident",
+      "complaint": false,
+      "corrected": true,
+      "dementia": false
+    },
+    {
+      "date": "2025-05-01",
+      "cycle": 1,
+      "tag": "0686",
+      "title": "Pressure sores not prevented or treated",
+      "detail": "Provide appropriate pressure ulcer care and prevent new ulcers from developing.",
+      "category": "Quality of Life and Care",
+      "sev": "D",
+      "level": 2,
+      "scope": "one resident",
+      "complaint": false,
+      "corrected": true,
+      "dementia": false
+    },
+    {
+      "date": "2024-12-23",
+      "cycle": 2,
+      "tag": "0677",
+      "title": "Help with daily activities not provided",
+      "detail": "Provide care and assistance to perform activities of daily living for any resident who is unable.",
+      "category": "Quality of Life and Care",
+      "sev": "D",
+      "level": 2,
+      "scope": "one resident",
+      "complaint": true,
+      "corrected": true,
+      "dementia": false
+    },
+    {
+      "date": "2024-12-23",
+      "cycle": 2,
+      "tag": "0760",
+      "title": "Significant medication error",
+      "detail": "Ensure that residents are free from significant medication errors.",
+      "category": "Pharmacy Service",
+      "sev": "D",
+      "level": 2,
+      "scope": "one resident",
+      "complaint": true,
+      "corrected": true,
+      "dementia": false
+    },
+    {
+      "date": "2024-05-01",
+      "cycle": 2,
+      "tag": "0803",
+      "title": "Menus not meeting nutrition needs",
+      "detail": "Ensure menus must meet the nutritional needs of residents, be prepared in advance, be followed, be updated, be reviewed by dietician, and meet the needs of the resident.",
+      "category": "Nutrition and Dietary",
+      "sev": "F",
+      "level": 2,
+      "scope": "many residents",
+      "complaint": false,
+      "corrected": true,
+      "dementia": false
+    },
+    {
+      "date": "2024-05-01",
+      "cycle": 2,
+      "tag": "0812",
+      "title": "Food stored or prepared unsafely",
+      "detail": "Procure food from sources approved or considered satisfactory and store, prepare, distribute and serve food in accordance with professional standards.",
+      "category": "Nutrition and Dietary",
+      "sev": "F",
+      "level": 2,
+      "scope": "many residents",
+      "complaint": false,
+      "corrected": true,
+      "dementia": false
+    },
+    {
+      "date": "2024-05-01",
+      "cycle": 2,
+      "tag": "0578",
+      "title": "Honor the resident's right to request, refuse, and/or discontinue treatment, to participate in or refuse to participate in experimental research, and to formulate an advance directive",
+      "detail": "Honor the resident's right to request, refuse, and/or discontinue treatment, to participate in or refuse to participate in experimental research, and to formulate an advance directive.",
+      "category": "Resident Rights",
+      "sev": "E",
+      "level": 2,
+      "scope": "several residents",
+      "complaint": true,
+      "corrected": true,
+      "dementia": false
+    },
+    {
+      "date": "2024-05-01",
+      "cycle": 2,
+      "tag": "0658",
+      "title": "Services not up to professional standards",
+      "detail": "Ensure services provided by the nursing facility meet professional standards of quality.",
+      "category": "Resident Assessment and Care Planning",
+      "sev": "E",
+      "level": 2,
+      "scope": "several residents",
+      "complaint": false,
+      "corrected": true,
+      "dementia": false
+    },
+    {
+      "date": "2024-05-01",
+      "cycle": 2,
+      "tag": "0561",
+      "title": "Resident choices not respected",
+      "detail": "Honor the resident's right to and the facility must promote and facilitate resident self-determination through support of resident choice.",
+      "category": "Resident Rights",
+      "sev": "D",
+      "level": 2,
+      "scope": "one resident",
+      "complaint": false,
+      "corrected": true,
+      "dementia": false
+    },
+    {
+      "date": "2024-05-01",
+      "cycle": 2,
+      "tag": "0684",
+      "title": "Care not given as ordered",
+      "detail": "Provide appropriate treatment and care according to orders, resident’s preferences and goals.",
+      "category": "Quality of Life and Care",
+      "sev": "D",
+      "level": 2,
+      "scope": "one resident",
+      "complaint": false,
+      "corrected": true,
+      "dementia": false
+    },
+    {
+      "date": "2024-05-01",
+      "cycle": 2,
+      "tag": "0689",
+      "title": "Accident hazards or not enough supervision (falls, wandering)",
+      "detail": "Ensure that a nursing home area is free from accident hazards and provides adequate supervision to prevent accidents.",
+      "category": "Quality of Life and Care",
+      "sev": "D",
+      "level": 2,
+      "scope": "one resident",
+      "complaint": false,
+      "corrected": true,
+      "dementia": true
+    },
+    {
+      "date": "2024-05-01",
+      "cycle": 2,
+      "tag": "0757",
+      "title": "Unnecessary medications given",
+      "detail": "Ensure each resident’s drug regimen must be free from unnecessary drugs.",
+      "category": "Pharmacy Service",
+      "sev": "D",
+      "level": 2,
+      "scope": "one resident",
+      "complaint": false,
+      "corrected": true,
+      "dementia": false
+    }
+  ],
+  "penalties": [
+    {
+      "date": "2026-06-03",
+      "type": "Fine",
+      "amount": 14380,
+      "days": null
+    },
+    {
+      "date": "2025-05-01",
+      "type": "Fine",
+      "amount": 10296,
+      "days": null
+    }
+  ],
+  "owners": {
+    "type": "Non profit - Corporation",
+    "legalName": "Tabitha Grand Island, Inc",
+    "changed12m": false,
+    "direct": [
+      {
+        "name": "Tabitha, Inc.",
+        "pct": "100%",
+        "since": "12/22/2022"
+      }
+    ],
+    "indirect": [
+      "Eventide Nebraska Senior Living LLC"
+    ],
+    "indirectCount": 1,
+    "operators": [
+      "Eventide"
+    ]
+  },
+  "quality": [
+    {
+      "code": "481",
+      "label": "Antipsychotic drugs (long-stay)",
+      "value": 16.3,
+      "ne": 20.7,
+      "us": 15.4,
+      "lowerBetter": true
+    },
+    {
+      "code": "410",
+      "label": "Falls with major injury",
+      "value": 1.5,
+      "ne": 4.5,
+      "us": 3.2,
+      "lowerBetter": true
+    },
+    {
+      "code": "479",
+      "label": "Pressure ulcers (bed sores)",
+      "value": 5.9,
+      "ne": 4,
+      "us": 4.5,
+      "lowerBetter": true
+    },
+    {
+      "code": "401",
+      "label": "Needing more help with daily activities",
+      "value": 35.3,
+      "ne": 19,
+      "us": 13.5,
+      "lowerBetter": true
+    },
+    {
+      "code": "404",
+      "label": "Lost too much weight",
+      "value": 7.7,
+      "ne": 5.1,
+      "us": 5.1,
+      "lowerBetter": true
+    },
+    {
+      "code": "408",
+      "label": "Depressive symptoms",
+      "value": 16.2,
+      "ne": 4.4,
+      "us": 13.5,
+      "lowerBetter": true
+    },
+    {
+      "code": "452",
+      "label": "Anti-anxiety or sleep drugs",
+      "value": 18.5,
+      "ne": 19,
+      "us": 19.5,
+      "lowerBetter": true
+    }
+  ],
+  "memoryCare": "ask",
+  "memorySource": null,
+  "behavioral": false,
+  "memoryUnits": null,
+  "beds": 36,
+  "openings": {
+    "est": 6,
+    "note": "Estimate: certified beds minus average daily residents (CMS). Certified beds are often more than the beds actually staffed. Call to confirm."
+  },
+  "payment": {
+    "private": "yes",
+    "medicaid": "yes",
+    "medicare": "short",
+    "va": "ask",
+    "ltc": "ask"
+  },
+  "vaSource": null,
+  "bio": "Non-profit nursing home in Grand Island with 36 certified beds. Provides 24-hour skilled nursing care, long-term care, and short-term rehab. Part of a continuing care retirement community, so residents can move between levels of care on one campus.",
+  "sources": [
+    "Medicare / CMS Provider Data: provider info, health inspections, penalties, ownership, quality measures (processed 2026-10-01)",
+    "Dementia units & VA contracts: City of Lincoln Aging Partners nursing facility list (Mar 2024); Eastern Nebraska Office on Aging facility list (Sep 2025)",
+    "Price: CareScout Cost of Care Survey 2024, Nebraska averages"
+  ]
+}

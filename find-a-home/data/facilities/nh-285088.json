@@ -1,0 +1,230 @@
+{
+  "id": "nh-285088",
+  "kind": "facility",
+  "type": "nursing",
+  "name": "Accura HealthCare of Hartington",
+  "aka": null,
+  "city": "Hartington",
+  "county": "Cedar",
+  "area": "Northeast Nebraska",
+  "address": "401 W  Darlene Street, Hartington, NE 68739",
+  "zip": "68739",
+  "phone": "(402) 254-3905",
+  "lat": 42.6189,
+  "lon": -97.269,
+  "website": null,
+  "websiteLabel": null,
+  "careCompare": "https://www.medicare.gov/care-compare/details/nursing-home/285088",
+  "priceLow": 8380,
+  "priceHigh": 10040,
+  "priceEstimated": true,
+  "priceNote": "Nebraska average for a nursing home (semi-private to private room). This facility does not publish its price.",
+  "rating": {
+    "value": 5,
+    "source": "Medicare (CMS) overall star rating",
+    "count": null
+  },
+  "cms": {
+    "ccn": "285088",
+    "overall": 5,
+    "inspection": 5,
+    "staffing": 5,
+    "quality": 3,
+    "nurseHours": 3.5,
+    "rnHours": 0.83,
+    "weekendHours": 3,
+    "turnover": 41,
+    "rnTurnover": 0,
+    "adminLeft": null,
+    "deficiencies": 1,
+    "complaintDeficiencies": 0,
+    "inspectionDate": "2026-02-23",
+    "fines": 0,
+    "fineDollars": 0,
+    "paymentDenials": 0,
+    "abuse": false,
+    "sff": false,
+    "sffCandidate": false,
+    "ownership": "For-profit",
+    "familyCouncil": false
+  },
+  "inspections": [
+    {
+      "date": "2026-02-23",
+      "cycle": 1,
+      "tag": "0881",
+      "title": "Implement a program that monitors antibiotic use",
+      "detail": "Implement a program that monitors antibiotic use.",
+      "category": "Infection Control",
+      "sev": "D",
+      "level": 2,
+      "scope": "one resident",
+      "complaint": false,
+      "corrected": true,
+      "dementia": false
+    },
+    {
+      "date": "2025-02-03",
+      "cycle": 2,
+      "tag": "0757",
+      "title": "Unnecessary medications given",
+      "detail": "Ensure each resident’s drug regimen must be free from unnecessary drugs.",
+      "category": "Pharmacy Service",
+      "sev": "D",
+      "level": 2,
+      "scope": "one resident",
+      "complaint": false,
+      "corrected": true,
+      "dementia": false
+    },
+    {
+      "date": "2025-02-03",
+      "cycle": 2,
+      "tag": "0761",
+      "title": "Medications not labeled or stored correctly",
+      "detail": "Ensure drugs and biologicals used in the facility are labeled in accordance with currently accepted professional principles; and all drugs and biologicals must be stored in locked compartments, separately locked, compartments for controlled drugs.",
+      "category": "Pharmacy Service",
+      "sev": "D",
+      "level": 2,
+      "scope": "one resident",
+      "complaint": false,
+      "corrected": true,
+      "dementia": false
+    },
+    {
+      "date": "2024-01-31",
+      "cycle": 3,
+      "tag": "0801",
+      "title": "Kitchen not properly staffed",
+      "detail": "Employ sufficient staff with the appropriate competencies and skills sets to carry out the functions of the food and nutrition service, including a qualified dietician.",
+      "category": "Nutrition and Dietary",
+      "sev": "F",
+      "level": 2,
+      "scope": "many residents",
+      "complaint": false,
+      "corrected": true,
+      "dementia": false
+    },
+    {
+      "date": "2024-01-31",
+      "cycle": 3,
+      "tag": "0812",
+      "title": "Food stored or prepared unsafely",
+      "detail": "Procure food from sources approved or considered satisfactory and store, prepare, distribute and serve food in accordance with professional standards.",
+      "category": "Nutrition and Dietary",
+      "sev": "F",
+      "level": 2,
+      "scope": "many residents",
+      "complaint": false,
+      "corrected": true,
+      "dementia": false
+    },
+    {
+      "date": "2024-01-31",
+      "cycle": 3,
+      "tag": "0606",
+      "title": "Hired someone with an abuse/neglect record",
+      "detail": "Not hire anyone with a finding of abuse, neglect, exploitation, or theft.",
+      "category": "Freedom from Abuse, Neglect, and Exploitation",
+      "sev": "C",
+      "level": 1,
+      "scope": "many residents",
+      "complaint": false,
+      "corrected": true,
+      "dementia": true
+    }
+  ],
+  "penalties": [],
+  "owners": {
+    "type": "For profit - Limited Liability company",
+    "legalName": "Accura Healthcare of Hartington, LLC",
+    "changed12m": false,
+    "direct": [],
+    "indirect": [],
+    "indirectCount": 0,
+    "operators": [
+      "Accura Management Consulting Services LLC"
+    ]
+  },
+  "quality": [
+    {
+      "code": "481",
+      "label": "Antipsychotic drugs (long-stay)",
+      "value": 23.1,
+      "ne": 20.7,
+      "us": 15.4,
+      "lowerBetter": true
+    },
+    {
+      "code": "410",
+      "label": "Falls with major injury",
+      "value": 0.9,
+      "ne": 4.5,
+      "us": 3.2,
+      "lowerBetter": true
+    },
+    {
+      "code": "479",
+      "label": "Pressure ulcers (bed sores)",
+      "value": 2.4,
+      "ne": 4,
+      "us": 4.5,
+      "lowerBetter": true
+    },
+    {
+      "code": "401",
+      "label": "Needing more help with daily activities",
+      "value": 31.5,
+      "ne": 19,
+      "us": 13.5,
+      "lowerBetter": true
+    },
+    {
+      "code": "404",
+      "label": "Lost too much weight",
+      "value": 10.4,
+      "ne": 5.1,
+      "us": 5.1,
+      "lowerBetter": true
+    },
+    {
+      "code": "408",
+      "label": "Depressive symptoms",
+      "value": 0,
+      "ne": 4.4,
+      "us": 13.5,
+      "lowerBetter": true
+    },
+    {
+      "code": "452",
+      "label": "Anti-anxiety or sleep drugs",
+      "value": 9.4,
+      "ne": 19,
+      "us": 19.5,
+      "lowerBetter": true
+    }
+  ],
+  "memoryCare": "ask",
+  "memorySource": null,
+  "behavioral": false,
+  "memoryUnits": null,
+  "beds": 47,
+  "openings": {
+    "est": 15,
+    "note": "Estimate: certified beds minus average daily residents (CMS). Certified beds are often more than the beds actually staffed. Call to confirm."
+  },
+  "payment": {
+    "private": "yes",
+    "medicaid": "yes",
+    "medicare": "short",
+    "va": "ask",
+    "ltc": "ask"
+  },
+  "vaSource": null,
+  "bio": "For-profit nursing home in Hartington with 47 certified beds, part of Accura Healthcare. Provides 24-hour skilled nursing care, long-term care, and short-term rehab.",
+  "sources": [
+    "Medicare / CMS Provider Data: provider info, health inspections, penalties, ownership, quality measures (processed 2026-10-01)",
+    "Dementia units & VA contracts: City of Lincoln Aging Partners nursing facility list (Mar 2024); Eastern Nebraska Office on Aging facility list (Sep 2025)",
+    "Price: CareScout Cost of Care Survey 2024, Nebraska averages"
+  ]
+}

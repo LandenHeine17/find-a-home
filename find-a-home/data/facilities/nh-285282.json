@@ -1,0 +1,222 @@
+{
+  "id": "nh-285282",
+  "kind": "facility",
+  "type": "nursing",
+  "name": "Jefferson Community Health & Life Gardenside",
+  "aka": null,
+  "city": "Fairbury",
+  "county": "Jefferson",
+  "area": "Southeast Nebraska",
+  "address": "2200 North H Street, Fairbury, NE 68352",
+  "zip": "68352",
+  "phone": "(402) 729-5220",
+  "lat": 40.1556,
+  "lon": -97.176,
+  "website": null,
+  "websiteLabel": null,
+  "careCompare": "https://www.medicare.gov/care-compare/details/nursing-home/285282",
+  "priceLow": 8380,
+  "priceHigh": 10040,
+  "priceEstimated": true,
+  "priceNote": "Nebraska average for a nursing home (semi-private to private room). This facility does not publish its price.",
+  "rating": {
+    "value": 5,
+    "source": "Medicare (CMS) overall star rating",
+    "count": null
+  },
+  "cms": {
+    "ccn": "285282",
+    "overall": 5,
+    "inspection": 5,
+    "staffing": 4,
+    "quality": 5,
+    "nurseHours": 4.8,
+    "rnHours": 1.13,
+    "weekendHours": 3.7,
+    "turnover": null,
+    "rnTurnover": null,
+    "adminLeft": null,
+    "deficiencies": 0,
+    "complaintDeficiencies": 0,
+    "inspectionDate": "2026-04-08",
+    "fines": 0,
+    "fineDollars": 0,
+    "paymentDenials": 0,
+    "abuse": false,
+    "sff": false,
+    "sffCandidate": false,
+    "ownership": "Non-profit",
+    "familyCouncil": false
+  },
+  "inspections": [
+    {
+      "date": "2025-01-08",
+      "cycle": 2,
+      "tag": "0609",
+      "title": "Suspected abuse or neglect not reported on time",
+      "detail": "Timely report suspected abuse, neglect, or theft and report the results of the investigation to proper authorities.",
+      "category": "Freedom from Abuse, Neglect, and Exploitation",
+      "sev": "D",
+      "level": 2,
+      "scope": "one resident",
+      "complaint": true,
+      "corrected": true,
+      "dementia": true
+    },
+    {
+      "date": "2025-01-08",
+      "cycle": 2,
+      "tag": "0610",
+      "title": "Abuse allegation not investigated properly",
+      "detail": "Respond appropriately to all alleged violations.",
+      "category": "Freedom from Abuse, Neglect, and Exploitation",
+      "sev": "D",
+      "level": 2,
+      "scope": "one resident",
+      "complaint": true,
+      "corrected": true,
+      "dementia": true
+    },
+    {
+      "date": "2024-11-13",
+      "cycle": 2,
+      "tag": "0689",
+      "title": "Accident hazards or not enough supervision (falls, wandering)",
+      "detail": "Ensure that a nursing home area is free from accident hazards and provides adequate supervision to prevent accidents.",
+      "category": "Quality of Life and Care",
+      "sev": "E",
+      "level": 2,
+      "scope": "several residents",
+      "complaint": false,
+      "corrected": true,
+      "dementia": true
+    },
+    {
+      "date": "2023-12-21",
+      "cycle": 3,
+      "tag": "0641",
+      "title": "Resident assessment inaccurate",
+      "detail": "Ensure each resident receives an accurate assessment.",
+      "category": "Resident Assessment and Care Planning",
+      "sev": "D",
+      "level": 2,
+      "scope": "one resident",
+      "complaint": false,
+      "corrected": true,
+      "dementia": false
+    },
+    {
+      "date": "2023-12-21",
+      "cycle": 3,
+      "tag": "0880",
+      "title": "Infection control not followed",
+      "detail": "Provide and implement an infection prevention and control program.",
+      "category": "Infection Control",
+      "sev": "D",
+      "level": 2,
+      "scope": "one resident",
+      "complaint": false,
+      "corrected": true,
+      "dementia": false
+    }
+  ],
+  "penalties": [],
+  "owners": {
+    "type": "Non profit - Corporation",
+    "legalName": "Jefferson Community Health Center Inc",
+    "changed12m": false,
+    "direct": [
+      {
+        "name": "Jefferson Community Health Center Inc",
+        "pct": "100%",
+        "since": "09/25/2009"
+      }
+    ],
+    "indirect": [],
+    "indirectCount": 0,
+    "operators": [
+      "Jefferson Community Health Center Inc"
+    ]
+  },
+  "quality": [
+    {
+      "code": "481",
+      "label": "Antipsychotic drugs (long-stay)",
+      "value": 2.3,
+      "ne": 20.7,
+      "us": 15.4,
+      "lowerBetter": true
+    },
+    {
+      "code": "410",
+      "label": "Falls with major injury",
+      "value": 4.5,
+      "ne": 4.5,
+      "us": 3.2,
+      "lowerBetter": true
+    },
+    {
+      "code": "479",
+      "label": "Pressure ulcers (bed sores)",
+      "value": 2.3,
+      "ne": 4,
+      "us": 4.5,
+      "lowerBetter": true
+    },
+    {
+      "code": "401",
+      "label": "Needing more help with daily activities",
+      "value": 20.8,
+      "ne": 19,
+      "us": 13.5,
+      "lowerBetter": true
+    },
+    {
+      "code": "404",
+      "label": "Lost too much weight",
+      "value": 6.9,
+      "ne": 5.1,
+      "us": 5.1,
+      "lowerBetter": true
+    },
+    {
+      "code": "408",
+      "label": "Depressive symptoms",
+      "value": 4.5,
+      "ne": 4.4,
+      "us": 13.5,
+      "lowerBetter": true
+    },
+    {
+      "code": "452",
+      "label": "Anti-anxiety or sleep drugs",
+      "value": 35,
+      "ne": 19,
+      "us": 19.5,
+      "lowerBetter": true
+    }
+  ],
+  "memoryCare": "ask",
+  "memorySource": null,
+  "behavioral": false,
+  "memoryUnits": null,
+  "beds": 39,
+  "openings": {
+    "est": 8,
+    "note": "Estimate: certified beds minus average daily residents (CMS). Certified beds are often more than the beds actually staffed. Call to confirm."
+  },
+  "payment": {
+    "private": "yes",
+    "medicaid": "yes",
+    "medicare": "short",
+    "va": "ask",
+    "ltc": "ask"
+  },
+  "vaSource": null,
+  "bio": "Non-profit nursing home in Fairbury with 39 certified beds. Provides 24-hour skilled nursing care, long-term care, and short-term rehab.",
+  "sources": [
+    "Medicare / CMS Provider Data: provider info, health inspections, penalties, ownership, quality measures (processed 2026-10-01)",
+    "Dementia units & VA contracts: City of Lincoln Aging Partners nursing facility list (Mar 2024); Eastern Nebraska Office on Aging facility list (Sep 2025)",
+    "Price: CareScout Cost of Care Survey 2024, Nebraska averages"
+  ]
+}

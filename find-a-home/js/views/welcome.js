@@ -1,24 +1,33 @@
-/** Screen 1 of the sketch: "Welcome!" plus the short intake (about them, cost & distance). */
+/** Screen 1 of the sketch: the short intake (about you and where you live, about them, cost & distance). */
 import { S, save, defaultFilters } from '../core/state.js';
 import { esc, fmt, toast } from '../core/util.js';
 import { lovedOne } from '../core/labels.js';
+import { geocodeAddress } from '../core/geo.js';
+import { data } from '../core/data.js';
 import { app, go } from '../router.js';
+
+const locNote = L => L && L.lat != null
+  ? (L.source === 'device' ? 'Using your current location.' : `Found: ${esc(L.label)}`) : '';
 
 export function renderWelcome() {
   const I = S.intake, st = S.step;
-  const steps = ['Welcome', `About ${I.lovedOne ? esc(I.lovedOne) : 'them'}`, 'Cost & distance'];
+  const steps = ['About you', `About ${I.lovedOne ? esc(I.lovedOne) : 'them'}`, 'Cost and distance'];
   const bar = `<div class="steps">${steps.map((t, i) => `<div class="${i + 1 < st ? 'done' : i + 1 === st ? 'current' : ''}">${i + 1}. ${t}</div>`).join('')}</div>`;
   let body = '';
   if (st === 1) {
     body = `
-    <div class="field"><label for="f-name">Please enter your name</label>
-      <input id="f-name" type="text" autocomplete="given-name" value="${esc(I.name)}" placeholder="Your first name"></div>
     <div class="row">
-      <div class="field"><label for="f-loved">Who are you finding care for?<span class="hint">What you call them, like "Mom" or "Grandpa Joe"</span></label>
+      <div class="field"><label for="f-name">Your first name</label>
+        <input id="f-name" type="text" autocomplete="given-name" value="${esc(I.name)}"></div>
+      <div class="field"><label for="f-loved">Who you are finding care for<span class="hint">What you call them, like "Mom" or "Grandpa Joe"</span></label>
         <input id="f-loved" type="text" value="${esc(I.lovedOne)}" placeholder="e.g. Dad"></div>
-      <div class="field"><label for="f-zip">Your ZIP code<span class="hint">So we can find places close to family</span></label>
-        <input id="f-zip" type="text" inputmode="numeric" maxlength="5" value="${esc(I.zip)}" placeholder="e.g. 68516"></div>
     </div>
+    <div class="field"><label for="f-addr">Home address<span class="hint">Street, town and ZIP, or just a ZIP code. Distances are measured from here. It stays on this device and is only sent to the US Census address lookup.</span></label>
+      <div class="addr-row">
+        <input id="f-addr" type="text" autocomplete="street-address" value="${esc(I.address || I.zip)}" placeholder="e.g. 410 Main St, Seward, NE 68434" aria-describedby="addrNote">
+        <button type="button" class="btn secondary" id="useLoc">Use my location</button>
+      </div>
+      <div id="addrNote" class="field-note" role="status">${locNote(I.loc)}</div></div>
     <div class="field"><label>Upload insurance card <span class="hint">Optional. We use it to show places that take your insurance.</span></label>
       <label class="upload" for="f-card" style="font-weight:400">
         <span class="plus">+</span>
@@ -52,7 +61,7 @@ export function renderWelcome() {
       <div class="field"><label for="f-budget">Monthly budget: <span class="range-val" id="budgetVal">$${fmt(I.budget)}${I.budget >= 12000 ? '+' : ''}</span></label>
         <input id="f-budget" type="range" min="2000" max="12000" step="250" value="${I.budget}"></div>
       <div class="field"><label for="f-miles">How far will family drive? <span class="range-val" id="milesVal">${I.maxMiles} miles</span></label>
-        <input id="f-miles" type="range" min="5" max="60" step="5" value="${I.maxMiles}"></div>
+        <input id="f-miles" type="range" min="5" max="100" step="5" value="${I.maxMiles}"></div>
     </div>
     <div class="field"><label>How soon do you need care?</label>
       <div class="choice-grid">${when.map(([v, t, h]) => `<label class="choice"><input type="radio" name="when" value="${v}" ${I.timing === v ? 'checked' : ''}><span>${t}${h ? `<small>${h}</small>` : ''}</span></label>`).join('')}</div></div>`;
@@ -60,24 +69,48 @@ export function renderWelcome() {
   app.innerHTML = `
   <div class="welcome-wrap">
     <div class="welcome-hero">
-      <h1>${st === 1 ? 'Welcome!' : st === 2 ? `Tell us about ${lovedOne()}` : 'Cost & distance'}</h1>
-      <p>${st === 1 ? 'Find safe, affordable dementia care near Lincoln in about 2 minutes. No account needed.' : st === 2 ? 'There are no wrong answers. You can change these any time.' : 'Almost done. This keeps your matches realistic.'}</p>
+      <h1>${st === 1 ? 'Find dementia care in Nebraska' : st === 2 ? `About ${lovedOne()}` : 'Cost and distance'}</h1>
+      <p>${st === 1 ? `Compare ${data.facilities.filter(p => p.type === 'nursing').length} Nebraska nursing homes, ${data.facilities.filter(p => p.type !== 'nursing').length} Lincoln memory care communities and ${data.homecare.length} home care agencies. Three short questions, no account.` : st === 2 ? 'There are no wrong answers. You can change these any time.' : 'Last step. This keeps prices and distances realistic.'}</p>
     </div>
     ${bar}
     <form class="card" id="intakeForm" novalidate>
       ${body}
       <div class="intake-actions">
-        ${st > 1 ? '<button type="button" class="btn secondary" data-action="intake-back">← Back</button>' : '<button type="button" class="btn ghost" data-action="skip-intake">Skip and just browse</button>'}
-        <button type="submit" class="btn big">${st < 3 ? 'Next →' : '🔍 Find Homes'}</button>
+        ${st > 1 ? '<button type="button" class="btn secondary" data-action="intake-back">Back</button>' : '<button type="button" class="btn ghost" data-action="skip-intake">Skip and browse</button>'}
+        <button type="submit" class="btn big">${st < 3 ? 'Next' : 'See matches'}</button>
       </div>
     </form>
     <div class="reassure"><span>Free for families</span><span>Facilities can't pay for a higher ranking</span><span>Nothing is shared without your OK</span></div>
   </div>`;
 
   const form = document.getElementById('intakeForm');
-  form.addEventListener('submit', e => { e.preventDefault(); readIntake(); if (S.step < 3) { S.step++; save(); renderWelcome(); window.scrollTo(0, 0); } else finishIntake(); });
+  form.addEventListener('submit', async e => {
+    e.preventDefault();
+    if (S.step === 1 && !(await resolveAddress())) return;
+    readIntake();
+    if (S.step < 3) { S.step++; save(); renderWelcome(); window.scrollTo(0, 0); } else finishIntake();
+  });
+  const useLoc = document.getElementById('useLoc');
+  if (useLoc) useLoc.addEventListener('click', () => {
+    const note = document.getElementById('addrNote');
+    if (!navigator.geolocation) { note.textContent = 'This browser cannot share its location. Type your address instead.'; return; }
+    note.textContent = 'Finding your location…';
+    navigator.geolocation.getCurrentPosition(pos => {
+      S.intake.loc = { lat: +pos.coords.latitude.toFixed(4), lon: +pos.coords.longitude.toFixed(4), source: 'device' };
+      S.intake.address = ''; save();
+      document.getElementById('f-addr').value = '';
+      note.textContent = locNote(S.intake.loc);
+    }, () => { note.textContent = 'Location was not shared. Type your address instead.'; }, { timeout: 10000 });
+  });
   const card = document.getElementById('f-card');
-  if (card) card.addEventListener('change', () => { readIntake(); if (card.files[0]) { S.intake.insuranceFile = card.files[0].name; save(); renderWelcome(); toast('Insurance card added'); } });
+  if (card) card.addEventListener('change', () => {
+    readIntake();
+    if (card.files[0]) {
+      const typed = document.getElementById('f-addr').value;
+      S.intake.insuranceFile = card.files[0].name; save(); renderWelcome();
+      document.getElementById('f-addr').value = typed; toast('Insurance card added');
+    }
+  });
   const doc = document.getElementById('f-doc');
   if (doc) doc.addEventListener('change', () => { document.getElementById('docNote').textContent = doc.value ? 'Prototype: nothing is shared. In the full app you would sign in to your patient portal here.' : ''; });
   const b = document.getElementById('f-budget');
@@ -90,7 +123,7 @@ export function readIntake() {
   const I = S.intake, v = id => document.getElementById(id);
   if (S.step === 1) {
     I.name = v('f-name').value.trim(); I.lovedOne = v('f-loved').value.trim();
-    I.zip = v('f-zip').value.replace(/\D/g, '').slice(0, 5); I.doctor = v('f-doc').value;
+    I.doctor = v('f-doc').value;
   } else if (S.step === 2) {
     I.stage = (document.querySelector('[name=stage]:checked') || {}).value || '';
     I.behaviors = [...document.querySelectorAll('[name=beh]:checked')].map(x => x.value);
@@ -102,6 +135,35 @@ export function readIntake() {
   }
   save();
 }
+/**
+ * Step 1: turn what was typed into a starting point. A bare ZIP uses the ZIP center;
+ * a street address is looked up with the US Census geocoder. Returns false to stay on the step.
+ */
+async function resolveAddress() {
+  const input = document.getElementById('f-addr'), note = document.getElementById('addrNote');
+  const typed = input.value.trim(), I = S.intake;
+  const fail = msg => { note.textContent = msg; note.classList.add('error'); input.setAttribute('aria-invalid', 'true'); input.focus(); return false; };
+  note.classList.remove('error'); input.removeAttribute('aria-invalid');
+  if (!typed) { if (!(I.loc && I.loc.source === 'device')) { I.address = ''; I.zip = ''; I.loc = null; } return true; }
+  if (typed === I.address && I.loc) return true;
+  if (/^\d{5}$/.test(typed)) {
+    if (!data.zips[typed]) return fail(`We don't have ZIP ${typed}. Write a Nebraska ZIP code or your full address.`);
+    Object.assign(I, { zip: typed, address: '', loc: null }); return true;
+  }
+  note.textContent = 'Looking up your address…';
+  try {
+    const hit = await geocodeAddress(typed);
+    Object.assign(I, { address: typed, zip: hit.zip || I.zip, loc: { lat: hit.lat, lon: hit.lon, label: hit.label, source: 'address' } });
+    note.textContent = locNote(I.loc); save();
+    if (hit.state && hit.state !== 'NE') toast('That address is outside Nebraska. Distances may be long.');
+    return true;
+  } catch (e) {
+    const zip = (typed.match(/\b(\d{5})\b/) || [])[1];
+    if (zip && data.zips[zip]) { Object.assign(I, { zip, address: '', loc: null }); toast(`Street not found. Using the center of ZIP ${zip}.`); return true; }
+    return fail(`${e.message} Write the street, town and state, like "410 Main St, Seward, NE", or a ZIP code.`);
+  }
+}
+
 function finishIntake() {
   S.intakeDone = true; S.step = 1;
   S.mode = S.intake.livingPref === 'home' ? 'homecare' : 'facility';

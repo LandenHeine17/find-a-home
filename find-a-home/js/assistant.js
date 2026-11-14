@@ -64,9 +64,9 @@ export function initAssistant() {
     if (p.cms) {
       const c = p.cms;
       s += c.overall ? `Medicare rates it <b>${c.overall} of 5 stars</b> (inspections ${c.inspection}, staffing ${c.staffing}, quality ${c.quality}). ` : 'Medicare does not star-rate it right now. ';
-      if (c.sff) s += '⚠️ It is on Medicare\'s <b>watch list</b> for serious quality problems. ';
+      if (c.sff) s += 'It is on Medicare\'s <b>watch list</b> for serious quality problems. ';
       if (c.fines) s += `It has had ${c.fines} federal fine(s) in the last 3 years. `;
-      if (c.sffCandidate) s += '⚠️ It is a <b>candidate</b> for Medicare\'s watch list. ';
+      if (c.sffCandidate) s += 'It is a <b>candidate</b> for Medicare\'s watch list. ';
       const serious = p.inspectionSummary ? p.inspectionSummary.serious : 0;
       s += serious ? `Inspectors cited <b>${serious}</b> problem(s) where a resident was harmed or in danger in the last 3 inspections. ` : 'No citations for harming residents in the last 3 inspections. ';
       if (p.memoryCare === 'unit') s += 'It has a <b>dementia / memory support unit</b>. ';
@@ -81,7 +81,7 @@ export function initAssistant() {
       if (m.good.length) s += ` Pluses: ${m.good.slice(0, 3).map(esc).join('; ')}.`;
       if (m.warn.length) s += ` Ask about: ${m.warn.slice(0, 2).map(esc).join('; ')}.`;
     }
-    s += `\n\n<a href="https://www.google.com/maps/search/?api=1&query=${encodeURIComponent(p.name + ', ' + (p.address || 'Lincoln NE'))}" target="_blank" rel="noopener">📍 See it on Google Maps</a>`;
+    s += `\n\n<a href="https://www.google.com/maps/search/?api=1&query=${encodeURIComponent(p.name + ', ' + (p.address || 'Lincoln NE'))}" target="_blank" rel="noopener">See it on Google Maps</a>`;
     return s;
   }
 
@@ -118,15 +118,17 @@ export function initAssistant() {
       'If ' + esc(lo()) + ' wanders, look for <b>memory care</b> with a secured unit. I rank "memory care only" communities higher when you check "Wanders or gets lost." Still ask on the tour how exits are secured and what happens if someone tries to leave.' },
     { k: /(antipsychotic|sedat|drug|medicat)/, a: () =>
       'Antipsychotic drugs are sometimes overused in nursing homes to calm people with dementia, and they carry real risks. Medicare tracks how often each home uses them. Open any nursing home\'s <b>Quality of care</b> section to compare it with the Nebraska average. Ask on tours: "How do you handle agitation without medication?"' },
-    { k: /(omaha|council bluffs|papillion|bellevue|elkhorn)/, a: () =>
-      'Find-A-Home now includes 52 nursing homes across the Lincoln and Omaha areas. Use the <b>Area</b> filter, or enter an Omaha ZIP code in your answers, so distances are measured from you. Assisted living and home care are still Lincoln only in this prototype.' },
+    { k: /(omaha|council bluffs|papillion|bellevue|elkhorn|grand island|kearney|hastings|norfolk|columbus|beatrice|north platte|scottsbluff|outside lincoln|rural|small town|my town|address)/, a: () =>
+      'Find-A-Home now lists every nursing home in Nebraska. Enter your street address in your answers so distances are measured from your door, then use the <b>Distance</b> and <b>Region</b> filters. Assisted living and home care are still Lincoln only in this prototype.' },
+    { k: /(fee|hidden|extra|cost more|charge|price breakdown|breakdown)/, a: () =>
+      'Each place\'s page has a <b>Price breakdown</b>: what the base price usually covers, what is often billed on top (like level-of-care fees or medication management), and one-time fees. When you request a tour, we ask the place to send every fee in writing.' },
     { k: /(wait ?list|opening|bed|room|full|how (long|soon))/, a: () =>
       'Openings change daily and most places don\'t publish them. For nursing homes I show an <b>estimate</b> from Medicare data (beds minus average residents). For everyone else, use "Request a tour." The form can add you to a waitlist and show your next best match if they\'re full.' },
     { k: /(home care|stay home|at home|in-home|keep (her|him|them) home)/, a: () =>
       'Tap <b>Home care</b> at the top of the matches page to see Lincoln agencies. Non-medical caregivers help with bathing, meals and companionship. Medical home health sends nurses when a doctor orders it, and Medicare can cover that. Many families start with home care and move to memory care later.' },
     { k: /(diagnos|doctor|stage)/, a: () =>
       'Most memory care communities, and Medicaid, ask for a <b>written diagnosis</b>. Ask ' + esc(lo()) + '\'s doctor for the diagnosis, the current stage, and a short summary of daily care needs. That summary makes intake forms and tours much easier.' },
-    { k: /^(hi|hello|hey|help)\b/, a: () => 'Hi! I can explain care types, costs, Medicaid and Medicare, safety ratings, and what to ask on tours. I can also summarize any place you\'re looking at. What\'s on your mind?' }
+    { k: /^(hi|hello|hey|help)\b/, a: () => 'Hi. I can explain care types, costs, Medicaid and Medicare, safety ratings, and what to ask on tours. I can also summarize any place you\'re looking at. What\'s on your mind?' }
   ];
 
   function answer(q) {
@@ -146,7 +148,7 @@ export function initAssistant() {
     if (!opened) {
       opened = true;
       const name = F().state.intake.name;
-      add(`Hi${name ? ' ' + esc(name) : ''}! I'm Care Guide. I can answer common questions about dementia care in Lincoln. <i>(This is a scripted demo for testing.)</i>`, 'bot');
+      add(`Hi${name ? ' ' + esc(name) : ''}. I'm Care Guide. I can answer common questions about dementia care in Nebraska. <i>(This is a scripted demo for testing.)</i>`, 'bot');
     }
     suggestions(); input.focus();
   }

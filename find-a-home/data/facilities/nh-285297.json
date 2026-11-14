@@ -1,0 +1,307 @@
+{
+  "id": "nh-285297",
+  "kind": "facility",
+  "type": "nursing",
+  "name": "Brookestone View",
+  "aka": null,
+  "city": "Broken Bow",
+  "county": "Custer",
+  "area": "Western Nebraska",
+  "address": "850 Laurel Parkway Drive, Broken Bow, NE 68822",
+  "zip": "68822",
+  "phone": "(308) 767-2300",
+  "lat": 41.4043,
+  "lon": -99.641,
+  "website": null,
+  "websiteLabel": null,
+  "careCompare": "https://www.medicare.gov/care-compare/details/nursing-home/285297",
+  "priceLow": 8380,
+  "priceHigh": 10040,
+  "priceEstimated": true,
+  "priceNote": "Nebraska average for a nursing home (semi-private to private room). This facility does not publish its price.",
+  "rating": {
+    "value": 4,
+    "source": "Medicare (CMS) overall star rating",
+    "count": null
+  },
+  "cms": {
+    "ccn": "285297",
+    "overall": 4,
+    "inspection": 4,
+    "staffing": 4,
+    "quality": 4,
+    "nurseHours": 4,
+    "rnHours": 0.47,
+    "weekendHours": 3.6,
+    "turnover": 29.8,
+    "rnTurnover": 60,
+    "adminLeft": null,
+    "deficiencies": 3,
+    "complaintDeficiencies": 0,
+    "inspectionDate": "2026-06-04",
+    "fines": 0,
+    "fineDollars": 0,
+    "paymentDenials": 0,
+    "abuse": false,
+    "sff": false,
+    "sffCandidate": false,
+    "ownership": "Non-profit",
+    "familyCouncil": false
+  },
+  "inspections": [
+    {
+      "date": "2026-06-04",
+      "cycle": 1,
+      "tag": "0550",
+      "title": "Resident dignity not respected",
+      "detail": "Honor the resident's right to a dignified existence, self-determination, communication, and to exercise his or her rights.",
+      "category": "Resident Rights",
+      "sev": "D",
+      "level": 2,
+      "scope": "one resident",
+      "complaint": false,
+      "corrected": true,
+      "dementia": false
+    },
+    {
+      "date": "2026-06-04",
+      "cycle": 1,
+      "tag": "0628",
+      "title": "Transfer / bed-hold notice not given",
+      "detail": "Provide the required documentation or notification related to the resident's needs, appeal rights, or bed-hold policies.",
+      "category": "Resident Rights",
+      "sev": "D",
+      "level": 2,
+      "scope": "one resident",
+      "complaint": false,
+      "corrected": true,
+      "dementia": false
+    },
+    {
+      "date": "2026-06-04",
+      "cycle": 1,
+      "tag": "0690",
+      "title": "Incontinence or catheter care problems",
+      "detail": "Provide appropriate care for residents who are continent or incontinent of bowel/bladder, appropriate catheter care,  and appropriate care  to prevent urinary tract infections.",
+      "category": "Quality of Life and Care",
+      "sev": "D",
+      "level": 2,
+      "scope": "one resident",
+      "complaint": false,
+      "corrected": true,
+      "dementia": false
+    },
+    {
+      "date": "2025-02-27",
+      "cycle": 2,
+      "tag": "0880",
+      "title": "Infection control not followed",
+      "detail": "Provide and implement an infection prevention and control program.",
+      "category": "Infection Control",
+      "sev": "F",
+      "level": 2,
+      "scope": "many residents",
+      "complaint": false,
+      "corrected": true,
+      "dementia": false
+    },
+    {
+      "date": "2025-02-27",
+      "cycle": 2,
+      "tag": "0677",
+      "title": "Help with daily activities not provided",
+      "detail": "Provide care and assistance to perform activities of daily living for any resident who is unable.",
+      "category": "Quality of Life and Care",
+      "sev": "D",
+      "level": 2,
+      "scope": "one resident",
+      "complaint": false,
+      "corrected": true,
+      "dementia": false
+    },
+    {
+      "date": "2025-02-27",
+      "cycle": 2,
+      "tag": "0686",
+      "title": "Pressure sores not prevented or treated",
+      "detail": "Provide appropriate pressure ulcer care and prevent new ulcers from developing.",
+      "category": "Quality of Life and Care",
+      "sev": "D",
+      "level": 2,
+      "scope": "one resident",
+      "complaint": false,
+      "corrected": true,
+      "dementia": false
+    },
+    {
+      "date": "2025-02-27",
+      "cycle": 2,
+      "tag": "0688",
+      "title": "Mobility / range-of-motion care not provided",
+      "detail": "Provide appropriate care for a resident to maintain and/or improve range of motion (ROM), limited ROM and/or mobility, unless a decline is for a medical reason.",
+      "category": "Quality of Life and Care",
+      "sev": "D",
+      "level": 2,
+      "scope": "one resident",
+      "complaint": false,
+      "corrected": true,
+      "dementia": false
+    },
+    {
+      "date": "2025-02-27",
+      "cycle": 2,
+      "tag": "0695",
+      "title": "Breathing / oxygen care problems",
+      "detail": "Provide safe and appropriate respiratory care for a resident when needed.",
+      "category": "Quality of Life and Care",
+      "sev": "D",
+      "level": 2,
+      "scope": "one resident",
+      "complaint": false,
+      "corrected": true,
+      "dementia": false
+    },
+    {
+      "date": "2024-03-21",
+      "cycle": 3,
+      "tag": "0880",
+      "title": "Infection control not followed",
+      "detail": "Provide and implement an infection prevention and control program.",
+      "category": "Infection Control",
+      "sev": "F",
+      "level": 2,
+      "scope": "many residents",
+      "complaint": false,
+      "corrected": true,
+      "dementia": false
+    },
+    {
+      "date": "2024-03-21",
+      "cycle": 3,
+      "tag": "0684",
+      "title": "Care not given as ordered",
+      "detail": "Provide appropriate treatment and care according to orders, resident’s preferences and goals.",
+      "category": "Quality of Life and Care",
+      "sev": "D",
+      "level": 2,
+      "scope": "one resident",
+      "complaint": false,
+      "corrected": true,
+      "dementia": false
+    },
+    {
+      "date": "2024-03-21",
+      "cycle": 3,
+      "tag": "0695",
+      "title": "Breathing / oxygen care problems",
+      "detail": "Provide safe and appropriate respiratory care for a resident when needed.",
+      "category": "Quality of Life and Care",
+      "sev": "D",
+      "level": 2,
+      "scope": "one resident",
+      "complaint": false,
+      "corrected": true,
+      "dementia": false
+    }
+  ],
+  "penalties": [],
+  "owners": {
+    "type": "Non profit - Corporation",
+    "legalName": "Vsl Broken Bow LLC",
+    "changed12m": false,
+    "direct": [
+      {
+        "name": "Vetter Senior Living",
+        "pct": "100%",
+        "since": "12/23/2016"
+      }
+    ],
+    "indirect": [],
+    "indirectCount": 0,
+    "operators": [
+      "Vetter Senior Living",
+      "Vsl Vetter Health Services LLC"
+    ]
+  },
+  "quality": [
+    {
+      "code": "481",
+      "label": "Antipsychotic drugs (long-stay)",
+      "value": 6.8,
+      "ne": 20.7,
+      "us": 15.4,
+      "lowerBetter": true
+    },
+    {
+      "code": "410",
+      "label": "Falls with major injury",
+      "value": 2.5,
+      "ne": 4.5,
+      "us": 3.2,
+      "lowerBetter": true
+    },
+    {
+      "code": "479",
+      "label": "Pressure ulcers (bed sores)",
+      "value": 4.8,
+      "ne": 4,
+      "us": 4.5,
+      "lowerBetter": true
+    },
+    {
+      "code": "401",
+      "label": "Needing more help with daily activities",
+      "value": 27.4,
+      "ne": 19,
+      "us": 13.5,
+      "lowerBetter": true
+    },
+    {
+      "code": "404",
+      "label": "Lost too much weight",
+      "value": 1.7,
+      "ne": 5.1,
+      "us": 5.1,
+      "lowerBetter": true
+    },
+    {
+      "code": "408",
+      "label": "Depressive symptoms",
+      "value": 2.1,
+      "ne": 4.4,
+      "us": 13.5,
+      "lowerBetter": true
+    },
+    {
+      "code": "452",
+      "label": "Anti-anxiety or sleep drugs",
+      "value": 19,
+      "ne": 19,
+      "us": 19.5,
+      "lowerBetter": true
+    }
+  ],
+  "memoryCare": "ask",
+  "memorySource": null,
+  "behavioral": false,
+  "memoryUnits": null,
+  "beds": 60,
+  "openings": {
+    "est": 7,
+    "note": "Estimate: certified beds minus average daily residents (CMS). Certified beds are often more than the beds actually staffed. Call to confirm."
+  },
+  "payment": {
+    "private": "yes",
+    "medicaid": "yes",
+    "medicare": "short",
+    "va": "ask",
+    "ltc": "ask"
+  },
+  "vaSource": null,
+  "bio": "Non-profit nursing home in Broken Bow with 60 certified beds, part of Vetter Senior Living. Provides 24-hour skilled nursing care, long-term care, and short-term rehab.",
+  "sources": [
+    "Medicare / CMS Provider Data: provider info, health inspections, penalties, ownership, quality measures (processed 2026-10-01)",
+    "Dementia units & VA contracts: City of Lincoln Aging Partners nursing facility list (Mar 2024); Eastern Nebraska Office on Aging facility list (Sep 2025)",
+    "Price: CareScout Cost of Care Survey 2024, Nebraska averages"
+  ]
+}

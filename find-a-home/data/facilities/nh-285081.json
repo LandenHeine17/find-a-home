@@ -1,0 +1,242 @@
+{
+  "id": "nh-285081",
+  "kind": "facility",
+  "type": "nursing",
+  "name": "CHI Health St. Francis",
+  "aka": null,
+  "city": "Grand Island",
+  "county": "Hall",
+  "area": "Central Nebraska",
+  "address": "2116 West Faidley Avenue, Grand Island, NE 68803",
+  "zip": "68803",
+  "phone": "(308) 398-5880",
+  "lat": 40.9242,
+  "lon": -98.364,
+  "website": null,
+  "websiteLabel": null,
+  "careCompare": "https://www.medicare.gov/care-compare/details/nursing-home/285081",
+  "priceLow": 8380,
+  "priceHigh": 10040,
+  "priceEstimated": true,
+  "priceNote": "Nebraska average for a nursing home (semi-private to private room). This facility does not publish its price.",
+  "rating": {
+    "value": 3,
+    "source": "Medicare (CMS) overall star rating",
+    "count": null
+  },
+  "cms": {
+    "ccn": "285081",
+    "overall": 3,
+    "inspection": 4,
+    "staffing": 1,
+    "quality": 2,
+    "nurseHours": null,
+    "rnHours": null,
+    "weekendHours": null,
+    "turnover": null,
+    "rnTurnover": null,
+    "adminLeft": null,
+    "deficiencies": 2,
+    "complaintDeficiencies": 0,
+    "inspectionDate": "2025-03-20",
+    "fines": 0,
+    "fineDollars": 0,
+    "paymentDenials": 0,
+    "abuse": false,
+    "sff": false,
+    "sffCandidate": false,
+    "ownership": "Non-profit",
+    "familyCouncil": false
+  },
+  "inspections": [
+    {
+      "date": "2025-03-20",
+      "cycle": 1,
+      "tag": "0729",
+      "title": "Verify that a nurse aide has been trained; and if they haven't worked as a nurse aide for 2 years, receive retraining",
+      "detail": "Verify that a nurse aide has been trained; and if they haven't worked as a nurse aide for 2 years, receive retraining.",
+      "category": "Nursing and Physician Services",
+      "sev": "F",
+      "level": 2,
+      "scope": "many residents",
+      "complaint": false,
+      "corrected": true,
+      "dementia": false
+    },
+    {
+      "date": "2025-03-20",
+      "cycle": 1,
+      "tag": "0625",
+      "title": "Bed-hold policy not explained",
+      "detail": "Notify the resident or the resident’s representative in writing how long the nursing home will hold the resident’s bed in cases of transfer to a hospital or therapeutic leave.",
+      "category": "Resident Rights",
+      "sev": "D",
+      "level": 2,
+      "scope": "one resident",
+      "complaint": false,
+      "corrected": true,
+      "dementia": false
+    },
+    {
+      "date": "2024-02-01",
+      "cycle": 2,
+      "tag": "0812",
+      "title": "Food stored or prepared unsafely",
+      "detail": "Procure food from sources approved or considered satisfactory and store, prepare, distribute and serve food in accordance with professional standards.",
+      "category": "Nutrition and Dietary",
+      "sev": "F",
+      "level": 2,
+      "scope": "many residents",
+      "complaint": false,
+      "corrected": true,
+      "dementia": false
+    },
+    {
+      "date": "2024-02-01",
+      "cycle": 2,
+      "tag": "0580",
+      "title": "Family or doctor not told about a change or injury",
+      "detail": "Immediately tell the resident, the resident's doctor, and a family member of situations (injury/decline/room, etc.)  that affect the resident.",
+      "category": "Resident Rights",
+      "sev": "D",
+      "level": 2,
+      "scope": "one resident",
+      "complaint": false,
+      "corrected": true,
+      "dementia": false
+    },
+    {
+      "date": "2024-02-01",
+      "cycle": 2,
+      "tag": "0880",
+      "title": "Infection control not followed",
+      "detail": "Provide and implement an infection prevention and control program.",
+      "category": "Infection Control",
+      "sev": "D",
+      "level": 2,
+      "scope": "one resident",
+      "complaint": false,
+      "corrected": true,
+      "dementia": false
+    },
+    {
+      "date": "2023-03-13",
+      "cycle": 3,
+      "tag": "0923",
+      "title": "Poor ventilation",
+      "detail": "Have enough outside ventilation via a window or mechanical ventilation, or both.",
+      "category": "Environmental",
+      "sev": "F",
+      "level": 2,
+      "scope": "many residents",
+      "complaint": false,
+      "corrected": true,
+      "dementia": false
+    },
+    {
+      "date": "2023-03-13",
+      "cycle": 3,
+      "tag": "0655",
+      "title": "Initial care plan not done within 48 hours",
+      "detail": "Create and put into place a plan for meeting the resident's most immediate needs within 48 hours of being admitted",
+      "category": "Resident Assessment and Care Planning",
+      "sev": "E",
+      "level": 2,
+      "scope": "several residents",
+      "complaint": false,
+      "corrected": true,
+      "dementia": false
+    }
+  ],
+  "penalties": [],
+  "owners": {
+    "type": "Non profit - Corporation",
+    "legalName": "Legal Business Name Not Available",
+    "changed12m": false,
+    "direct": [],
+    "indirect": [],
+    "indirectCount": 0,
+    "operators": []
+  },
+  "quality": [
+    {
+      "code": "481",
+      "label": "Antipsychotic drugs (long-stay)",
+      "value": null,
+      "ne": 20.7,
+      "us": 15.4,
+      "lowerBetter": true
+    },
+    {
+      "code": "410",
+      "label": "Falls with major injury",
+      "value": 0,
+      "ne": 4.5,
+      "us": 3.2,
+      "lowerBetter": true
+    },
+    {
+      "code": "479",
+      "label": "Pressure ulcers (bed sores)",
+      "value": 0,
+      "ne": 4,
+      "us": 4.5,
+      "lowerBetter": true
+    },
+    {
+      "code": "401",
+      "label": "Needing more help with daily activities",
+      "value": null,
+      "ne": 19,
+      "us": 13.5,
+      "lowerBetter": true
+    },
+    {
+      "code": "404",
+      "label": "Lost too much weight",
+      "value": null,
+      "ne": 5.1,
+      "us": 5.1,
+      "lowerBetter": true
+    },
+    {
+      "code": "408",
+      "label": "Depressive symptoms",
+      "value": null,
+      "ne": 4.4,
+      "us": 13.5,
+      "lowerBetter": true
+    },
+    {
+      "code": "452",
+      "label": "Anti-anxiety or sleep drugs",
+      "value": null,
+      "ne": 19,
+      "us": 19.5,
+      "lowerBetter": true
+    }
+  ],
+  "memoryCare": "ask",
+  "memorySource": null,
+  "behavioral": false,
+  "memoryUnits": null,
+  "beds": 36,
+  "openings": {
+    "est": 0,
+    "note": "Estimate: certified beds minus average daily residents (CMS). Certified beds are often more than the beds actually staffed. Call to confirm."
+  },
+  "payment": {
+    "private": "yes",
+    "medicaid": "yes",
+    "medicare": "short",
+    "va": "ask",
+    "ltc": "ask"
+  },
+  "vaSource": null,
+  "bio": "Non-profit nursing home in Grand Island with 36 certified beds. Provides 24-hour skilled nursing care, long-term care, and short-term rehab.",
+  "sources": [
+    "Medicare / CMS Provider Data: provider info, health inspections, penalties, ownership, quality measures (processed 2026-10-01)",
+    "Dementia units & VA contracts: City of Lincoln Aging Partners nursing facility list (Mar 2024); Eastern Nebraska Office on Aging facility list (Sep 2025)",
+    "Price: CareScout Cost of Care Survey 2024, Nebraska averages"
+  ]
+}

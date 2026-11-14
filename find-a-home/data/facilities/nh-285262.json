@@ -1,0 +1,307 @@
+{
+  "id": "nh-285262",
+  "kind": "facility",
+  "type": "nursing",
+  "name": "Heritage Care Center",
+  "aka": null,
+  "city": "Fairbury",
+  "county": "Jefferson",
+  "area": "Southeast Nebraska",
+  "address": "909 17th Street, Fairbury, NE 68352",
+  "zip": "68352",
+  "phone": "(402) 729-2289",
+  "lat": 40.1507,
+  "lon": -97.174,
+  "website": null,
+  "websiteLabel": null,
+  "careCompare": "https://www.medicare.gov/care-compare/details/nursing-home/285262",
+  "priceLow": 8380,
+  "priceHigh": 10040,
+  "priceEstimated": true,
+  "priceNote": "Nebraska average for a nursing home (semi-private to private room). This facility does not publish its price.",
+  "rating": {
+    "value": 3,
+    "source": "Medicare (CMS) overall star rating",
+    "count": null
+  },
+  "cms": {
+    "ccn": "285262",
+    "overall": 3,
+    "inspection": 3,
+    "staffing": 3,
+    "quality": 4,
+    "nurseHours": 2.5,
+    "rnHours": 0.76,
+    "weekendHours": 1.7,
+    "turnover": 52.4,
+    "rnTurnover": 0,
+    "adminLeft": 1,
+    "deficiencies": 4,
+    "complaintDeficiencies": 2,
+    "inspectionDate": "2025-06-17",
+    "fines": 0,
+    "fineDollars": 0,
+    "paymentDenials": 0,
+    "abuse": false,
+    "sff": false,
+    "sffCandidate": false,
+    "ownership": "Non-profit",
+    "familyCouncil": false
+  },
+  "inspections": [
+    {
+      "date": "2025-08-05",
+      "cycle": 2,
+      "tag": "0689",
+      "title": "Accident hazards or not enough supervision (falls, wandering)",
+      "detail": "Ensure that a nursing home area is free from accident hazards and provides adequate supervision to prevent accidents.",
+      "category": "Quality of Life and Care",
+      "sev": "E",
+      "level": 2,
+      "scope": "several residents",
+      "complaint": true,
+      "corrected": true,
+      "dementia": true
+    },
+    {
+      "date": "2025-06-17",
+      "cycle": 1,
+      "tag": "0812",
+      "title": "Food stored or prepared unsafely",
+      "detail": "Procure food from sources approved or considered satisfactory and store, prepare, distribute and serve food in accordance with professional standards.",
+      "category": "Nutrition and Dietary",
+      "sev": "F",
+      "level": 2,
+      "scope": "many residents",
+      "complaint": true,
+      "corrected": true,
+      "dementia": false
+    },
+    {
+      "date": "2025-06-17",
+      "cycle": 1,
+      "tag": "0908",
+      "title": "Equipment not kept in safe working order",
+      "detail": "Keep all essential equipment working safely.",
+      "category": "Environmental",
+      "sev": "F",
+      "level": 2,
+      "scope": "many residents",
+      "complaint": true,
+      "corrected": true,
+      "dementia": false
+    },
+    {
+      "date": "2025-06-17",
+      "cycle": 1,
+      "tag": "0759",
+      "title": "Medication error rate of 5% or more",
+      "detail": "Ensure medication error rates are not 5 percent or greater.",
+      "category": "Pharmacy Service",
+      "sev": "D",
+      "level": 2,
+      "scope": "one resident",
+      "complaint": false,
+      "corrected": true,
+      "dementia": false
+    },
+    {
+      "date": "2025-06-17",
+      "cycle": 1,
+      "tag": "0760",
+      "title": "Significant medication error",
+      "detail": "Ensure that residents are free from significant medication errors.",
+      "category": "Pharmacy Service",
+      "sev": "D",
+      "level": 2,
+      "scope": "one resident",
+      "complaint": false,
+      "corrected": true,
+      "dementia": false
+    },
+    {
+      "date": "2025-02-19",
+      "cycle": 2,
+      "tag": "0580",
+      "title": "Family or doctor not told about a change or injury",
+      "detail": "Immediately tell the resident, the resident's doctor, and a family member of situations (injury/decline/room, etc.)  that affect the resident.",
+      "category": "Resident Rights",
+      "sev": "E",
+      "level": 2,
+      "scope": "several residents",
+      "complaint": true,
+      "corrected": true,
+      "dementia": false
+    },
+    {
+      "date": "2025-02-19",
+      "cycle": 2,
+      "tag": "0757",
+      "title": "Unnecessary medications given",
+      "detail": "Ensure each resident’s drug regimen must be free from unnecessary drugs.",
+      "category": "Pharmacy Service",
+      "sev": "D",
+      "level": 2,
+      "scope": "one resident",
+      "complaint": true,
+      "corrected": true,
+      "dementia": false
+    },
+    {
+      "date": "2024-05-02",
+      "cycle": 2,
+      "tag": "0826",
+      "title": "Provide specialized rehabilitative services by qualified personnel, when ordered for a resident by a doctor",
+      "detail": "Provide specialized rehabilitative services by qualified personnel, when ordered for a resident by a doctor.",
+      "category": "Quality of Life and Care",
+      "sev": "D",
+      "level": 2,
+      "scope": "one resident",
+      "complaint": false,
+      "corrected": true,
+      "dementia": false
+    },
+    {
+      "date": "2024-05-02",
+      "cycle": 2,
+      "tag": "0880",
+      "title": "Infection control not followed",
+      "detail": "Provide and implement an infection prevention and control program.",
+      "category": "Infection Control",
+      "sev": "D",
+      "level": 2,
+      "scope": "one resident",
+      "complaint": false,
+      "corrected": true,
+      "dementia": false
+    },
+    {
+      "date": "2023-06-16",
+      "cycle": 3,
+      "tag": "0580",
+      "title": "Family or doctor not told about a change or injury",
+      "detail": "Immediately tell the resident, the resident's doctor, and a family member of situations (injury/decline/room, etc.)  that affect the resident.",
+      "category": "Resident Rights",
+      "sev": "D",
+      "level": 2,
+      "scope": "one resident",
+      "complaint": false,
+      "corrected": true,
+      "dementia": false
+    },
+    {
+      "date": "2023-06-16",
+      "cycle": 3,
+      "tag": "0602",
+      "title": "Protect each resident from the wrongful use of the resident's belongings or money",
+      "detail": "Protect each resident from the wrongful use of the resident's belongings or money.",
+      "category": "Freedom from Abuse, Neglect, and Exploitation",
+      "sev": "D",
+      "level": 2,
+      "scope": "one resident",
+      "complaint": false,
+      "corrected": true,
+      "dementia": false
+    }
+  ],
+  "penalties": [],
+  "owners": {
+    "type": "Non profit - Corporation",
+    "legalName": "Vsl Fairbury LLC",
+    "changed12m": false,
+    "direct": [
+      {
+        "name": "Vetter Senior Living",
+        "pct": "100%",
+        "since": "12/23/2016"
+      }
+    ],
+    "indirect": [],
+    "indirectCount": 0,
+    "operators": [
+      "Vetter Senior Living",
+      "Vsl Vetter Health Services LLC"
+    ]
+  },
+  "quality": [
+    {
+      "code": "481",
+      "label": "Antipsychotic drugs (long-stay)",
+      "value": 0,
+      "ne": 20.7,
+      "us": 15.4,
+      "lowerBetter": true
+    },
+    {
+      "code": "410",
+      "label": "Falls with major injury",
+      "value": 3.3,
+      "ne": 4.5,
+      "us": 3.2,
+      "lowerBetter": true
+    },
+    {
+      "code": "479",
+      "label": "Pressure ulcers (bed sores)",
+      "value": 1.8,
+      "ne": 4,
+      "us": 4.5,
+      "lowerBetter": true
+    },
+    {
+      "code": "401",
+      "label": "Needing more help with daily activities",
+      "value": 39.9,
+      "ne": 19,
+      "us": 13.5,
+      "lowerBetter": true
+    },
+    {
+      "code": "404",
+      "label": "Lost too much weight",
+      "value": 0.6,
+      "ne": 5.1,
+      "us": 5.1,
+      "lowerBetter": true
+    },
+    {
+      "code": "408",
+      "label": "Depressive symptoms",
+      "value": 0,
+      "ne": 4.4,
+      "us": 13.5,
+      "lowerBetter": true
+    },
+    {
+      "code": "452",
+      "label": "Anti-anxiety or sleep drugs",
+      "value": 12.2,
+      "ne": 19,
+      "us": 19.5,
+      "lowerBetter": true
+    }
+  ],
+  "memoryCare": "ask",
+  "memorySource": null,
+  "behavioral": false,
+  "memoryUnits": null,
+  "beds": 100,
+  "openings": {
+    "est": 54,
+    "note": "Estimate: certified beds minus average daily residents (CMS). Certified beds are often more than the beds actually staffed. Call to confirm."
+  },
+  "payment": {
+    "private": "yes",
+    "medicaid": "yes",
+    "medicare": "short",
+    "va": "ask",
+    "ltc": "ask"
+  },
+  "vaSource": null,
+  "bio": "Non-profit nursing home in Fairbury with 100 certified beds, part of Vetter Senior Living. Provides 24-hour skilled nursing care, long-term care, and short-term rehab.",
+  "sources": [
+    "Medicare / CMS Provider Data: provider info, health inspections, penalties, ownership, quality measures (processed 2026-10-01)",
+    "Dementia units & VA contracts: City of Lincoln Aging Partners nursing facility list (Mar 2024); Eastern Nebraska Office on Aging facility list (Sep 2025)",
+    "Price: CareScout Cost of Care Survey 2024, Nebraska averages"
+  ]
+}

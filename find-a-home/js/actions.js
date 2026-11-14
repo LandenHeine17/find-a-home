@@ -5,6 +5,7 @@
 import { S, save, resetState, defaultFilters } from './core/state.js';
 import { toast } from './core/util.js';
 import { go, refresh } from './router.js';
+import { summary } from './core/data.js';
 import { readIntake } from './views/welcome.js';
 import { shareList } from './views/list.js';
 import { openTour, openReview, openRateApp, showSources } from './components/modals.js';
@@ -29,6 +30,11 @@ const ACTIONS = {
   },
   'compare-remove': (el, id) => { S.compare = S.compare.filter(x => x !== id); save(); refresh(); },
   'compare-clear': () => { S.compare = []; save(); refresh(); },
+  'compare-saved': () => {
+    const of = kind => S.saved.filter(id => summary(id)?.kind === kind);
+    const pick = of(S.mode).length >= 2 ? of(S.mode) : of(S.mode === 'facility' ? 'homecare' : 'facility');
+    S.compare = (pick.length >= 2 ? pick : S.saved).slice(0, 3); save(); go('#/compare');
+  },
   'tour': (el, id) => openTour(id),
   'tour-status': (el, id) => { const t = S.tours.find(x => x.id === id); if (t) t.status = el.dataset.status; save(); refresh(); },
   'choose': (el, id) => {
@@ -41,7 +47,8 @@ const ACTIONS = {
   'sources': () => showSources(),
   'reset': () => {
     if (confirm('Clear your answers, saved places and tours, and start over?')) { resetState(); go('#/welcome'); }
-  }
+  },
+  'check': (el) => { S.checklist[el.dataset.q] = el.checked; save(); }
 };
 ACTIONS['compare-toggle-btn'] = ACTIONS['compare-toggle'];
 

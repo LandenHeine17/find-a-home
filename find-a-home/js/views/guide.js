@@ -3,7 +3,7 @@ import { S } from '../core/state.js';
 import { esc } from '../core/util.js';
 import { lovedOne } from '../core/labels.js';
 import { app } from '../router.js';
-import { TOUR_QS } from '../components/modals.js';
+import { checklistHtml } from '../components/modals.js';
 
 const GUIDE = [
   { t: 'Get the diagnosis in writing', b: `Ask ${'{lo}'}'s doctor for a written diagnosis and a short summary of daily care needs. Memory care communities and Medicaid usually ask for it.`,
@@ -16,7 +16,7 @@ const GUIDE = [
   { t: 'Choose the type of care', b: 'Match the level of care to what your loved one needs now, and soon.',
     more: ['<b>In-home care:</b> caregivers come to the house for a few hours a day up to 24/7. Best in early stages, or when family lives nearby.', '<b>Assisted living:</b> an apartment with meals and help with daily tasks. Not always secured.', '<b>Memory care:</b> a secured, dementia-focused setting with trained staff. Good for wandering or confusion.', '<b>Nursing home:</b> 24-hour nursing for heavy medical needs. Rated by Medicare.'],
     link: ['#/results', 'See matches'] },
-  { t: 'Shortlist and compare 2–3 places', b: 'Check safety first, then cost, distance and openings.', more: ['Use Compare to see places side by side.', 'Check Medicare inspection results for nursing homes.', 'Call to ask about openings and waitlists before you tour.'], link: ['#/compare', 'Open compare'] },
+  { t: 'Shortlist and compare 2–3 places', b: 'Check safety first, then cost, distance and openings.', more: ['Use Compare to see places side by side.', 'Check Medicare inspection results for nursing homes.', 'Check the open beds on each page, then call to confirm before you tour.', 'Read the price breakdown and ask each place for its full fee list in writing.'], link: ['#/compare', 'Open compare'] },
   { t: 'Tour, and bring your loved one if you can', b: 'Visit at a mealtime if possible. Watch how staff treat residents.', more: ['Bring the tour checklist.', 'Visit twice: once scheduled, once drop-in.', 'Ask for their latest state inspection report.'], checklist: true },
   { t: 'Apply and complete the assessments', b: 'The facility will do its own care assessment before move-in.', more: ['Nursing homes that take Medicaid must do a pre-admission screening (PASRR).', 'Medicaid also needs a level-of-care assessment.', 'Gather: photo ID, insurance and Medicare cards, power of attorney, medication list and doctor\'s orders.'] },
   { t: 'Plan the move', b: 'Familiar things help a lot with the change.', more: ['Bring photos, a favorite chair and blanket, and label clothing.', 'Share their routines, likes and triggers with staff.', 'Ask staff about the best visiting schedule for the first few weeks.'] },
@@ -27,18 +27,19 @@ export function renderGuide() {
   app.innerHTML = `
     <div style="max-width:860px;margin:0 auto">
       <h1>What to do next</h1>
-      <p class="muted" style="font-size:1.05rem">A step-by-step plan for placing ${lovedOne()} in care. Check off steps as you go. Your progress is saved on this device.</p>
-      <div class="progress" aria-label="${done} of ${GUIDE.length} steps done"><i style="width:${done / GUIDE.length * 100}%"></i></div>
+      <p class="muted" style="font-size:1.05rem">Eight steps for placing ${lovedOne()} in care, from the diagnosis to the first months after the move. Your progress is saved on this device.</p>
+      <p class="progress-label"><b>${done} of ${GUIDE.length}</b> steps done</p>
+      <div class="progress" aria-hidden="true"><i style="width:${done / GUIDE.length * 100}%"></i></div>
       ${GUIDE.map((g, i) => `
         <div class="card guide-step ${S.guide[i] ? 'done' : ''}">
           <div class="num">${S.guide[i] ? '✓' : i + 1}</div>
           <div>
             <h3>${esc(g.t)}</h3><p style="margin-bottom:.4rem">${g.b.replace('{lo}', lovedOne())}</p>
             <details><summary>Show details</summary><ul>${g.more.map(m => `<li>${m}</li>`).join('')}</ul>
-              ${g.checklist ? `<ul class="checklist">${TOUR_QS.map(q => `<li><label><input type="checkbox"> ${esc(q)}</label></li>`).join('')}</ul>` : ''}
+              ${g.checklist ? checklistHtml() : ''}
             </details>
             <div style="display:flex;gap:.5rem;margin-top:.6rem;flex-wrap:wrap">
-              <button class="btn small ${S.guide[i] ? 'secondary' : ''}" data-action="guide-toggle" data-i="${i}">${S.guide[i] ? 'Undo' : 'Mark done'}</button>
+              <button class="btn small ${S.guide[i] ? 'secondary' : ''}" data-action="guide-toggle" data-i="${i}" aria-pressed="${!!S.guide[i]}">${S.guide[i] ? '✓ Done (undo)' : 'Mark done'}</button>
               ${g.link ? `<a class="btn small secondary" href="${g.link[0]}">${g.link[1]}</a>` : ''}
             </div>
           </div>

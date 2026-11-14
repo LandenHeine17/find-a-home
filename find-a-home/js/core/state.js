@@ -5,18 +5,18 @@
 const STORE = 'fah-state-v1';
 
 export const defaultIntake = () => ({
-  name: '', lovedOne: '', zip: '', insuranceFile: '', doctor: '',
+  name: '', lovedOne: '', address: '', zip: '', loc: null, insuranceFile: '', doctor: '',
   stage: '', behaviors: [], livingPref: '', payment: [], budget: 6000, maxMiles: 20, timing: ''
 });
 export const defaultFilters = () => ({
   types: ['memory', 'assisted_memory', 'nursing'], price: 'any', includeUnpriced: true, miles: null,
   noMedicaidNo: false, hideLow: false, hideWatch: false, openOnly: false, memoryUnitOnly: false, noSerious: false,
-  areas: ['Lincoln area', 'Omaha area'], q: '',
+  hideAreas: [], q: '',
   hcTypes: ['non-medical', 'medical'], dementiaOnly: false, vaOnly: false
 });
 const defaults = () => ({
   intake: defaultIntake(), intakeDone: false, step: 1, mode: 'facility', filters: defaultFilters(),
-  sort: 'match', saved: [], compare: [], tours: [], guide: {}, reviews: {}, appRating: null, chosen: null
+  sort: 'match', saved: [], compare: [], tours: [], guide: {}, checklist: {}, reviews: {}, appRating: null, chosen: null
 });
 
 function load() {

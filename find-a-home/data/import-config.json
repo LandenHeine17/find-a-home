@@ -1,15 +1,7 @@
 {
-  "_about": "Which nursing homes `npm run import` pulls from Medicare. Add a county name to grow the list.",
+  "_about": "Which nursing homes `npm run import` pulls from Medicare. \"counties\": \"all\" pulls the whole state; or list county names. Each home is labelled with its nearest area below.",
   "state": "NE",
-  "counties": [
-    "Lancaster",
-    "Seward",
-    "Saunders",
-    "Douglas",
-    "Sarpy",
-    "Cass",
-    "Washington"
-  ],
+  "counties": "all",
   "priceEstimate": {
     "low": 8380,
     "high": 10040,
@@ -26,6 +18,31 @@
       "name": "Omaha area",
       "lat": 41.2565,
       "lon": -95.9345
+    },
+    {
+      "name": "Southeast Nebraska",
+      "lat": 40.268,
+      "lon": -96.747
+    },
+    {
+      "name": "Central Nebraska",
+      "lat": 40.925,
+      "lon": -98.342
+    },
+    {
+      "name": "Northeast Nebraska",
+      "lat": 42.028,
+      "lon": -97.417
+    },
+    {
+      "name": "Western Nebraska",
+      "lat": 41.123,
+      "lon": -100.765
+    },
+    {
+      "name": "Western Nebraska",
+      "lat": 41.867,
+      "lon": -103.66
     }
   ]
 }

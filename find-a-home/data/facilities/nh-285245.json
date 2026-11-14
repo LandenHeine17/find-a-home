@@ -1,0 +1,266 @@
+{
+  "id": "nh-285245",
+  "kind": "facility",
+  "type": "nursing",
+  "name": "Parkside Manor",
+  "aka": null,
+  "city": "Stuart",
+  "county": "Holt",
+  "area": "Northeast Nebraska",
+  "address": "607 North Main Street, Stuart, NE 68780",
+  "zip": "68780",
+  "phone": "(402) 924-3601",
+  "lat": 42.604,
+  "lon": -99.143,
+  "website": null,
+  "websiteLabel": null,
+  "careCompare": "https://www.medicare.gov/care-compare/details/nursing-home/285245",
+  "priceLow": 8380,
+  "priceHigh": 10040,
+  "priceEstimated": true,
+  "priceNote": "Nebraska average for a nursing home (semi-private to private room). This facility does not publish its price.",
+  "rating": {
+    "value": 5,
+    "source": "Medicare (CMS) overall star rating",
+    "count": null
+  },
+  "cms": {
+    "ccn": "285245",
+    "overall": 5,
+    "inspection": 4,
+    "staffing": 5,
+    "quality": 5,
+    "nurseHours": 3.8,
+    "rnHours": 0.67,
+    "weekendHours": 3.3,
+    "turnover": 34.6,
+    "rnTurnover": null,
+    "adminLeft": 0,
+    "deficiencies": 2,
+    "complaintDeficiencies": 0,
+    "inspectionDate": "2026-03-11",
+    "fines": 0,
+    "fineDollars": 0,
+    "paymentDenials": 0,
+    "abuse": false,
+    "sff": false,
+    "sffCandidate": false,
+    "ownership": "Government",
+    "familyCouncil": false
+  },
+  "inspections": [
+    {
+      "date": "2026-03-11",
+      "cycle": 1,
+      "tag": "0606",
+      "title": "Hired someone with an abuse/neglect record",
+      "detail": "Not hire anyone with a finding of abuse, neglect, exploitation, or theft.",
+      "category": "Freedom from Abuse, Neglect, and Exploitation",
+      "sev": "E",
+      "level": 2,
+      "scope": "several residents",
+      "complaint": false,
+      "corrected": true,
+      "dementia": true
+    },
+    {
+      "date": "2026-03-11",
+      "cycle": 1,
+      "tag": "0881",
+      "title": "Implement a program that monitors antibiotic use",
+      "detail": "Implement a program that monitors antibiotic use.",
+      "category": "Infection Control",
+      "sev": "D",
+      "level": 2,
+      "scope": "one resident",
+      "complaint": false,
+      "corrected": true,
+      "dementia": false
+    },
+    {
+      "date": "2025-02-20",
+      "cycle": 2,
+      "tag": "0880",
+      "title": "Infection control not followed",
+      "detail": "Provide and implement an infection prevention and control program.",
+      "category": "Infection Control",
+      "sev": "F",
+      "level": 2,
+      "scope": "many residents",
+      "complaint": false,
+      "corrected": true,
+      "dementia": false
+    },
+    {
+      "date": "2025-02-20",
+      "cycle": 2,
+      "tag": "0758",
+      "title": "Psychiatric drugs not reduced or reviewed as required",
+      "detail": "Implement gradual dose reductions(GDR) and non-pharmacological interventions, unless contraindicated, prior to initiating or instead of continuing psychotropic medication; and PRN orders for psychotropic medications are only used when the medication is necessary and PRN use is limited.",
+      "category": "Pharmacy Service",
+      "sev": "D",
+      "level": 2,
+      "scope": "one resident",
+      "complaint": false,
+      "corrected": true,
+      "dementia": true
+    },
+    {
+      "date": "2025-02-20",
+      "cycle": 2,
+      "tag": "0761",
+      "title": "Medications not labeled or stored correctly",
+      "detail": "Ensure drugs and biologicals used in the facility are labeled in accordance with currently accepted professional principles; and all drugs and biologicals must be stored in locked compartments, separately locked, compartments for controlled drugs.",
+      "category": "Pharmacy Service",
+      "sev": "D",
+      "level": 2,
+      "scope": "one resident",
+      "complaint": false,
+      "corrected": true,
+      "dementia": false
+    },
+    {
+      "date": "2024-02-01",
+      "cycle": 3,
+      "tag": "0609",
+      "title": "Suspected abuse or neglect not reported on time",
+      "detail": "Timely report suspected abuse, neglect, or theft and report the results of the investigation to proper authorities.",
+      "category": "Freedom from Abuse, Neglect, and Exploitation",
+      "sev": "D",
+      "level": 2,
+      "scope": "one resident",
+      "complaint": false,
+      "corrected": true,
+      "dementia": true
+    },
+    {
+      "date": "2024-02-01",
+      "cycle": 3,
+      "tag": "0641",
+      "title": "Resident assessment inaccurate",
+      "detail": "Ensure each resident receives an accurate assessment.",
+      "category": "Resident Assessment and Care Planning",
+      "sev": "D",
+      "level": 2,
+      "scope": "one resident",
+      "complaint": false,
+      "corrected": true,
+      "dementia": false
+    },
+    {
+      "date": "2024-02-01",
+      "cycle": 3,
+      "tag": "0812",
+      "title": "Food stored or prepared unsafely",
+      "detail": "Procure food from sources approved or considered satisfactory and store, prepare, distribute and serve food in accordance with professional standards.",
+      "category": "Nutrition and Dietary",
+      "sev": "D",
+      "level": 2,
+      "scope": "one resident",
+      "complaint": false,
+      "corrected": true,
+      "dementia": false
+    }
+  ],
+  "penalties": [],
+  "owners": {
+    "type": "Government - City",
+    "legalName": "Stuart Village Nursing Home Board Parkside Manor of Stuart",
+    "changed12m": false,
+    "direct": [
+      {
+        "name": "Village of Stuart",
+        "pct": "100%",
+        "since": "07/01/1971"
+      }
+    ],
+    "indirect": [
+      "Amgl, P.C"
+    ],
+    "indirectCount": 1,
+    "operators": [
+      "Rural Health Development Inc."
+    ]
+  },
+  "quality": [
+    {
+      "code": "481",
+      "label": "Antipsychotic drugs (long-stay)",
+      "value": 0,
+      "ne": 20.7,
+      "us": 15.4,
+      "lowerBetter": true
+    },
+    {
+      "code": "410",
+      "label": "Falls with major injury",
+      "value": 4.7,
+      "ne": 4.5,
+      "us": 3.2,
+      "lowerBetter": true
+    },
+    {
+      "code": "479",
+      "label": "Pressure ulcers (bed sores)",
+      "value": 0.9,
+      "ne": 4,
+      "us": 4.5,
+      "lowerBetter": true
+    },
+    {
+      "code": "401",
+      "label": "Needing more help with daily activities",
+      "value": 23,
+      "ne": 19,
+      "us": 13.5,
+      "lowerBetter": true
+    },
+    {
+      "code": "404",
+      "label": "Lost too much weight",
+      "value": 9.5,
+      "ne": 5.1,
+      "us": 5.1,
+      "lowerBetter": true
+    },
+    {
+      "code": "408",
+      "label": "Depressive symptoms",
+      "value": 0,
+      "ne": 4.4,
+      "us": 13.5,
+      "lowerBetter": true
+    },
+    {
+      "code": "452",
+      "label": "Anti-anxiety or sleep drugs",
+      "value": 14.3,
+      "ne": 19,
+      "us": 19.5,
+      "lowerBetter": true
+    }
+  ],
+  "memoryCare": "ask",
+  "memorySource": null,
+  "behavioral": false,
+  "memoryUnits": null,
+  "beds": 40,
+  "openings": {
+    "est": 14,
+    "note": "Estimate: certified beds minus average daily residents (CMS). Certified beds are often more than the beds actually staffed. Call to confirm."
+  },
+  "payment": {
+    "private": "yes",
+    "medicaid": "yes",
+    "medicare": "short",
+    "va": "ask",
+    "ltc": "ask"
+  },
+  "vaSource": null,
+  "bio": "Government nursing home in Stuart with 40 certified beds, part of Rural Health Development. Provides 24-hour skilled nursing care, long-term care, and short-term rehab.",
+  "sources": [
+    "Medicare / CMS Provider Data: provider info, health inspections, penalties, ownership, quality measures (processed 2026-10-01)",
+    "Dementia units & VA contracts: City of Lincoln Aging Partners nursing facility list (Mar 2024); Eastern Nebraska Office on Aging facility list (Sep 2025)",
+    "Price: CareScout Cost of Care Survey 2024, Nebraska averages"
+  ]
+}

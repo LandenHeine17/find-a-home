@@ -1,0 +1,276 @@
+{
+  "id": "nh-285269",
+  "kind": "facility",
+  "type": "nursing",
+  "name": "Beaver City Manor",
+  "aka": null,
+  "city": "Beaver City",
+  "county": "Furnas",
+  "area": "Western Nebraska",
+  "address": "905 Floyd Street, Beaver City, NE 68926",
+  "zip": "68926",
+  "phone": "(308) 268-5111",
+  "lat": 40.1323,
+  "lon": -99.829,
+  "website": null,
+  "websiteLabel": null,
+  "careCompare": "https://www.medicare.gov/care-compare/details/nursing-home/285269",
+  "priceLow": 8380,
+  "priceHigh": 10040,
+  "priceEstimated": true,
+  "priceNote": "Nebraska average for a nursing home (semi-private to private room). This facility does not publish its price.",
+  "rating": {
+    "value": 3,
+    "source": "Medicare (CMS) overall star rating",
+    "count": null
+  },
+  "cms": {
+    "ccn": "285269",
+    "overall": 3,
+    "inspection": 3,
+    "staffing": 5,
+    "quality": 1,
+    "nurseHours": 4.6,
+    "rnHours": 0.85,
+    "weekendHours": 4,
+    "turnover": 38.2,
+    "rnTurnover": 42.9,
+    "adminLeft": null,
+    "deficiencies": 4,
+    "complaintDeficiencies": 2,
+    "inspectionDate": "2025-06-12",
+    "fines": 0,
+    "fineDollars": 0,
+    "paymentDenials": 0,
+    "abuse": false,
+    "sff": false,
+    "sffCandidate": false,
+    "ownership": "Government",
+    "familyCouncil": false
+  },
+  "inspections": [
+    {
+      "date": "2025-06-12",
+      "cycle": 1,
+      "tag": "0812",
+      "title": "Food stored or prepared unsafely",
+      "detail": "Procure food from sources approved or considered satisfactory and store, prepare, distribute and serve food in accordance with professional standards.",
+      "category": "Nutrition and Dietary",
+      "sev": "F",
+      "level": 2,
+      "scope": "many residents",
+      "complaint": true,
+      "corrected": true,
+      "dementia": false
+    },
+    {
+      "date": "2025-06-12",
+      "cycle": 1,
+      "tag": "0880",
+      "title": "Infection control not followed",
+      "detail": "Provide and implement an infection prevention and control program.",
+      "category": "Infection Control",
+      "sev": "F",
+      "level": 2,
+      "scope": "many residents",
+      "complaint": true,
+      "corrected": true,
+      "dementia": false
+    },
+    {
+      "date": "2025-06-12",
+      "cycle": 1,
+      "tag": "0881",
+      "title": "Implement a program that monitors antibiotic use",
+      "detail": "Implement a program that monitors antibiotic use.",
+      "category": "Infection Control",
+      "sev": "F",
+      "level": 2,
+      "scope": "many residents",
+      "complaint": false,
+      "corrected": true,
+      "dementia": false
+    },
+    {
+      "date": "2025-06-12",
+      "cycle": 1,
+      "tag": "0552",
+      "title": "Ensure that residents are fully informed and understand their health status, care and treatments",
+      "detail": "Ensure that residents are fully informed and understand their health status, care and treatments.",
+      "category": "Resident Rights",
+      "sev": "E",
+      "level": 2,
+      "scope": "several residents",
+      "complaint": false,
+      "corrected": true,
+      "dementia": false
+    },
+    {
+      "date": "2024-07-10",
+      "cycle": 2,
+      "tag": "0609",
+      "title": "Suspected abuse or neglect not reported on time",
+      "detail": "Timely report suspected abuse, neglect, or theft and report the results of the investigation to proper authorities.",
+      "category": "Freedom from Abuse, Neglect, and Exploitation",
+      "sev": "D",
+      "level": 2,
+      "scope": "one resident",
+      "complaint": true,
+      "corrected": true,
+      "dementia": true
+    },
+    {
+      "date": "2024-07-10",
+      "cycle": 2,
+      "tag": "0758",
+      "title": "Psychiatric drugs not reduced or reviewed as required",
+      "detail": "Implement gradual dose reductions(GDR) and non-pharmacological interventions, unless contraindicated, prior to initiating or instead of continuing psychotropic medication; and PRN orders for psychotropic medications are only used when the medication is necessary and PRN use is limited.",
+      "category": "Pharmacy Service",
+      "sev": "D",
+      "level": 2,
+      "scope": "one resident",
+      "complaint": false,
+      "corrected": true,
+      "dementia": true
+    },
+    {
+      "date": "2024-07-10",
+      "cycle": 2,
+      "tag": "0759",
+      "title": "Medication error rate of 5% or more",
+      "detail": "Ensure medication error rates are not 5 percent or greater.",
+      "category": "Pharmacy Service",
+      "sev": "D",
+      "level": 2,
+      "scope": "one resident",
+      "complaint": false,
+      "corrected": true,
+      "dementia": false
+    },
+    {
+      "date": "2024-07-10",
+      "cycle": 2,
+      "tag": "0760",
+      "title": "Significant medication error",
+      "detail": "Ensure that residents are free from significant medication errors.",
+      "category": "Pharmacy Service",
+      "sev": "D",
+      "level": 2,
+      "scope": "one resident",
+      "complaint": false,
+      "corrected": true,
+      "dementia": false
+    },
+    {
+      "date": "2023-06-28",
+      "cycle": 3,
+      "tag": "0812",
+      "title": "Food stored or prepared unsafely",
+      "detail": "Procure food from sources approved or considered satisfactory and store, prepare, distribute and serve food in accordance with professional standards.",
+      "category": "Nutrition and Dietary",
+      "sev": "F",
+      "level": 2,
+      "scope": "many residents",
+      "complaint": false,
+      "corrected": true,
+      "dementia": false
+    }
+  ],
+  "penalties": [],
+  "owners": {
+    "type": "Government - City",
+    "legalName": "Beaver City Manor",
+    "changed12m": false,
+    "direct": [
+      {
+        "name": "City of Beaver City",
+        "pct": "100%",
+        "since": "06/01/2016"
+      }
+    ],
+    "indirect": [],
+    "indirectCount": 0,
+    "operators": []
+  },
+  "quality": [
+    {
+      "code": "481",
+      "label": "Antipsychotic drugs (long-stay)",
+      "value": 17.2,
+      "ne": 20.7,
+      "us": 15.4,
+      "lowerBetter": true
+    },
+    {
+      "code": "410",
+      "label": "Falls with major injury",
+      "value": 14.6,
+      "ne": 4.5,
+      "us": 3.2,
+      "lowerBetter": true
+    },
+    {
+      "code": "479",
+      "label": "Pressure ulcers (bed sores)",
+      "value": 9.2,
+      "ne": 4,
+      "us": 4.5,
+      "lowerBetter": true
+    },
+    {
+      "code": "401",
+      "label": "Needing more help with daily activities",
+      "value": 25,
+      "ne": 19,
+      "us": 13.5,
+      "lowerBetter": true
+    },
+    {
+      "code": "404",
+      "label": "Lost too much weight",
+      "value": 6.8,
+      "ne": 5.1,
+      "us": 5.1,
+      "lowerBetter": true
+    },
+    {
+      "code": "408",
+      "label": "Depressive symptoms",
+      "value": 0,
+      "ne": 4.4,
+      "us": 13.5,
+      "lowerBetter": true
+    },
+    {
+      "code": "452",
+      "label": "Anti-anxiety or sleep drugs",
+      "value": 5.3,
+      "ne": 19,
+      "us": 19.5,
+      "lowerBetter": true
+    }
+  ],
+  "memoryCare": "ask",
+  "memorySource": null,
+  "behavioral": false,
+  "memoryUnits": null,
+  "beds": 30,
+  "openings": {
+    "est": 8,
+    "note": "Estimate: certified beds minus average daily residents (CMS). Certified beds are often more than the beds actually staffed. Call to confirm."
+  },
+  "payment": {
+    "private": "yes",
+    "medicaid": "yes",
+    "medicare": "short",
+    "va": "ask",
+    "ltc": "ask"
+  },
+  "vaSource": null,
+  "bio": "Government nursing home in Beaver City with 30 certified beds. Provides 24-hour skilled nursing care, long-term care, and short-term rehab.",
+  "sources": [
+    "Medicare / CMS Provider Data: provider info, health inspections, penalties, ownership, quality measures (processed 2026-10-01)",
+    "Dementia units & VA contracts: City of Lincoln Aging Partners nursing facility list (Mar 2024); Eastern Nebraska Office on Aging facility list (Sep 2025)",
+    "Price: CareScout Cost of Care Survey 2024, Nebraska averages"
+  ]
+}

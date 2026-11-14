@@ -6,8 +6,10 @@
 import { S } from './state.js';
 import { fmt } from './util.js';
 import { knownPrice } from './labels.js';
-import { dist } from './geo.js';
+import { dist, home, milesBetween, zipKnown } from './geo.js';
 import { data } from './data.js';
+
+const LINCOLN = [40.8136, -96.7026];
 
 export function match(p) {
   const I = S.intake, pay = I.payment || [], beh = I.behaviors || [];
@@ -70,11 +72,13 @@ export function match(p) {
       if (p.rating.value >= 4.5) good.push(`${p.rating.value}★ family reviews`);
     }
     if (p.openings.est != null) {
-      if (p.openings.est >= 3) { s += 3; good.push(`~${p.openings.est} beds may be open`); }
+      if (p.openings.est >= 3) { s += 3; good.push(`About ${p.openings.est} beds may be open`); }
       else { s -= 3; warn.push('May be nearly full'); }
     }
     if (I.livingPref === 'home') s -= 5;
   } else {
+    // Every home care agency we list is based in Lincoln. Families farther out should check coverage.
+    if (zipKnown() && milesBetween(home(), LINCOLN) > 30) { s -= 15; warn.push('Based in Lincoln: ask if they come to your town'); }
     if (p.dementia) { s += 12; good.push('Advertises dementia care'); }
     else if (p.type !== 'medical') warn.push('Ask about dementia training');
     if (p.type === 'medical') {
@@ -112,7 +116,7 @@ export function filtered(mode) {
   if (mode === 'facility') {
     list = data.facilities.filter(p => {
       if (!F.types.includes(p.type)) return false;
-      if (p.area && !F.areas.includes(p.area)) return false;
+      if (p.area && F.hideAreas.includes(p.area)) return false;
       if (F.q && !(p.name + ' ' + (p.aka || '') + ' ' + p.address).toLowerCase().includes(F.q.toLowerCase())) return false;
       if (dist(p) > miles) return false;
       const kp = knownPrice(p);
@@ -140,6 +144,7 @@ export function filtered(mode) {
   const sorters = {
     match: (a, b) => b.m.score - a.m.score,
     distance: (a, b) => a.d - b.d,
+    beds: (a, b) => (b.p.openings?.est ?? -1) - (a.p.openings?.est ?? -1) || a.d - b.d,
     rating: (a, b) => (b.p.rating?.value ?? -1) - (a.p.rating?.value ?? -1),
     price: (a, b) => (knownPrice(a.p) ?? a.p.priceLow ?? 1e9) - (knownPrice(b.p) ?? b.p.priceLow ?? 1e9)
   };

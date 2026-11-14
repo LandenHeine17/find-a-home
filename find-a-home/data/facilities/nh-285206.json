@@ -1,0 +1,199 @@
+{
+  "id": "nh-285206",
+  "kind": "facility",
+  "type": "nursing",
+  "name": "Fairview Manor",
+  "aka": null,
+  "city": "Fairmont",
+  "county": "Fillmore",
+  "area": "Central Nebraska",
+  "address": "255 F Street, Fairmont, NE 68354",
+  "zip": "68354",
+  "phone": "(402) 268-2271",
+  "lat": 40.6352,
+  "lon": -97.59,
+  "website": null,
+  "websiteLabel": null,
+  "careCompare": "https://www.medicare.gov/care-compare/details/nursing-home/285206",
+  "priceLow": 8380,
+  "priceHigh": 10040,
+  "priceEstimated": true,
+  "priceNote": "Nebraska average for a nursing home (semi-private to private room). This facility does not publish its price.",
+  "rating": {
+    "value": 5,
+    "source": "Medicare (CMS) overall star rating",
+    "count": null
+  },
+  "cms": {
+    "ccn": "285206",
+    "overall": 5,
+    "inspection": 5,
+    "staffing": 5,
+    "quality": 3,
+    "nurseHours": 4.1,
+    "rnHours": 0.74,
+    "weekendHours": 3.5,
+    "turnover": 20.9,
+    "rnTurnover": 0,
+    "adminLeft": 0,
+    "deficiencies": 0,
+    "complaintDeficiencies": 0,
+    "inspectionDate": "2026-01-15",
+    "fines": 0,
+    "fineDollars": 0,
+    "paymentDenials": 0,
+    "abuse": false,
+    "sff": false,
+    "sffCandidate": false,
+    "ownership": "Government",
+    "familyCouncil": false
+  },
+  "inspections": [
+    {
+      "date": "2024-10-03",
+      "cycle": 2,
+      "tag": "0801",
+      "title": "Kitchen not properly staffed",
+      "detail": "Employ sufficient staff with the appropriate competencies and skills sets to carry out the functions of the food and nutrition service, including a qualified dietician.",
+      "category": "Nutrition and Dietary",
+      "sev": "F",
+      "level": 2,
+      "scope": "many residents",
+      "complaint": false,
+      "corrected": true,
+      "dementia": false
+    },
+    {
+      "date": "2024-10-03",
+      "cycle": 2,
+      "tag": "0641",
+      "title": "Resident assessment inaccurate",
+      "detail": "Ensure each resident receives an accurate assessment.",
+      "category": "Resident Assessment and Care Planning",
+      "sev": "D",
+      "level": 2,
+      "scope": "one resident",
+      "complaint": false,
+      "corrected": true,
+      "dementia": false
+    },
+    {
+      "date": "2024-10-03",
+      "cycle": 2,
+      "tag": "0880",
+      "title": "Infection control not followed",
+      "detail": "Provide and implement an infection prevention and control program.",
+      "category": "Infection Control",
+      "sev": "D",
+      "level": 2,
+      "scope": "one resident",
+      "complaint": false,
+      "corrected": true,
+      "dementia": false
+    }
+  ],
+  "penalties": [],
+  "owners": {
+    "type": "Government - City/county",
+    "legalName": "City of Fairmont Nebraska - Fairview Manor",
+    "changed12m": false,
+    "direct": [
+      {
+        "name": "City of Fairmont Nebraska - Fairview Manor",
+        "pct": "100%",
+        "since": "10/28/2009"
+      },
+      {
+        "name": "Village of Fairmont",
+        "pct": "",
+        "since": "03/05/1974"
+      }
+    ],
+    "indirect": [],
+    "indirectCount": 0,
+    "operators": [
+      "Village of Fairmont"
+    ]
+  },
+  "quality": [
+    {
+      "code": "481",
+      "label": "Antipsychotic drugs (long-stay)",
+      "value": 15.1,
+      "ne": 20.7,
+      "us": 15.4,
+      "lowerBetter": true
+    },
+    {
+      "code": "410",
+      "label": "Falls with major injury",
+      "value": 4.2,
+      "ne": 4.5,
+      "us": 3.2,
+      "lowerBetter": true
+    },
+    {
+      "code": "479",
+      "label": "Pressure ulcers (bed sores)",
+      "value": 1,
+      "ne": 4,
+      "us": 4.5,
+      "lowerBetter": true
+    },
+    {
+      "code": "401",
+      "label": "Needing more help with daily activities",
+      "value": 17.1,
+      "ne": 19,
+      "us": 13.5,
+      "lowerBetter": true
+    },
+    {
+      "code": "404",
+      "label": "Lost too much weight",
+      "value": 0,
+      "ne": 5.1,
+      "us": 5.1,
+      "lowerBetter": true
+    },
+    {
+      "code": "408",
+      "label": "Depressive symptoms",
+      "value": 9.3,
+      "ne": 4.4,
+      "us": 13.5,
+      "lowerBetter": true
+    },
+    {
+      "code": "452",
+      "label": "Anti-anxiety or sleep drugs",
+      "value": 22.4,
+      "ne": 19,
+      "us": 19.5,
+      "lowerBetter": true
+    }
+  ],
+  "memoryCare": "ask",
+  "memorySource": null,
+  "behavioral": false,
+  "memoryUnits": null,
+  "beds": 40,
+  "openings": {
+    "est": 2,
+    "note": "Estimate: certified beds minus average daily residents (CMS). Certified beds are often more than the beds actually staffed. Call to confirm."
+  },
+  "payment": {
+    "private": "yes",
+    "medicaid": "yes",
+    "medicare": "short",
+    "va": "ask",
+    "ltc": "ask"
+  },
+  "vaSource": null,
+  "bio": "Government nursing home in Fairmont with 40 certified beds. Provides 24-hour skilled nursing care, long-term care, and short-term rehab.",
+  "sources": [
+    "Medicare / CMS Provider Data: provider info, health inspections, penalties, ownership, quality measures (processed 2026-10-01)",
+    "Dementia units & VA contracts: City of Lincoln Aging Partners nursing facility list (Mar 2024); Eastern Nebraska Office on Aging facility list (Sep 2025)",
+    "Price: CareScout Cost of Care Survey 2024, Nebraska averages"
+  ]
+}

@@ -1,7 +1,8 @@
 /** Side-by-side comparison of 2–3 places, with the best value in each row highlighted. */
 import { S } from '../core/state.js';
-import { esc, fmt, stars, icon, telHref } from '../core/util.js';
+import { esc, fmt, stars, telHref } from '../core/util.js';
 import { TYPE_LABEL, LovedOne, priceText, knownPrice, avgReview } from '../core/labels.js';
+import { extrasShort } from '../core/fees.js';
 import { dist, mapsUrl } from '../core/geo.js';
 import { match, seriousCount } from '../core/matching.js';
 import { summary } from '../core/data.js';
@@ -16,13 +17,16 @@ const heart = p => {
 export function renderCompare() {
   const items = S.compare.map(summary).filter(Boolean);
   if (items.length < 2) {
-    app.innerHTML = `<h1>Compare side by side</h1><div class="card empty"><p style="font-size:1.1rem">Pick 2 or 3 places to compare.<br>Tick <b>Compare</b> on any match.</p>
-      ${items.length ? `<p>Selected so far: <b>${esc(items[0].name)}</b></p>` : ''}<a class="btn" href="#/results">Go to matches</a></div>`;
+    const savedN = S.saved.length;
+    app.innerHTML = `<h1>Compare side by side</h1><div class="card empty"><p style="font-size:1.1rem">Pick 2 or 3 places to compare.<br>Press <b>Compare</b> on any match.</p>
+      ${items.length ? `<p>Selected so far: <b>${esc(items[0].name)}</b></p>` : ''}
+      <div class="contact-row" style="justify-content:center">${savedN >= 2 ? '<button class="btn" data-action="compare-saved">Compare saved places</button>' : ''}<a class="btn ${savedN >= 2 ? 'secondary' : ''}" href="#/results">Go to matches</a></div></div>`;
     return;
   }
   const rows = [
     ['Match for ' + LovedOne(), p => match(p).score, v => v + '%', 'max'],
     ['Type', p => TYPE_LABEL[p.type]],
+    ['Open beds (est.)', p => p.openings ? p.openings.est : null, (v, p) => v == null ? '<span class="muted">' + (p.kind === 'homecare' ? 'Comes to you' : 'Ask') + '</span>' : `${v} of ${p.beds}`, 'max'],
     ['Distance', p => p.kind === 'facility' ? dist(p) : null, v => v == null ? 'Comes to you' : v.toFixed(1) + ' mi', 'min'],
     ['Rating', p => p.kind === 'facility' ? p.rating.value : avgReview(p.id), (v, p) => v == null ? '<span class="muted">No rating</span>' : `${stars(v)}<br><span class="small muted">${p.cms ? 'Medicare' : p.kind === 'facility' ? p.rating.count + ' reviews' : 'Find-A-Home'}</span>`, 'max'],
     ['Health inspection', p => p.cms ? p.cms.inspection : null, v => v == null ? '<span class="muted">Not federally rated</span>' : v + ' / 5', 'max'],
@@ -35,10 +39,11 @@ export function renderCompare() {
     ['Staff turnover', p => p.cms ? p.cms.turnover : null, v => v == null ? '<span class="muted">–</span>' : v + '% / yr', 'min'],
     ['Owner type', p => p.cms ? p.cms.ownership + (p.owners.changed12m ? ' <span class="tag warn">new owner</span>' : '') : '<span class="muted">–</span>'],
     ['Medicaid', p => ({ yes: '✓ Accepts', no: '✕ No', ask: '? Ask' })[p.payment.medicaid]],
-    ['Price', p => knownPrice(p) ?? (p.kind === 'homecare' ? p.priceLow * 120 : null), (v, p) => priceText(p, true), 'min'],
-    ['Open beds (est.)', p => p.openings ? p.openings.est : null, v => v == null ? '<span class="muted">Ask</span>' : '~' + v, 'max'],
+    ['Base price', p => knownPrice(p) ?? (p.kind === 'homecare' ? p.priceLow * 120 : null), (v, p) => priceText(p, true), 'min'],
+    ['Often billed on top', p => `<span class="small">${esc(extrasShort(p))}</span>`],
+    ['Website', p => p.website ? `<a href="${esc(p.website)}" target="_blank" rel="noopener">Visit website</a>` : '<span class="muted">Not verified</span>'],
     ['Phone', p => `<a href="tel:${p.phone.replace(/\D/g, '')}">${esc(p.phone)}</a>`],
-    ['Map', p => `<a href="${mapsUrl(p)}" target="_blank" rel="noopener">📍 Google Maps ↗</a>`]
+    ['Map and photos', p => `<a href="${mapsUrl(p)}" target="_blank" rel="noopener">Google Maps</a>`]
   ];
   const body = rows.map(([label, get, show, best]) => {
     const vals = items.map(get);
@@ -55,11 +60,11 @@ export function renderCompare() {
   }).join('');
   app.innerHTML = `
     <div style="display:flex;justify-content:space-between;align-items:center;flex-wrap:wrap;gap:1rem;margin-bottom:1rem">
-      <div><h1 style="margin:0">Compare side by side</h1><p class="muted" style="margin:0">Green marks the best value in each row. Tap ♡ to save a place to My list.</p></div>
-      <div class="no-print" style="display:flex;gap:.5rem"><button class="btn secondary" onclick="window.print()">🖨️ Print</button><a class="btn secondary" href="#/results">+ Add another</a></div>
+      <div><h1 style="margin:0">Compare side by side</h1><p class="muted" style="margin:0">"Best" marks the strongest value in each row. Tap ♡ to save a place to My list.</p></div>
+      <div class="no-print" style="display:flex;gap:.5rem"><button class="btn secondary" onclick="window.print()">Print</button><a class="btn secondary" href="#/results">+ Add another</a></div>
     </div>
     <div class="compare-wrap"><table class="compare">
-      <thead><tr><th></th>${items.map(p => `<th scope="col">${icon(p.type, 44)}<br><span class="compare-name"><a href="#/place/${p.id}">${esc(p.name)}</a>${heart(p)}</span></th>`).join('')}</tr></thead>
+      <thead><tr><th></th>${items.map(p => `<th scope="col"><span class="type-label" data-type="${p.type}">${TYPE_LABEL[p.type]}</span><span class="compare-name"><a href="#/place/${p.id}">${esc(p.name)}</a>${heart(p)}</span></th>`).join('')}</tr></thead>
       <tbody>${body}
         <tr class="no-print"><th></th>${items.map(p => `<td><button class="btn small" data-action="tour" data-id="${p.id}">Request ${p.kind === 'facility' ? 'tour' : 'consult'}</button><br><button class="linkbtn small" data-action="compare-remove" data-id="${p.id}" style="margin-top:.4rem">Remove</button></td>`).join('')}</tr>
       </tbody></table></div>

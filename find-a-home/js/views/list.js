@@ -1,6 +1,6 @@
 /** "My list": saved places, tour requests (with simulated facility replies) and sharing. */
 import { S } from '../core/state.js';
-import { esc, icon, toast, openModal } from '../core/util.js';
+import { esc, toast, openModal } from '../core/util.js';
 import { TYPE_LABEL, lovedOne, priceText } from '../core/labels.js';
 import { dist } from '../core/geo.js';
 import { match } from '../core/matching.js';
@@ -18,7 +18,7 @@ export function renderList() {
   const saved = S.saved.map(summary).filter(Boolean);
   const STATUS = {
     pending: ['warn', 'Waiting for them to confirm'], confirmed: ['good', 'Tour confirmed'],
-    waitlist: ['warn', 'Full: on waitlist'], declined: ['bad', 'Full: declined'], chosen: ['good', 'Chosen! 🎉'], notfit: ['', 'Not a fit']
+    waitlist: ['warn', 'Full: on waitlist'], declined: ['bad', 'Full: declined'], chosen: ['good', 'Chosen'], notfit: ['', 'Not a fit']
   };
   const tours = S.tours.map(t => {
     const p = summary(t.id); if (!p) return '';
@@ -35,16 +35,16 @@ export function renderList() {
       actions = nb ? `<span class="small">Next best match: <a href="#/place/${nb.id}"><b>${esc(nb.name)}</b></a> (${match(nb).score}%)</span> <button class="btn small" data-action="tour" data-id="${nb.id}">Request ${nb.kind === 'facility' ? 'tour' : 'consult'}</button>` : '';
     } else if (t.status === 'chosen') actions = `<span class="small">We'll remind you to review ${esc(p.name)} after 30 days. <button class="linkbtn" data-action="review" data-id="${p.id}">Write a review now</button></span>`;
     return `<div class="card" style="margin-bottom:.75rem"><div style="display:flex;gap:1rem;align-items:center;flex-wrap:wrap">
-      ${icon(p.type, 52)}<div style="flex:1;min-width:200px"><b><a href="#/place/${p.id}">${esc(p.name)}</a></b><br><span class="small muted">${t.date ? new Date(t.date + 'T12:00').toLocaleDateString('en-US', { month: 'short', day: 'numeric' }) + ', ' + t.time.toLowerCase() : ''}${t.withLoved === 'yes' ? ' · with ' + lovedOne() : ''}</span></div>
+      <div style="flex:1;min-width:200px"><span class="type-label">${TYPE_LABEL[p.type]}</span><br><b><a href="#/place/${p.id}">${esc(p.name)}</a></b><br><span class="small muted">${t.date ? new Date(t.date + 'T12:00').toLocaleDateString('en-US', { month: 'short', day: 'numeric' }) + ', ' + t.time.toLowerCase() : ''}${t.withLoved === 'yes' ? ' · with ' + lovedOne() : ''}</span></div>
       <span class="tag ${cls}">${label}</span></div>
       ${actions ? `<div style="display:flex;gap:.5rem;align-items:center;flex-wrap:wrap;margin-top:.75rem">${actions}</div>` : ''}</div>`;
   }).join('');
   app.innerHTML = `
     <div style="display:flex;justify-content:space-between;align-items:center;flex-wrap:wrap;gap:1rem;margin-bottom:1rem">
       <div><h1 style="margin:0">My list</h1><p class="muted" style="margin:0">Places you saved and tours you requested.</p></div>
-      ${saved.length ? '<button class="btn" data-action="share">👪 Share with family</button>' : ''}
+      ${saved.length ? '<button class="btn" data-action="share">Share with family</button>' : ''}
     </div>
-    ${S.chosen ? `<div class="alert good" style="font-size:1.05rem">🎉 You chose <b>${esc(summary(S.chosen)?.name || '')}</b> for ${lovedOne()}. See <a href="#/next-steps">next steps</a> for moving in.</div>` : ''}
+    ${S.chosen ? `<div class="alert good" style="font-size:1.05rem">You chose <b>${esc(summary(S.chosen)?.name || '')}</b> for ${lovedOne()}. See <a href="#/next-steps">next steps</a> for moving in.</div>` : ''}
     <h2>Tours & consultations</h2>
     ${tours || '<div class="card empty" style="padding:1.25rem">No requests yet. Open a match and tap <b>Request a tour</b>.</div>'}
     <h2 style="margin-top:1.5rem">Saved places</h2>
@@ -62,12 +62,12 @@ export function shareList() {
     <p class="muted">Many families we talked to make this decision together. Send your list to siblings, a spouse or a social worker.</p>
     <textarea id="shareText" rows="9" style="font-size:.9rem">${esc(text)}</textarea>
     <div style="display:flex;gap:.5rem;justify-content:flex-end;margin-top:1rem;flex-wrap:wrap">
-      <a class="btn secondary" href="mailto:?subject=${encodeURIComponent('Care options for ' + (S.intake.lovedOne || 'our loved one'))}&body=${encodeURIComponent(text)}">✉️ Email</a>
-      <a class="btn secondary" href="sms:?&body=${encodeURIComponent(text)}">💬 Text</a>
-      <button class="btn" id="copyBtn">📋 Copy</button></div>`, modal => {
+      <a class="btn secondary" href="mailto:?subject=${encodeURIComponent('Care options for ' + (S.intake.lovedOne || 'our loved one'))}&body=${encodeURIComponent(text)}">Email</a>
+      <a class="btn secondary" href="sms:?&body=${encodeURIComponent(text)}">Text</a>
+      <button class="btn" id="copyBtn">Copy</button></div>`, modal => {
     modal.querySelector('#copyBtn').addEventListener('click', () => {
       const ta = modal.querySelector('#shareText'); ta.select();
-      (navigator.clipboard ? navigator.clipboard.writeText(ta.value) : Promise.reject()).then(() => toast('Copied! Paste it into a text or email.'), () => { document.execCommand('copy'); toast('Copied!'); });
+      (navigator.clipboard ? navigator.clipboard.writeText(ta.value) : Promise.reject()).then(() => toast('Copied. Paste it into a text or email.'), () => { document.execCommand('copy'); toast('Copied.'); });
     });
   });
 }

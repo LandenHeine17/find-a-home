@@ -1,0 +1,283 @@
+{
+  "id": "nh-285261",
+  "kind": "facility",
+  "type": "nursing",
+  "name": "Parkview Haven Nursing Home",
+  "aka": null,
+  "city": "Deshler",
+  "county": "Thayer",
+  "area": "Southeast Nebraska",
+  "address": "1203 4th Street, Deshler, NE 68340",
+  "zip": "68340",
+  "phone": "(402) 365-7237",
+  "lat": 40.1362,
+  "lon": -97.723,
+  "website": null,
+  "websiteLabel": null,
+  "careCompare": "https://www.medicare.gov/care-compare/details/nursing-home/285261",
+  "priceLow": 8380,
+  "priceHigh": 10040,
+  "priceEstimated": true,
+  "priceNote": "Nebraska average for a nursing home (semi-private to private room). This facility does not publish its price.",
+  "rating": {
+    "value": 2,
+    "source": "Medicare (CMS) overall star rating",
+    "count": null
+  },
+  "cms": {
+    "ccn": "285261",
+    "overall": 2,
+    "inspection": 3,
+    "staffing": 1,
+    "quality": 4,
+    "nurseHours": null,
+    "rnHours": null,
+    "weekendHours": null,
+    "turnover": null,
+    "rnTurnover": null,
+    "adminLeft": null,
+    "deficiencies": 6,
+    "complaintDeficiencies": 1,
+    "inspectionDate": "2025-05-22",
+    "fines": 0,
+    "fineDollars": 0,
+    "paymentDenials": 1,
+    "abuse": false,
+    "sff": false,
+    "sffCandidate": false,
+    "ownership": "Government",
+    "familyCouncil": false
+  },
+  "inspections": [
+    {
+      "date": "2025-05-22",
+      "cycle": 1,
+      "tag": "0689",
+      "title": "Accident hazards or not enough supervision (falls, wandering)",
+      "detail": "Ensure that a nursing home area is free from accident hazards and provides adequate supervision to prevent accidents.",
+      "category": "Quality of Life and Care",
+      "sev": "G",
+      "level": 3,
+      "scope": "one resident",
+      "complaint": false,
+      "corrected": true,
+      "dementia": true
+    },
+    {
+      "date": "2025-05-22",
+      "cycle": 1,
+      "tag": "0558",
+      "title": "Reasonably accommodate the needs and preferences of each resident",
+      "detail": "Reasonably accommodate the needs and preferences of each resident.",
+      "category": "Resident Rights",
+      "sev": "D",
+      "level": 2,
+      "scope": "one resident",
+      "complaint": false,
+      "corrected": true,
+      "dementia": false
+    },
+    {
+      "date": "2025-05-22",
+      "cycle": 1,
+      "tag": "0610",
+      "title": "Abuse allegation not investigated properly",
+      "detail": "Respond appropriately to all alleged violations.",
+      "category": "Freedom from Abuse, Neglect, and Exploitation",
+      "sev": "D",
+      "level": 2,
+      "scope": "one resident",
+      "complaint": true,
+      "corrected": true,
+      "dementia": true
+    },
+    {
+      "date": "2025-05-22",
+      "cycle": 1,
+      "tag": "0700",
+      "title": "Bed rails used without safety checks",
+      "detail": "Try different approaches before using a bed rail.  If a bed rail is needed, the facility must (1) assess a resident for safety risk; (2) review these risks and benefits with the resident/representative; (3) get informed consent; and (4) Correctly install and maintain the bed rail.",
+      "category": "Quality of Life and Care",
+      "sev": "D",
+      "level": 2,
+      "scope": "one resident",
+      "complaint": false,
+      "corrected": true,
+      "dementia": false
+    },
+    {
+      "date": "2025-05-22",
+      "cycle": 1,
+      "tag": "0880",
+      "title": "Infection control not followed",
+      "detail": "Provide and implement an infection prevention and control program.",
+      "category": "Infection Control",
+      "sev": "D",
+      "level": 2,
+      "scope": "one resident",
+      "complaint": false,
+      "corrected": true,
+      "dementia": false
+    },
+    {
+      "date": "2025-05-22",
+      "cycle": 1,
+      "tag": "0923",
+      "title": "Poor ventilation",
+      "detail": "Have enough outside ventilation via a window or mechanical ventilation, or both.",
+      "category": "Environmental",
+      "sev": "B",
+      "level": 1,
+      "scope": "several residents",
+      "complaint": false,
+      "corrected": true,
+      "dementia": false
+    },
+    {
+      "date": "2024-05-23",
+      "cycle": 2,
+      "tag": "0684",
+      "title": "Care not given as ordered",
+      "detail": "Provide appropriate treatment and care according to orders, resident’s preferences and goals.",
+      "category": "Quality of Life and Care",
+      "sev": "E",
+      "level": 2,
+      "scope": "several residents",
+      "complaint": false,
+      "corrected": true,
+      "dementia": false
+    },
+    {
+      "date": "2023-07-12",
+      "cycle": 3,
+      "tag": "0641",
+      "title": "Resident assessment inaccurate",
+      "detail": "Ensure each resident receives an accurate assessment.",
+      "category": "Resident Assessment and Care Planning",
+      "sev": "E",
+      "level": 2,
+      "scope": "several residents",
+      "complaint": false,
+      "corrected": true,
+      "dementia": false
+    },
+    {
+      "date": "2023-07-12",
+      "cycle": 3,
+      "tag": "0637",
+      "title": "Not reassessed after a major change",
+      "detail": "Assess the resident when there is a significant change in condition",
+      "category": "Resident Assessment and Care Planning",
+      "sev": "D",
+      "level": 2,
+      "scope": "one resident",
+      "complaint": false,
+      "corrected": true,
+      "dementia": false
+    }
+  ],
+  "penalties": [
+    {
+      "date": "2025-05-22",
+      "type": "Payment Denial",
+      "amount": null,
+      "days": 16
+    }
+  ],
+  "owners": {
+    "type": "Government - City/county",
+    "legalName": "Parkview Haven Nursing Home",
+    "changed12m": false,
+    "direct": [
+      {
+        "name": "City of Deshler",
+        "pct": "100%",
+        "since": "01/01/1968"
+      }
+    ],
+    "indirect": [],
+    "indirectCount": 0,
+    "operators": []
+  },
+  "quality": [
+    {
+      "code": "481",
+      "label": "Antipsychotic drugs (long-stay)",
+      "value": 32.4,
+      "ne": 20.7,
+      "us": 15.4,
+      "lowerBetter": true
+    },
+    {
+      "code": "410",
+      "label": "Falls with major injury",
+      "value": 3.9,
+      "ne": 4.5,
+      "us": 3.2,
+      "lowerBetter": true
+    },
+    {
+      "code": "479",
+      "label": "Pressure ulcers (bed sores)",
+      "value": 0,
+      "ne": 4,
+      "us": 4.5,
+      "lowerBetter": true
+    },
+    {
+      "code": "401",
+      "label": "Needing more help with daily activities",
+      "value": 16.7,
+      "ne": 19,
+      "us": 13.5,
+      "lowerBetter": true
+    },
+    {
+      "code": "404",
+      "label": "Lost too much weight",
+      "value": 2.2,
+      "ne": 5.1,
+      "us": 5.1,
+      "lowerBetter": true
+    },
+    {
+      "code": "408",
+      "label": "Depressive symptoms",
+      "value": 2.8,
+      "ne": 4.4,
+      "us": 13.5,
+      "lowerBetter": true
+    },
+    {
+      "code": "452",
+      "label": "Anti-anxiety or sleep drugs",
+      "value": 8.7,
+      "ne": 19,
+      "us": 19.5,
+      "lowerBetter": true
+    }
+  ],
+  "memoryCare": "ask",
+  "memorySource": null,
+  "behavioral": false,
+  "memoryUnits": null,
+  "beds": 49,
+  "openings": {
+    "est": 30,
+    "note": "Estimate: certified beds minus average daily residents (CMS). Certified beds are often more than the beds actually staffed. Call to confirm."
+  },
+  "payment": {
+    "private": "yes",
+    "medicaid": "yes",
+    "medicare": "short",
+    "va": "ask",
+    "ltc": "ask"
+  },
+  "vaSource": null,
+  "bio": "Government nursing home in Deshler with 49 certified beds. Provides 24-hour skilled nursing care, long-term care, and short-term rehab.",
+  "sources": [
+    "Medicare / CMS Provider Data: provider info, health inspections, penalties, ownership, quality measures (processed 2026-10-01)",
+    "Dementia units & VA contracts: City of Lincoln Aging Partners nursing facility list (Mar 2024); Eastern Nebraska Office on Aging facility list (Sep 2025)",
+    "Price: CareScout Cost of Care Survey 2024, Nebraska averages"
+  ]
+}

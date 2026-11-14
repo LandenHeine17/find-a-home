@@ -7,6 +7,9 @@
  *   npm run import -- --county Hall --save  # ...and add it to the config permanently
  *   npm run import -- --prune               # delete nh-*.json files no longer in the selection
  *
+ * Set "counties": "all" in import-config.json to pull every nursing home in the state.
+ * Each home gets the name of its nearest region center in config.areas.
+ *
  * Each nursing home is written to data/facilities/nh-<CCN>.json.
  * Hand-researched facts (dementia units, websites, notes) come from
  * data/curated/nursing-homes.json and are merged in. Edit that file, not the output.
@@ -173,13 +176,14 @@ async function main() {
   const configFile = path.join(DATA, 'import-config.json');
   const config = await readJson(configFile);
   const state = opt.state || config.state;
-  const counties = [...new Set([...config.counties, ...opt.counties])];
+  const all = config.counties === 'all';
+  const counties = all ? [] : [...new Set([...config.counties, ...opt.counties])];
   const curated = await readJson(path.join(DATA, 'curated', 'nursing-homes.json'));
   const titleRef = await readJson(path.join(DATA, 'reference', 'citation-titles.json'));
   const { _sources: curSources = {}, ...cur } = curated;
 
-  console.log(`Fetching ${state} nursing homes from Medicare for: ${counties.join(', ')}`);
-  const providers = (await query(DS.provider, { state })).filter(p => counties.some(c => c.toLowerCase() === p.countyparish.toLowerCase()));
+  console.log(`Fetching ${state} nursing homes from Medicare for: ${all ? 'every county' : counties.join(', ')}`);
+  const providers = (await query(DS.provider, { state })).filter(p => all || counties.some(c => c.toLowerCase() === p.countyparish.toLowerCase()));
   if (!providers.length) throw new Error('No nursing homes matched. Check the county spelling (e.g. "Douglas", "Scott Bluff").');
   const keep = new Set(providers.map(p => p.cms_certification_number_ccn));
   const only = rows => rows.filter(r => keep.has(r.cms_certification_number_ccn));
@@ -212,7 +216,7 @@ async function main() {
       if (ccn && !keep.has(ccn)) { await unlink(path.join(dir, f)); console.log(`  removed ${f}`); }
     }
   }
-  if (opt.save && opt.counties.length) { config.counties = counties; await writeJson(configFile, config); console.log('  saved counties to data/import-config.json'); }
+  if (opt.save && opt.counties.length && !all) { config.counties = counties; await writeJson(configFile, config); console.log('  saved counties to data/import-config.json'); }
 
   const missing = providers.filter(p => !cur[p.cms_certification_number_ccn]).map(p => `${p.cms_certification_number_ccn} ${p.provider_name}`);
   console.log(`Done. Wrote ${providers.length} files to data/facilities/.`);

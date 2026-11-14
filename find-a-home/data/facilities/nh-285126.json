@@ -1,0 +1,264 @@
+{
+  "id": "nh-285126",
+  "kind": "facility",
+  "type": "nursing",
+  "name": "The Ambassador Nebraska City",
+  "aka": null,
+  "city": "Nebraska City",
+  "county": "Otoe",
+  "area": "Omaha area",
+  "address": "1800 14th Avenue, Nebraska City, NE 68410",
+  "zip": "68410",
+  "phone": "(402) 873-6650",
+  "lat": 40.6893,
+  "lon": -95.868,
+  "website": null,
+  "websiteLabel": null,
+  "careCompare": "https://www.medicare.gov/care-compare/details/nursing-home/285126",
+  "priceLow": 8380,
+  "priceHigh": 10040,
+  "priceEstimated": true,
+  "priceNote": "Nebraska average for a nursing home (semi-private to private room). This facility does not publish its price.",
+  "rating": {
+    "value": 5,
+    "source": "Medicare (CMS) overall star rating",
+    "count": null
+  },
+  "cms": {
+    "ccn": "285126",
+    "overall": 5,
+    "inspection": 5,
+    "staffing": 5,
+    "quality": 4,
+    "nurseHours": 4.7,
+    "rnHours": 0.56,
+    "weekendHours": 4,
+    "turnover": 41.1,
+    "rnTurnover": 28.6,
+    "adminLeft": 0,
+    "deficiencies": 2,
+    "complaintDeficiencies": 1,
+    "inspectionDate": "2026-04-14",
+    "fines": 0,
+    "fineDollars": 0,
+    "paymentDenials": 0,
+    "abuse": false,
+    "sff": false,
+    "sffCandidate": false,
+    "ownership": "For-profit",
+    "familyCouncil": false
+  },
+  "inspections": [
+    {
+      "date": "2026-04-14",
+      "cycle": 1,
+      "tag": "0580",
+      "title": "Family or doctor not told about a change or injury",
+      "detail": "Immediately tell the resident, the resident's doctor, and a family member of situations (injury/decline/room, etc.)  that affect the resident.",
+      "category": "Resident Rights",
+      "sev": "D",
+      "level": 2,
+      "scope": "one resident",
+      "complaint": false,
+      "corrected": true,
+      "dementia": false
+    },
+    {
+      "date": "2026-04-14",
+      "cycle": 1,
+      "tag": "0692",
+      "title": "Not enough food or fluids",
+      "detail": "Provide enough food/fluids to maintain a resident's health.",
+      "category": "Quality of Life and Care",
+      "sev": "D",
+      "level": 2,
+      "scope": "one resident",
+      "complaint": true,
+      "corrected": true,
+      "dementia": false
+    },
+    {
+      "date": "2025-03-10",
+      "cycle": 2,
+      "tag": "0609",
+      "title": "Suspected abuse or neglect not reported on time",
+      "detail": "Timely report suspected abuse, neglect, or theft and report the results of the investigation to proper authorities.",
+      "category": "Freedom from Abuse, Neglect, and Exploitation",
+      "sev": "D",
+      "level": 2,
+      "scope": "one resident",
+      "complaint": true,
+      "corrected": true,
+      "dementia": true
+    },
+    {
+      "date": "2025-03-10",
+      "cycle": 2,
+      "tag": "0610",
+      "title": "Abuse allegation not investigated properly",
+      "detail": "Respond appropriately to all alleged violations.",
+      "category": "Freedom from Abuse, Neglect, and Exploitation",
+      "sev": "D",
+      "level": 2,
+      "scope": "one resident",
+      "complaint": true,
+      "corrected": true,
+      "dementia": true
+    },
+    {
+      "date": "2024-10-31",
+      "cycle": 2,
+      "tag": "0689",
+      "title": "Accident hazards or not enough supervision (falls, wandering)",
+      "detail": "Ensure that a nursing home area is free from accident hazards and provides adequate supervision to prevent accidents.",
+      "category": "Quality of Life and Care",
+      "sev": "E",
+      "level": 2,
+      "scope": "several residents",
+      "complaint": false,
+      "corrected": true,
+      "dementia": true
+    },
+    {
+      "date": "2024-10-31",
+      "cycle": 2,
+      "tag": "0757",
+      "title": "Unnecessary medications given",
+      "detail": "Ensure each resident’s drug regimen must be free from unnecessary drugs.",
+      "category": "Pharmacy Service",
+      "sev": "D",
+      "level": 2,
+      "scope": "one resident",
+      "complaint": false,
+      "corrected": true,
+      "dementia": false
+    },
+    {
+      "date": "2023-09-06",
+      "cycle": 3,
+      "tag": "0644",
+      "title": "Pre-admission screening not coordinated",
+      "detail": "Coordinate assessments with the pre-admission screening and resident review program; and referring for services as needed.",
+      "category": "Resident Assessment and Care Planning",
+      "sev": "D",
+      "level": 2,
+      "scope": "one resident",
+      "complaint": false,
+      "corrected": true,
+      "dementia": false
+    },
+    {
+      "date": "2023-09-06",
+      "cycle": 3,
+      "tag": "0657",
+      "title": "Care plan not updated on time",
+      "detail": "Develop the complete care plan within 7 days of the comprehensive assessment; and prepared, reviewed, and revised by a team of health professionals.",
+      "category": "Resident Assessment and Care Planning",
+      "sev": "D",
+      "level": 2,
+      "scope": "one resident",
+      "complaint": false,
+      "corrected": true,
+      "dementia": false
+    }
+  ],
+  "penalties": [],
+  "owners": {
+    "type": "For profit - Corporation",
+    "legalName": "The Ambassador Nebraska City Inc",
+    "changed12m": false,
+    "direct": [
+      {
+        "name": "Ambassador Holding Company",
+        "pct": "",
+        "since": "06/05/1985"
+      }
+    ],
+    "indirect": [],
+    "indirectCount": 0,
+    "operators": [
+      "The Ambassador Group Inc"
+    ]
+  },
+  "quality": [
+    {
+      "code": "481",
+      "label": "Antipsychotic drugs (long-stay)",
+      "value": 17,
+      "ne": 20.7,
+      "us": 15.4,
+      "lowerBetter": true
+    },
+    {
+      "code": "410",
+      "label": "Falls with major injury",
+      "value": 7.6,
+      "ne": 4.5,
+      "us": 3.2,
+      "lowerBetter": true
+    },
+    {
+      "code": "479",
+      "label": "Pressure ulcers (bed sores)",
+      "value": 2.8,
+      "ne": 4,
+      "us": 4.5,
+      "lowerBetter": true
+    },
+    {
+      "code": "401",
+      "label": "Needing more help with daily activities",
+      "value": 20.1,
+      "ne": 19,
+      "us": 13.5,
+      "lowerBetter": true
+    },
+    {
+      "code": "404",
+      "label": "Lost too much weight",
+      "value": 1.5,
+      "ne": 5.1,
+      "us": 5.1,
+      "lowerBetter": true
+    },
+    {
+      "code": "408",
+      "label": "Depressive symptoms",
+      "value": 0.7,
+      "ne": 4.4,
+      "us": 13.5,
+      "lowerBetter": true
+    },
+    {
+      "code": "452",
+      "label": "Anti-anxiety or sleep drugs",
+      "value": 5,
+      "ne": 19,
+      "us": 19.5,
+      "lowerBetter": true
+    }
+  ],
+  "memoryCare": "ask",
+  "memorySource": null,
+  "behavioral": false,
+  "memoryUnits": null,
+  "beds": 71,
+  "openings": {
+    "est": 26,
+    "note": "Estimate: certified beds minus average daily residents (CMS). Certified beds are often more than the beds actually staffed. Call to confirm."
+  },
+  "payment": {
+    "private": "yes",
+    "medicaid": "yes",
+    "medicare": "short",
+    "va": "ask",
+    "ltc": "ask"
+  },
+  "vaSource": null,
+  "bio": "For-profit nursing home in Nebraska City with 71 certified beds, part of Ambassador Health. Provides 24-hour skilled nursing care, long-term care, and short-term rehab.",
+  "sources": [
+    "Medicare / CMS Provider Data: provider info, health inspections, penalties, ownership, quality measures (processed 2026-10-01)",
+    "Dementia units & VA contracts: City of Lincoln Aging Partners nursing facility list (Mar 2024); Eastern Nebraska Office on Aging facility list (Sep 2025)",
+    "Price: CareScout Cost of Care Survey 2024, Nebraska averages"
+  ]
+}

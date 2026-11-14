@@ -7,3 +7,6 @@ node_modules/
 .specstory/
 .cursorindexingignore
 .vscode/
+
+# Design-check working files
+.taste-skill/

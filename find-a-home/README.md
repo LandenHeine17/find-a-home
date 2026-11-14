@@ -1,6 +1,6 @@
 # Find-A-Home
 
-A prototype that helps families find **dementia care** (memory care, nursing homes and in-home care) near **Lincoln and Omaha, Nebraska**.
+A prototype that helps families find **dementia care** in **Nebraska**: every nursing home in the state, plus memory care, assisted living and in-home care in Lincoln.
 Built by IP Group 14 (Landen Heine, Ammi Meyer, Kellan Nash) from our customer-discovery interviews and our top napkin sketch, "Find-A-Home".
 
 A family answers about 2 minutes of questions (stage, wandering, payment, budget, distance). The app then ranks real facilities on what our interviews said matters most: **Is it safe? Can we pay? Can they handle dementia? Is it close? Is there room?**
@@ -40,12 +40,12 @@ js/                     front end (plain ES modules, no build step)
   router.js             hash routes: #/welcome, #/results, #/place/<id>, #/compare, #/list, #/next-steps
   actions.js            one click handler; buttons use data-action="..."
   assistant.js          "Care Guide" chat (scripted answers, no real AI)
-  core/                 state (localStorage), data loading, matching/scoring, labels, helpers
+  core/                 state (localStorage), data loading, matching/scoring, labels, fees, location, helpers
   views/                one file per screen
   components/           dialogs and the nursing-home-only detail sections
 server/                 (at the repo root)
   index.js              Express app: serves all three prototypes + /api
-  routes/api.js         GET /api/facilities, /api/homecare, /api/places/:id, /api/reference
+  routes/api.js         GET /api/facilities, /api/homecare, /api/places/:id, /api/reference, /api/geocode
   lib/store.js          loads every JSON file in find-a-home/data/ into memory and builds list summaries
 data/
   facilities/           one JSON file per facility: nh-<CMS number>.json (nursing homes), al-*.json (memory care)
@@ -65,14 +65,27 @@ Each place is one object in one file. The server reads them all at startup, so a
 ### Nursing homes (automatic, from Medicare)
 
 ```bash
-npm run import -- --county Hall            # pull Hall County once
-npm run import -- --county Hall --save     # ...and keep it in data/import-config.json
-npm run import                             # refresh everything with the latest Medicare data
+npm run import                             # refresh every Nebraska nursing home with the latest Medicare data
 ```
+
+`data/import-config.json` has `"counties": "all"`, so the import pulls the whole state and labels each home with its nearest region (Lincoln area, Omaha area, Southeast, Central, Northeast or Western Nebraska). To pull only some counties instead, replace `"all"` with a list such as `["Lancaster", "Hall"]`; then `npm run import -- --county Gage --save` adds one more.
 
 The import downloads ratings, every inspection citation, penalties, owners, staffing and dementia-related quality measures. It then lists any homes that have no curated facts yet.
 
 ### Facts Medicare doesn't have
+
+### A place's own fee list
+
+The price breakdown on each page shows what that type of care usually includes and charges on top (`js/core/fees.js`). When a place sends its real fee sheet, add it to that place's JSON file and it replaces the general list:
+
+```json
+"fees": {
+  "included": ["Apartment", "Three meals a day"],
+  "extra": [["Level-of-care fee", "$400–$1,800 a month by care level"], ["Medication management", "$350 a month"]],
+  "oneTime": ["Community fee: $2,500"],
+  "source": "The community's 2026 fee sheet, sent Nov 2026"
+}
+```
 
 Edit `data/curated/nursing-homes.json`, keyed by the CMS certification number (the digits in `nh-<number>.json`):
 
@@ -101,12 +114,13 @@ npm run validate
 
 | What | Source |
 |---|---|
-| 52 nursing homes (Lincoln + Omaha metro): ratings, inspections, penalties, ownership, staffing, quality | Medicare / CMS Care Compare Provider Data |
+| 180 nursing homes (all of Nebraska): ratings, inspections, penalties, ownership, staffing, quality, Medicare/Medicaid certification | Medicare / CMS Care Compare Provider Data |
 | Dementia units, behavioral care, VA contracts | Lincoln Aging Partners nursing facility list (Mar 2024), Eastern Nebraska Office on Aging (Sep 2025) |
 | 17 Lincoln memory care / assisted living communities | Lincoln Aging Partners licensed assisted living list (2020), with prices and ratings from Caring.com / Seniorly |
 | 10 home care agencies | Lincoln Aging Partners home care list (Jul 2026) and agency websites |
 | Nursing home cost estimate | CareScout Cost of Care Survey 2024 (Nebraska averages) |
-| Distances | US Census ZIP code centers |
+| Distances | The user's street address via the US Census geocoder (`GET /api/geocode`), their device location, or US Census ZIP code centers |
+| Typical fees by type of care | General patterns in `js/core/fees.js`, labelled as not confirmed by the place |
 
 **Estimated:** nursing home prices (state average) and open beds (certified beds minus average residents).
 **Simulated:** insurance card upload, doctor connection, sending tour requests and facility replies, reviews (saved in the browser only) and the Care Guide chat.
@@ -116,8 +130,9 @@ This is a student prototype. It is not medical advice and doesn't take payment f
 
 ## Suggested user-testing tasks
 
-1. "Your dad has middle-stage dementia and wanders. You live in 68516 and will use savings, then Medicaid. Find two places worth touring."
+1. "Your dad has middle-stage dementia and wanders. You live at 410 Main St in Seward and will use savings, then Medicaid. Find two places worth touring."
 2. "Compare those two places. Which would you pick, and why?"
 3. "Request a tour. The facility says it's full. What do you do next?"
 4. "Find out whether Medicare will pay for memory care."
 5. "Send your list to your sister."
+6. "Before you sign, what could a memory care community charge on top of its base price?"
